@@ -1,6 +1,6 @@
-# Innovate with AI
+# Build A Fabric Real-Time Intelligence Solution in a Day 
 
-### Overall Estimated Duration: 8 Hours
+### Overall Estimated Duration: 4 hours
 
 ## Overview
 
