@@ -4,46 +4,44 @@
 
 ## Overview
 
-In this lab, you will explore the use of Natural Language Processing and Machine Learning to classify COVID-19 research papers into natural groupings. You will utilize Automated Machine Learning (AutoML) in Azure to train and refine the best classification models. The lab emphasizes the importance of a fully automated and traceable process for managing large volumes of incoming research documents, ensuring data quality through engineering processes, and providing advanced indexing and search capabilities using AI Search. Additionally, you will learn how to leverage Conversational AI, using Power Virtual Agents and Azure AI Services, to help analysts easily navigate and find relevant research documents through natural language interactions.
+In this lab, you will explore Real-Time Intelligence, create a Fabric Workspace, and set up an Eventhouse for event-driven data. You will enable OneLake Availability, create an Eventstream, and run a Data Generator Notebook to simulate streaming events. Additionally, you will set up a Lakehouse, upload reference data, access Eventhouse data, build a KQL Database schema, and develop a Real-Time Dashboard with auto-refresh. Finally, you will use Data Activator to automate real-time actions.
 
-## Objective
+## Objective  
 
-Understand how to utilize Natural Language Processing, Machine Learning, and Conversational AI in Azure for classifying and exploring COVID-19 research papers. By the end of the lab, you will have knowledge on : 
+Understand how to leverage **Microsoft Fabric** for real-time data processing, analytics, and automation. By the end of this lab, you will have knowledge on:  
 
-- **Azure Machine Learning Model Training** : Learn to build, train, and evaluate machine learning models using Azure Machine Learning. You will explore the end-to-end process, from data preparation to model deployment, leveraging Azure's Automated ML and other tools for streamlined development and operationalization.
-- **Document Processing and Summarization with Azure Document Intelligence and AI Service for Language** : Explore document processing and summarization using Azure Document Intelligence and AI Service for Language. learn to extract, analyze, and summarize key information from documents, enhancing data accessibility and comprehension.
-- **Knowledge Mining with Azure AI Search** : Learn to create rich search experiences by indexing and exploring data, extracting insights, and enabling advanced search capabilities across structured and unstructured content.
-- **Conversational AI with Bot Service using Power Virtual Agents** : Learn to create new topics, define conversation flows, and test the bot, enabling interactive and natural language interactions with users.
+- **Setting Up a Fabric Workspace and Eventhouse**: Create a **Fabric Workspace** for project collaboration and set up an **Eventhouse** to efficiently store and process event-driven data.  
+- **Integrating Data with OneLake and Eventstream**: Enable **OneLake Availability** for seamless data integration and create a **new Eventstream**, defining its topology to manage real-time data ingestion.  
+- **Simulating and Processing Streaming Data**: Import and run a **Data Generator Notebook** to simulate streaming events, then define the **Eventstream topology** for structured data flow.  
+- **Building a Lakehouse for Data Storage and Processing**: Set up a **Lakehouse**, upload reference data files, and create **Delta tables** for efficient data storage and processing.  
+- **Querying and Structuring Data with KQL**: Access **Eventhouse data** from the Lakehouse and build a **KQL Database schema** to structure and query real-time data effectively.  
+- **Creating Real-Time Dashboards and Automating Insights**: Develop a **Real-Time Dashboard**, enable **auto-refresh**, and use **Data Activator** to automate actions based on real-time events.  
 
 ## Pre-requisites
 
-Participants should have:
+Participants should have:  
 
-- Basic understanding of Azure AI Services and Azure DevOps
-- working knowledge with Github
-- Familarity with Machine Learning concepts
+- **Basic understanding of Microsoft Fabric** – Familiarity with Fabric’s data processing, storage, and analytics capabilities.  
+- **Familiarity with real-time data processing concepts** – Understanding of streaming data, event-driven architectures, and analytics workflows.  
 
 ## Architecture
 
-In this lab, you will use AI technologies to manage and analyze COVID-19 research papers. You'll apply Natural Language Processing and Machine Learning with Azure Automated ML to classify and group papers effectively. The workflow involves transforming natural language data for machine learning, ensuring high data quality, and using Azure AI Search for advanced document indexing and exploration. Additionally, you'll implement a conversational AI solution with Power Virtual Agents and Azure AI Services to enable intuitive navigation and retrieval of relevant research.
+In this lab, you will build a Real-Time Intelligence Solution in Microsoft Fabric to analyze web traffic and consumer behavior for an e-commerce website. Using clickstream data, you will leverage Fabric Real-Time Intelligence to track visitor interactions and predict sales trends. The workflow includes streaming events into Fabric Eventhouse via Eventstream, performing real-time data transformations using Kusto Query Language (KQL), and utilizing OneLake availability to seamlessly access data through the Lakehouse. Additionally, you will create real-time visualizations with Fabric Real-Time Dashboards and implement Data Activator Reflex actions to automate alerts and responses based on streaming data.
 
 ## Architecture Diagram
 
-![](media/updated-arch-new-v2.png)
+![](media/architecture.png)
 
 ## Explanation of Components
 
 The architecture for this lab involves the following key components:
 
-- **Natural Language Processing (NLP)** : Utilizes NLP techniques to analyze and understand the text within research papers, enabling the extraction of meaningful information and patterns.
-
-- **Machine Learning with Automated ML** : Employs Azure Automated ML to build, train, and refine classification models that automatically categorize and group research papers based on their content.
-
-- **Azure AI Search** : Provides advanced indexing and search capabilities, allowing users to perform complex queries and explore semantic relationships within the research document corpus.
-
-- **Data Engineering and Quality Assurance** : Involves transforming natural language data into numerical formats suitable for machine learning and ensuring data accuracy and completeness through robust quality checks.
-
-- **Conversational AI with Power Virtual Agents** : Implements a chatbot interface using Power Virtual Agents and AI Services to facilitate intuitive, natural language interactions for navigating and retrieving relevant research documents.
+- **Notebook** – Generates and ingests streaming data into the system.  
+- **Eventstream** – Acts as a streaming data pipeline, ingesting events from the Notebook into **Eventhouse**.  
+- **Eventhouse** – A real-time analytics store that processes and structures streaming data for further use.  
+- **Lakehouse** – Serves as a storage layer for structured and unstructured data, accessible via shortcuts from **Eventhouse**.  
+- **Real-Time Dashboard** – Visualizes real-time data from **Eventhouse** for monitoring and insights.  
+- **Reflex (Data Activator)** – Automates responses and alerts based on real-time streaming data.  
 
 ## Getting Started with Lab
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
@@ -68,35 +66,46 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
 
 ![](media/getting-started-5.png)
 
-## Let's Get Started with Azure Portal
+## Let's Get Started with Microsoft Fabric portal
  
-1. On your virtual machine, click on the **Azure Portal** icon as shown below:
- 
-   ![](media/azure-portal-edge.png)
+1. Open the **Microsoft Edge browser** on your desktop and visit `https://app.fabric.microsoft.com/` in Incognito mode. You will be navigated to the login page.
 
-1. On the **Sign in to Microsoft Azure** tab you will see the login screen, in that enter the following email/username, and click on **Next**. 
+    ![](media/image029.png)
 
-   * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
-   
-      ![](media/user-email.png "Enter Email")
-     
-1. Now enter the following password and click on **Sign in**.
-   
-   * **Password**: <inject key="AzureAdUserPassword"></inject>
-   
-      ![](media/user-pass.png "Enter Password")
 
-1. If you see the pop-up Action Required, click Ask Later.
+1. Enter the following email/username, and then click on **Submit**.  
 
-   ![](media/asklater.png)
+    - **Username/Email**:<inject key="AzureAdUserEmail"></inject>
 
-   >**NOTE:** Do not enable MFA, select **Ask Later**.
-     
-1. If you see the pop-up **Stay Signed in?**, select **No**.
+      ![](media/image6.png)
 
-1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
+    - **Password**:<inject key="AzureAdUserPassword"></inject> 
 
-1. If a **Welcome to Microsoft Azure** popup window appears, select **Maybe Later** to skip the tour.
+1. Click **Sign in** and follow the prompts to sign into Fabric.
+
+1. You will be navigated to the **Fabric Home**.
+
+    ![](media/image10upd.png)
+
+    To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up.
+
+1. On the top right corner of the screen, select the **user** **icon**.
+
+1. Select **Free Trial**.
+
+    ![](media/image11upd1.png)
+
+1. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Activate**.
+
+    ![](media/image12upd1.png)
+
+1. The "Successfully Upgraded to Microsoft Fabric" dialog will appear. Click on **Fabric Home Page**..  
+
+   ![](media/fabrichome_1.png)
+
+1. You will be navigated back to the **Microsoft** **Fabric Home page**.
+
+    ![](media/image10upd.png)
 
 ## Support Contact
 

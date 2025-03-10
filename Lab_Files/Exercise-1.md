@@ -3,67 +3,24 @@
 In this exercise, you will explore **Real-Time Intelligence** to gain insights from streaming data, and create a **Fabric Workspace** to organize and collaborate on your projects. You will set up an **Eventhouse** to efficiently store and analyze event-driven data, enable **OneLake Availability** for seamless data integration, and create an **Eventstream** while defining its topology for real-time data ingestion. Additionally, you will import and run a **Data Generator Notebook** to simulate streaming events, set up a **Lakehouse**, and upload reference data to create delta tables. You will access **Eventhouse data from the Lakehouse**, build a **KQL Database schema**, and develop a **Real-Time Dashboard** with auto-refresh for live insights. Finally, you will use **Data Activator** to automate actions based on real-time data.
 ## Lab objectives: 
 In this lab, you will be able to complete the following tasks:
-Here is the corrected task numbering:  
 
-- **Task 1:** Enable a Microsoft Fabric trial license  
-- **Task 2:** Experience Real-Time Intelligence  
-- **Task 3:** Create a Fabric Workspace  
-- **Task 4:** Create an Eventhouse  
-- **Task 5:** Enable OneLake Availability  
-- **Task 6:** Create a new Eventstream  
-- **Task 7:** Import Data Generator Notebook  
-- **Task 8:** Run the notebook  
-- **Task 9:** Define Eventstream topology  
-- **Task 10:** Set up the Lakehouse  
-- **Task 11:** Upload reference data files and create delta tables in the Lakehouse  
-- **Task 12:** Access Eventhouse data from the Lakehouse  
-- **Task 13:** Build the KQL DB schema  
-- **Task 14:** Real-Time Dashboard  
-- **Task 15:** Enable Auto-refresh for your dashboard  
-- **Task 16:** Data Activator
+- Task 1: Experience Real-Time Intelligence.  
+- Task 2: Create a Fabric Workspace.
+- Task 3: Create an Eventhouse.
+- Task 4. Enable OneLake Availability.
+- Task 5: Create a new Eventstream.
+- Task 6: Import Data Generator Notebook.
+- Task 7: Run the notebook.
+- Task 8: Define Eventstream topology.
+- Task 9: Setting up the Lakehouse.
+- Task 10: Create delta tables in the lakehouse.
+- Task 11: Accessing Eventhouse data from the lakehouse. 
+- Task 12: Build the KQL DB schema.
+- Task 13: Real-Time Dashboard. 
+- Task 14: Enable Auto-refresh to your dashboard.  
+- Task 15: Enable Data Activators.
 
-## Task 1: Enable a Microsoft Fabric trial license
-
-1. Open the **Microsoft Edge browser** on your desktop and visit `https://app.fabric.microsoft.com/` in Incognito mode. You will be navigated to the login page.
-
-    ![](media/image029.png)
-
-
-1. Enter the following email/username, and then click on **Submit**.  
-
-    - **Username/Email**:<inject key="AzureAdUserEmail"></inject>
-
-      ![](media/image6.png)
-
-    - **Password**:<inject key="AzureAdUserPassword"></inject> 
-
-1. Click **Sign in** and follow the prompts to sign into Fabric.
-
-1. You will be navigated to the **Fabric Home**.
-
-    ![](media/image10upd.png)
-
-    To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up.
-
-1. On the top right corner of the screen, select the **user** **icon**.
-
-1. Select **Free Trial**.
-
-    ![](media/image11upd1.png)
-
-1. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Activate**.
-
-    ![](media/image12upd1.png)
-
-1. The "Successfully Upgraded to Microsoft Fabric" dialog will appear. Click on **Fabric Home Page**..  
-
-   ![](media/fabrichome_1.png)
-
-1. You will be navigated back to the **Microsoft** **Fabric Home page**.
-
-    ![](media/image10upd.png)
-
-## Task 2: Real-Time Intelligence Experience Items
+## Task 1: Experience Real-Time Intelligence  
 
 1. Select **Workloads** icon on the left of your screen. A dialog with the list of Fabric experiences will open. The list of experiences includes Power BI, Data Factory, Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science and Data Warehouse. Let’s explore.
 
@@ -87,7 +44,7 @@ Here is the corrected task numbering:
 
     ![](media/image18upd1.png)
 
-## Task 4: Create a Fabric Workspace
+## Task 2: Create a Fabric Workspace
 
 1. Now let’s create a workspace with Fabric license. Select **Workspaces** from the navigation bar on the left.
 
@@ -115,7 +72,7 @@ Here is the corrected task numbering:
 
     ![](media/image28.png)
 
-## Task 5: Create an Eventhouse
+## Task 3: Create an Eventhouse
 
 1. Click the **\+ New item** box to open a new pane that has all the items you can create in this Fabric workspace.
 
@@ -166,7 +123,7 @@ Here is the corrected task numbering:
 
     ![](media/lab-final.png)
 
-### Task 6. Enable OneLake Availability
+### Task 4. Enable OneLake Availability
 In this task, you’ll enable OneLake Availability to automatically copy KQL Database data to OneLake in Delta format, allowing seamless querying through Lakehouse and other tools. It’s best enabled before loading large datasets and can be set per table.
 
 1. When an Eventhouse is created, a KQL Database with the same name is created as well. To open the KQL Database click on the Database **WebEvents_EH** in the section **KQL Databases**.
@@ -183,7 +140,7 @@ In this task, you’ll enable OneLake Availability to automatically copy KQL Dat
 
     ![](media/image_task04_step03.png)
 
-### Task 7: Create a new Eventstream
+### Task 5: Create a new Eventstream
 In this task, you will be streaming events (impressions and clicks events) generated by a notebook. The events will be streamed into an eventstream and consumed by our Eventhouse KQL Database.
 
 1. Select your Workspace in the left pane. In our example it is **RTI Tutorial**. If you have been assigned a Workspace at the start of this lab, choose the workspace name that was provided to you. Then click on **+ New Item**. In the popout window scroll a little bit down and select **Eventstream**.
@@ -216,7 +173,7 @@ In this task, you will be streaming events (impressions and clicks events) gener
 
     >**Note:** To copy the connection string it must be visible.
 
-### Task 8: Import Data Generator Notebook
+### Task 6: Import Data Generator Notebook
 We use a python notebook to generate a stream of artificial click events. The notebook can be found in **C:** directory.
 
 1. To import the notebook into your workspace you, navigate to your workspace and click on **Import**, and select **Notebook** and then **From this computer**.
@@ -235,7 +192,7 @@ We use a python notebook to generate a stream of artificial click events. The no
 
     ![](media/image_task06_step04.png)
 
-### Task 9: Run the notebook
+### Task 7: Run the notebook
 Now we have to run the notebook to create the stream of artificial click events for our lab. In order for the Notebook to send the events to the correct Event Hub we have to insert the information we have saved in Task 5 - Create Event Stream.To run the notebook and create our datastream please proceed with the following steps.
 
 DO NOT use an InPrivate browser window. Recommend using a Personal browser window for the Notebook session to connect and run successfully.
@@ -261,7 +218,7 @@ DO NOT use an InPrivate browser window. Recommend using a Personal browser windo
 
     ![](media/image_task07_step04.png)
 
-### Task 10: Define Eventstream topology
+### Task 8: Define Eventstream topology
 In the task, you will create the Eventstream topology that will insert the streamed data into your KQL database.
 
 1. Open your Eventstream in your Fabric Workspace by clicking on your workspace icon in the left pane, and then navigating to **Eventstream WebEventStream_ES**.
@@ -399,7 +356,7 @@ In the task, you will create the Eventstream topology that will insert the strea
 
     ![](media/image_task08_step21c.png)
 
-### Task 11: Setting up the Lakehouse
+### Task 9: Setting up the Lakehouse
 In this task, you will set up the Lakehouse that will contain additional information for our usecase and in which you will also make the data from the KQL Database accessible through the lakehouse.
 
 1. To create a **Lakehouse**, first return to your assigned workspace by clicking on its icon in the left toolbar.
@@ -414,7 +371,7 @@ In this task, you will set up the Lakehouse that will contain additional informa
 
     ![](media/image_task09_step04.png)
 
-### Task 12: Uploading reference data files and creating delta tables in the lakehouse
+### Task 10: Create delta tables in the lakehouse
 After our lakehouse has been created the overview page of the lakehouse will be displayed. Next task we have to accomplish is to load static data into our new lakehouse. To do so please execute the following steps.
 
 1. Click on the button **Get data** in the toolbar and select **Upload Files** from the dropdown menu.
@@ -452,7 +409,7 @@ After our lakehouse has been created the overview page of the lakehouse will be 
 
     ![](media/image_task10_step07.png)
 
-### Task 13: Accessing Eventhouse data from the lakehouse 
+### Task 11: Accessing Eventhouse data from the lakehouse 
 In this task, you will make the Eventhouse tables form the KQL Database available in our Lakehouse. This will be accomplished by creating shortcuts.
 
 1. Click on the button **Get data** in the menu bar at the top. Choose **New shortcut** from the dropdown menu.
@@ -483,7 +440,7 @@ In this task, you will make the Eventhouse tables form the KQL Database availabl
 
     ![](media/image_task11_step05b.png)
 
-### Task 14: Build the KQL DB schema
+### Task 12: Build the KQL DB schema
 In this task, you will create all the silver tables, functions and enable update policies and in our Eventhouse KQL Database. Two of the tables ('product' and 'productCategory)' are shortcuts to the lakehouse and the data is **NOT** being copied into our KQL Database.
 
 1. Open the KQL Database **WebEvents_EH** in the Eventhouse of your Fabric Workspace. To do so click on the Icon of the Eventhouse in the left toolbar.
@@ -659,7 +616,7 @@ In this task, you will create all the silver tables, functions and enable update
 
     ![](media/image_task12_step012.png)
 
-### Task 15:  Real-Time Dashboard 
+### Task 13:  Real-Time Dashboard 
 In this task, you will build a real-time dashboard to visualize the streaming data and set it to refresh every 30 seconds. (Optionally) A pre-built version of the dashboard is available to download here, which can be imported and configured to your KQL Database data source.
 
 ![](media/RealTimeDashboard.png)
@@ -847,7 +804,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step18.png)
 
-### Task 16: Enable Auto-refresh to your dashboard.
+### Task 14: Enable Auto-refresh to your dashboard.
 
 In this task, you will enable auto-refresh so the dashboard will be automatically updated while it is shown on screen.
 
@@ -863,7 +820,7 @@ In this task, you will enable auto-refresh so the dashboard will be automaticall
 
     ![](media/image_task13_step21.png)
 
-### Task 17: Data Activator
+### Task 15: Enable Data Activators
 In this task, you will create a Reflex Alert that will send a Teams Message when a value meets a certain threshold.
 
 1. While editing the dashboard, click on the three dots (...) of the tile **Click by hour**. Select **Set alert** from the context menu. This will open the pane **Set alert** at the right side in the browser.
