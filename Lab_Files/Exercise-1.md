@@ -20,7 +20,7 @@ In this lab, you will be able to complete the following tasks:
 - Task 14: Enable Auto-refresh to your dashboard.  
 - Task 15: Enable Data Activators.
 
-## Task 1: Experience Real-Time Intelligence  
+### Task 1: Experience Real-Time Intelligence  
 
 1. Select **Workloads** icon on the left of your screen. A dialog with the list of Fabric experiences will open. The list of experiences includes Power BI, Data Factory, Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science and Data Warehouse. Let’s explore.
 
@@ -44,7 +44,7 @@ In this lab, you will be able to complete the following tasks:
 
     ![](media/image18upd1.png)
 
-## Task 2: Create a Fabric Workspace
+### Task 2: Create a Fabric Workspace
 
 1. Now let’s create a workspace with Fabric license. Select **Workspaces** from the navigation bar on the left.
 
@@ -72,7 +72,7 @@ In this lab, you will be able to complete the following tasks:
 
     ![](media/image28.png)
 
-## Task 3: Create an Eventhouse
+### Task 3: Create an Eventhouse
 
 1. Click the **\+ New item** box to open a new pane that has all the items you can create in this Fabric workspace.
 
