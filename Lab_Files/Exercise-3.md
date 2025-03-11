@@ -1,3 +1,6 @@
+# Build A Fabric Real-Time Intelligence Solution in a Day 
+## Estimated duration: 1 hours
+
 ### Task 1: Setting up the Lakehouse
 In this task, you will set up the Lakehouse that will contain additional information for our usecase and in which you will also make the data from the KQL Database accessible through the lakehouse.
 
