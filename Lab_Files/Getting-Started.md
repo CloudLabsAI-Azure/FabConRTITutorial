@@ -40,7 +40,7 @@ The architecture for this lab involves the following key components:
 - **Eventhouse** – A real-time analytics store that processes and structures streaming data for further use.  
 - **Lakehouse** – Serves as a storage layer for structured and unstructured data, accessible via shortcuts from **Eventhouse**.  
 - **Real-Time Dashboard** – Visualizes real-time data from **Eventhouse** for monitoring and insights.  
-- **Reflex (Data Activator)** – Automates responses and alerts based on real-time streaming data.  
+- **Data Activator** – Automates responses and alerts based on real-time streaming data.  
 
 ## Getting Started with Lab
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
