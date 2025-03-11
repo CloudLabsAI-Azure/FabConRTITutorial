@@ -1,4 +1,4 @@
-### Task 9: Setting up the Lakehouse
+### Task 1: Setting up the Lakehouse
 In this task, you will set up the Lakehouse that will contain additional information for our usecase and in which you will also make the data from the KQL Database accessible through the lakehouse.
 
 1. To create a **Lakehouse**, first return to your assigned workspace by clicking on its icon in the left toolbar.
@@ -13,7 +13,7 @@ In this task, you will set up the Lakehouse that will contain additional informa
 
     ![](media/image_task09_step04.png)
 
-### Task 10: Create delta tables in the lakehouse
+### Task 2: Create delta tables in the lakehouse
 After our lakehouse has been created the overview page of the lakehouse will be displayed. Next task we have to accomplish is to load static data into our new lakehouse. To do so please execute the following steps.
 
 1. Click on the button **Get data** in the toolbar and select **Upload Files** from the dropdown menu.
@@ -47,7 +47,7 @@ After our lakehouse has been created the overview page of the lakehouse will be 
 
     ![](media/image_task10_step07.png)
 
-### Task 11: Accessing Eventhouse data from the lakehouse 
+### Task 3: Accessing Eventhouse data from the lakehouse 
 In this task, you will make the Eventhouse tables form the KQL Database available in our Lakehouse. This will be accomplished by creating shortcuts.
 
 1. Click on the button **Get data** in the menu bar at the top. Choose **New shortcut** from the dropdown menu.
@@ -78,7 +78,7 @@ In this task, you will make the Eventhouse tables form the KQL Database availabl
 
     ![](media/image_task11_step05b.png)
 
-### Task 12: Build the KQL DB schema
+### Task 4: Build the KQL DB schema
 In this task, you will create all the silver tables, functions and enable update policies and in our Eventhouse KQL Database. Two of the tables (`product` and `productCategory)` are shortcuts to the lakehouse and the data is **NOT** being copied into our KQL Database.
 
 1. Open the KQL Database **WebEvents_EH** in the Eventhouse of your Fabric Workspace. To do so click on the Icon of the Eventhouse in the left toolbar.
