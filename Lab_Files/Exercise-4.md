@@ -19,7 +19,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step01.png)
 
-1. To create a new realtime dashboard click on the button **+ New Item** and the select **Real-Time Dashboard**.
+1. To create a new realtime dashboard click on the button **+ New Item  (1)** and the select **Real-Time Dashboard  (2)**.
 
     ![](media/image_task13_step02.png)
 
@@ -31,11 +31,11 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step04.png)
 
-1. Click on the Button **Data source** and select **Eventhouse/KQL Database**.
+1. Click on the Button **Data source  (1)** and select **Eventhouse/KQL Database  (2)**.
 
     ![](media/image_task13_step05.png)
 
-1. In the Window **One Lake Data Hub** select the Eventhouse **WebEvents_EH**. Then click on **Connect**.
+1. In the Window **One Lake Data Hub** select the Eventhouse **WebEvents_EH  (1)**. Then click on **Connect  (2)**.
 
     ![](media/image_task13_step06.png)
 
@@ -55,15 +55,15 @@ In this task, you will build a real-time dashboard to visualize the streaming da
     | top 30 by date_count
     ```
 
-1. Replace the content of the textbox by the code above. Click on the time range parameter at the top of the screen and set it to **Last 7 days**. This parameter is referenced by the query in the `where` clause by using fields `_startTime` and `_endTime`. Click on the button Run. The query will be executed and the results will be shown in the table at the bottom. To create a visualisation click on the button **+ Add Visual**. This will open a pane at the right side of the browser.
+1. Replace the content of the textbox by the code above. Click on the time range parameter at the top of the screen and set it to **Last 7 days  (1)**. This parameter is referenced by the query in the `where` clause by using fields `_startTime` and `_endTime`. Click on the button **Run  (2)**. The query will be executed and the results will be shown in the table at the bottom. To create a visualisation click on the button **+ Add Visual  (3)**. This will open a pane at the right side of the browser.
 
     ![](media/image_task13_step08.png)
 
-1. Format the visual by entering `Click by hour` in the field **Title**. Select **Area chart** in the combobox **Visual type.** Then click on the button **Apply changes**.
+1. Format the visual by entering `Click by hour` (1) in the field **Title**. Select **Area chart  (2)** in the combobox **Visual type.** Then click on the button **Apply changes  (3)**.
 
     ![](media/image_task13_step09.png)
 
-1. While editing the dashboard, click on the tab **Manage** on the top left then click on the button **Parameters**.
+1. While editing the dashboard, click on the tab **Manage  (1)** on the top left then click on the button **Parameters  (2)**.
 
     ![](media/image_task13_step10.png)
 
@@ -71,7 +71,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step11.png)
 
-1. Select **Last 7 Days** in the combo box **Default value**. Then click on **Done**.
+1. Select **Last 7 Days  (1)** in the combo box **Default value**. Then click on **Done (2)**.
 
     ![](media/image_task13_step12.png)
 
@@ -142,7 +142,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step16.png)
 
-1. Click the 3-dots (...) at the top right of the tile you just created and select **Duplicate** from the **title options** to duplicate it two more times.
+1. Click the 3-dots (...)  (1) at the top right of the tile you just created and select **Duplicate  (2)** from the **title options  (2)** to duplicate it two more times.
 
     ![](media/image_task13_step17.png)
 
@@ -184,7 +184,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step17b.png)
 
-1. Paste the following code in the text area and click on the button **Apply changes**.
+1. **Paste  (1)** the following code in the text area and click on the button **Apply changes  (2)**.
 
     ```kusto
     //Logo (Markdown Text Tile)
@@ -201,11 +201,11 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
 In this task, you will enable auto-refresh so the dashboard will be automatically updated while it is shown on screen.
 
-1. While editing the dashboard, click on the tab **Manage** and then click on the button **Auto refresh.** This will open a pane on the right side of the browser.
+1. While editing the dashboard, click on the tab **Manage  (1)** and then click on the button **Auto refresh (2)** This will open a pane on the right side of the browser.
 
     ![](media/image_task13_step19.png)
 
-1. In the pane **Auto refresh** set it to **Enabled** and set **Default refresh rate** to Continous. Then click on the button **Apply**.
+1. In the pane **Auto refresh  (1)** set it to **Enabled** and set **Default refresh rate** to Continous. Then click on the button **Apply  (2)**.
 
     ![](media/image_task13_step20.png)
 
