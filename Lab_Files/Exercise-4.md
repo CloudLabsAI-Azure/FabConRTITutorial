@@ -1,3 +1,6 @@
+# Build A Fabric Real-Time Intelligence Solution in a Day 
+## Estimated duration: 4 hours
+
 ### Task 1:  Real-Time Dashboard 
 In this task, you will build a real-time dashboard to visualize the streaming data and set it to refresh every 30 seconds. (Optionally) A pre-built version of the dashboard is available to download here, which can be imported and configured to your KQL Database data source.
 
