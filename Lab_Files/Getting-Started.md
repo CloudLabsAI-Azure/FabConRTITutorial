@@ -86,6 +86,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
 1. You will be navigated to the **Fabric Home**.
 
     ![](media/image10upd.png)
+    > **Note:** Click on **Cancel** in the Welcome to Fabric view pop-up.
 
     To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up.
 
@@ -99,9 +100,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
 
     ![](media/image12upd1.png)
 
-1. The "Successfully Upgraded to Microsoft Fabric" dialog will appear. Click on **Fabric Home Page**..  
-
-   ![](media/fabrichome_1.png)
+1. The "Successfully Upgraded to Microsoft Fabric" dialog will appear. Click on **Fabric Home Page**..      
 
 1. You will be navigated back to the **Microsoft** **Fabric Home page**.
 

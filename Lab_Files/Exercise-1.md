@@ -40,7 +40,7 @@ In this lab, you will be able to complete the following tasks:
     
     d. **Eventstream:** Used to capture, transform, and route real-time event stream.
     
-    e. **Reflex:** For automatically taking actions when patterns or conditions are detected in changing data.
+    e. **Activator:** For automatically taking actions when patterns or conditions are detected in changing data.
 
     ![](media/image18upd1.png)
 
@@ -48,7 +48,7 @@ In this lab, you will be able to complete the following tasks:
 
 1. Now let’s create a workspace with Fabric license. Select **Workspaces** from the navigation bar on the left.
 
-1. Select + **New workspace**.
+1. Select  **+ New workspace**.
 
     ![](media/workspace11.png)
 
@@ -73,8 +73,9 @@ In this lab, you will be able to complete the following tasks:
     ![](media/image28.png)
 
 ### Task 3: Create an Eventhouse
+In this task, you will create an Eventhouse, which is used for storing, processing, and analyzing real-time streaming data efficiently within Microsoft Fabric.
 
-1. Click the **\+ New item** box to open a new pane that has all the items you can create in this Fabric workspace.
+1. Click the **+ New item** box to open a new pane that has all the items you can create in this Fabric workspace.
 
     ![](media/new_item.png)
 
@@ -86,42 +87,7 @@ In this lab, you will be able to complete the following tasks:
 
     ![](media/image32.png)
 
-1. This is where you will ultimately stream data from various sources through the rest of the training today. When the item is created, a window will appear giving you some details about the Eventhouse. Click on the **Get started** button.
-
-    ![](media/image33.png)
-
-1. Take a quick tour of the Eventhouse by following the green tooltips on your screen.  This first one shows that an empty Kusto Query Language (KQL) Database was created with the Eventhouse.
-
-    ![](media/imag021.png)
-
-1. Follow the remainder of the tooltips around the screen to show you where to create additional databases, check the storage in OneLake of the Eventhouse, check the usage of Fabric resources in compute minutes, and finally see what actions have occurred in the Eventhouse.  
-
-2. Within the navigational pane on the left of the Eventhouse, find your KQL Database that was created alongside the Eventhouse and simply click on it to view the database details  
-
-    ![](media/image35.png)
-
-1. This will allow us to still have one tab in the left browser pane to see the overview of our entire Eventhouse and a new tab to focus on the KQL Database properties. One goal that we wish to accomplish in our scenario is to ensure that the data streamed to the KQL database is accessible via OneLake. By enabling this feature, we make the data in this KQL Database easily discoverable through shortcuts to be used in any Lakehouse we may want. Locate the **Database details** section on the right and toggle **On** the “Availability” option.
-   
-
-   >**Note**: You will be popped up with a dialogue box, leave all the settings as default and click on **Turn on**.
-
-   ![](media/P1L1T5S9.png)
-
-   ![](media/turn-on-1.png)
-
-
-
-1. Return to your **RTI_<inject key="DeploymentID" enableCopy="false"></inject>** workspace by selecting it from the left side of the browser.
-
-    ![](media/rti-2upd1.png)
-
-1. If you see the **Task Flows** option taking up most of the space, select the double up arrow on the right-hand side to minimize it
-
-    ![](media/rti_1.png)
-
-1. You now have the basis for how you will begin to ingest the streaming data into your OneLake. The next step is to create a stream of data that can receive the data in motion.
-
-    ![](media/lab-final.png)
+1. The Eventhouse efficiently handles real-time data streams, enabling organizations to ingest, process, and analyze data in near real-time. It is optimized for time-based, streaming events, automatically indexing and partitioning data based on ingestion time.
 
 ### Task 4. Enable OneLake Availability
 In this task, you’ll enable OneLake Availability to automatically copy KQL Database data to OneLake in Delta format, allowing seamless querying through Lakehouse and other tools. It’s best enabled before loading large datasets and can be set per table.
@@ -147,7 +113,7 @@ In this task, you will be streaming events (impressions and clicks events) gener
 
     ![](media/image_task05_step01.png)
 
-1. Give the Eventstream the name WebEventsStream_ES. Make sure that the checkbox **Enhanced Capabilites** is selected and click on **Create**.
+1. Give the Eventstream the name **WebEventsStream_ES**. Make sure that the checkbox **Enhanced Capabilites** is selected and click on **Create**.
 
     ![](media/image_task05_step02.png)
 
@@ -155,7 +121,7 @@ In this task, you will be streaming events (impressions and clicks events) gener
 
     ![](media/image_task05_step03.png)
 
-1. Insert 'WebEventsCustomSource' as the source name and the click on Add.
+1. Insert `WebEventsCustomSource` as the source name and the click on Add.
 
     ![](media/image_task05_step04.png)
 
@@ -174,9 +140,11 @@ In this task, you will be streaming events (impressions and clicks events) gener
     >**Note:** To copy the connection string it must be visible.
 
 ### Task 6: Import Data Generator Notebook
-We use a python notebook to generate a stream of artificial click events. The notebook can be found in **C:** directory.
+We use a python notebook to generate a stream of artificial click events. The notebook can be found in **C:\LabFiles** directory.
 
-1. To import the notebook into your workspace you, navigate to your workspace and click on **Import**, and select **Notebook** and then **From this computer**.
+1. Navigate back to your workspace that you have created.
+
+1. Click on **Import** and select **Notebook** and click on **From this computer**
 
     ![](media/image_task06_step01.png)
 
@@ -184,13 +152,11 @@ We use a python notebook to generate a stream of artificial click events. The no
 
     ![](media/image_task06_step02.png)
 
-1. Browse to the folder on your local computer where you saved the notebook and select the notebook and click on the button **Open**.
+1. Browse to the **C:\LabFiles** folder and select the `Generate_synthetic_web_events` notebook and click on the button **Open**.
 
     ![](media/image_task06_step03.png)
 
 1. After the notebook has been uploaded Fabric will display a message that the notebook has been imported successfully.
-
-    ![](media/image_task06_step04.png)
 
 ### Task 7: Run the notebook
 Now we have to run the notebook to create the stream of artificial click events for our lab. In order for the Notebook to send the events to the correct Event Hub we have to insert the information we have saved in Task 5 - Create Event Stream.To run the notebook and create our datastream please proceed with the following steps.
@@ -201,9 +167,13 @@ DO NOT use an InPrivate browser window. Recommend using a Personal browser windo
 
     ![](media/image_task07_step01.png)
 
-1. Paste in the values your copied in **Task 7 - Create Event Stream** as values for "" and 'eventHubConnString' into the 'notebook'.
+1. Paste in the values your copied in **Task 7 - Create Event Stream** as values for "" and `eventHubConnString` into the `notebook`.
 
     ![](media/image_task07_step02.png)
+
+1. Select the **Workspace default** as the **Environment** settings.
+
+    ![](media/image_task07_step02b.png)
 
 1. Click **Run all** at the top left to start generating streaming events.
 
@@ -214,8 +184,7 @@ DO NOT use an InPrivate browser window. Recommend using a Personal browser windo
     ![](media/image_task07_errors.png)
     >**Note:** Wait a few minutes for the first code cell to finish and it will proceed to next code cells automatically.
 
-1. Scroll to the last code cell, where the generated synthetic events should begin printing in JSON format. If the output matches the provided screenshot, the notebook is successfully streaming artificial click data to the Event Hub.
-
+1. Scroll to the last code cell, where the generated synthetic events should begin printing in JSON format. If the output matches the provided screenshot, the notebook is successfully streaming artificial click data to the Event Hub.Let the last query run in the background, we will proceed to the next task.
     ![](media/image_task07_step04.png)
 
 ### Task 8: Define Eventstream topology
@@ -261,15 +230,11 @@ In the task, you will create the Eventstream topology that will insert the strea
 
     ![](media/image_task08_step07.png)
 
-1. Click on the pencil in node **Stream** to go to edit mode. Enter 'ClickEventsStream' as name of the Eventstream in the field **Stream name**. Ensure that the **Input data format** is **Json**. Click on the Button **Save**.
+1. Click on the pencil in node **Stream** to go to edit mode. Enter `ClickEventsStream` as name of the Eventstream in the field **Stream name**. Ensure that the **Input data format** is **Json**. Click on the Button **Save**.
 
     ![](media/image_task08_step08.png)
 
-1. Click on **+** icon next to the node **ClickEventsStream**.
-
-    ![](media/image_task08_step09.png)
-
-1. Select the option **Eventhouse** in the context menu.
+1. Click on **+** icon next to the node **ClickEventsStream**and select the option **Eventhouse** in the context menu.
 
     ![](media/image_task08_step10.png)
 
@@ -287,7 +252,9 @@ In the task, you will create the Eventstream topology that will insert the strea
 
     ![](media/image_task08_step11.png)
 
-1. Click on **+** sign next to the node **WebEventsStream_ES**.
+    ![](media/image_task08_step11b.png)
+
+1. Click on the highlighted sign next to the node **WebEventsStream_ES** in the image below.
 
     ![](media/image_task08_step12.png)
 
@@ -322,7 +289,7 @@ In the task, you will create the Eventstream topology that will insert the strea
 
     ![](media/image_task08_step17.png)
 
-1. Click on the pencil icon in the node **Stream** to enter edit mode. Enter 'ImpressionsEventsStream' as name of the Eventstream in the field **Stream name**. Ensure that the **Input** data format is **Json**. Click on the Button **Save**.
+1. Click on the pencil icon in the node **Stream** to enter edit mode. Enter `ImpressionsEventsStream` as name of the Eventstream in the field **Stream name**. Ensure that the **Input** data format is **Json**. Click on the Button **Save**.
 
     ![](media/image_task08_step18.png)
 
@@ -348,7 +315,7 @@ In the task, you will create the Eventstream topology that will insert the strea
 
     ![](media/image_task08_step21.png)
 
-1. After a few minutes, you should see the nodes **ClickEventStore** and **ImpressionEventStore** change to mode **Streaming**.
+1. After a few minutes, you should see the nodes **ClickEventStore** and **ImpressionEventStore** change to mode **Active**.
 
     ![](media/image_task08_step21b.png)
 
@@ -367,7 +334,7 @@ In this task, you will set up the Lakehouse that will contain additional informa
 
     ![](media/image_task09_step03.png)
 
-1. In the dialog **New lakehouse** enter 'WebSalesData_LH' as name for the new lakehouse. Ensure that the checkbox **Lakehouse schemas (Public Preview)** is not checked. Then click on the button **Create**
+1. In the dialog **New lakehouse** enter `WebSalesData_LH` as name for the new lakehouse. Ensure that the checkbox **Lakehouse schemas (Public Preview)** is not checked. Then click on the button **Create**
 
     ![](media/image_task09_step04.png)
 
@@ -378,7 +345,7 @@ After our lakehouse has been created the overview page of the lakehouse will be 
 
     ![](media/image_task10_step01.png)
 
-1. To upload the two files click on the folder symbol under **Files/.** Select the two files **products.csv** and **productcategory.csv**. Then click on the button **Open**.
+1. To upload the two files navigate to `C:\LabFiles` and select the two files **products.csv** and **productcategory.csv**. Then click on the button **Open**.
 
     ![](media/image_task10_step02.png)
 
@@ -392,13 +359,9 @@ After our lakehouse has been created the overview page of the lakehouse will be 
 
     ![](media/image_task10_step04.png)
 
-1. Next we have to create delta tables in our Lakehouse from the files we uploaded. To do this access the context menu by clicking on the three dots (...). Select **Load to tables** from the context menu.
+1. Next we have to create delta tables in our Lakehouse from the files we uploaded. To do this access the context menu by clicking on the three dots (...). Select **Load to tables** from the context menu and in the submenu click on **New table**
 
     ![](media/image_task10_step05.png)
-
-1. In the submenu click on **New table**
-
-    ![](media/image_task10_step05b.png)
 
 1. Retain all default values and click on the button **Load**.
 
@@ -441,7 +404,7 @@ In this task, you will make the Eventhouse tables form the KQL Database availabl
     ![](media/image_task11_step05b.png)
 
 ### Task 12: Build the KQL DB schema
-In this task, you will create all the silver tables, functions and enable update policies and in our Eventhouse KQL Database. Two of the tables ('product' and 'productCategory)' are shortcuts to the lakehouse and the data is **NOT** being copied into our KQL Database.
+In this task, you will create all the silver tables, functions and enable update policies and in our Eventhouse KQL Database. Two of the tables (`product` and `productCategory)` are shortcuts to the lakehouse and the data is **NOT** being copied into our KQL Database.
 
 1. Open the KQL Database **WebEvents_EH** in the Eventhouse of your Fabric Workspace. To do so click on the Icon of the Eventhouse in the left toolbar.
 
@@ -473,19 +436,15 @@ In this task, you will create all the silver tables, functions and enable update
 
     ![](media/image_task12_step06.png)
 
-1. Click on the button **Explore your Data** at the top of the screen.
+1. Click on the button **Query with code** at the top of the screen.
 
     ![](media/image_task12_step07.png)
 
-1. The popin window **Explore your data** will be shown.
+1. The popin window **Query with code** will be shown.
 
     ![](media/image_task12_step07b.png)
 
-1. Open the file **createAll.kql** in GitHub and click copy icon at the top right to copy the entire file content. This will copy the file contents to the Windows Clipboard.
-
-    ![](media/image_task12_step08.png)
-
-1. On the left side in the pane KQL Databases underneath the node WebEvents_EH there is the automatically created queryset WebEvents_EH_queryset. Click on this queryset and replace the text in the tab WebEvents_EH by the contents of the file **createAll.kql**. The easiest way to do this is to click in the textbox, press CTRL+A to select everything and then press CTRL+V to insert the contents from the clipboard. Then click on the Button Run
+1. Copy the below code, and paste it into the the Queryset and **Run** it.
 
     ```kusto
     .execute database script <|
@@ -629,7 +588,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step02.png)
 
-1. Enter the name Web Events Dashboard in the field **New Real-Time Dashboard**. Then click on **Create**.
+1. Enter the name as **Web Events Dashboard** in the field **New Real-Time Dashboard**. Then click on **Create**.
 
     ![](media/image_task13_step03.png)
 
@@ -637,7 +596,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step04.png)
 
-1. Click on the Button **+ Data source**.
+1. Click on the Button **Data source** and select **Eventhouse/KQL Database**.
 
     ![](media/image_task13_step05.png)
 
@@ -661,11 +620,11 @@ In this task, you will build a real-time dashboard to visualize the streaming da
     | top 30 by date_count
     ```
 
-1. Replace the content of the textbox by the code above. Click on the time range parameter at the top of the screen and set it to **Last 7 days**. This parameter is referenced by the query in the 'where' clause by using fields '_startTime' and '_endTime'. Click on the button Run. The query will be executed and the results will be shown in the table at the bottom. To create a visualisation click on the button **+ Add Visual**. This will open a pane at the right side of the browser.
+1. Replace the content of the textbox by the code above. Click on the time range parameter at the top of the screen and set it to **Last 7 days**. This parameter is referenced by the query in the `where` clause by using fields `_startTime` and `_endTime`. Click on the button Run. The query will be executed and the results will be shown in the table at the bottom. To create a visualisation click on the button **+ Add Visual**. This will open a pane at the right side of the browser.
 
     ![](media/image_task13_step08.png)
 
-1. Format the visual by entering 'Click by hour' in the field **Title**. Select **Area chart** in the combobox **Visual type.** Then click on the button **Apply changes**.
+1. Format the visual by entering `Click by hour` in the field **Title**. Select **Area chart** in the combobox **Visual type.** Then click on the button **Apply changes**.
 
     ![](media/image_task13_step09.png)
 
