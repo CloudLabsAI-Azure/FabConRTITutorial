@@ -1,6 +1,6 @@
 
 # Exercise 04: Building an Interactive Real-Time Dashboard with Live Data
-### Estimated duration: 240 minutes
+### Estimated duration: 180 minutes
 In this exercise, you will develop a **Real-Time Dashboard** with auto-refresh for live insights. Finally, you will use **Data Activator** to automate actions based on real-time data.
 
 ## Lab objectives: 
