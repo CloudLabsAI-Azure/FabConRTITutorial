@@ -1,5 +1,14 @@
 # Build A Fabric Real-Time Intelligence Solution in a Day 
+## Exercise - 04
 ## Estimated duration: 4 hours
+
+## Lab objectives: 
+In this lab, you will be able to complete the following tasks:
+
+- Task 1: Real-Time Dashboard. 
+- Task 2: Enable Auto-refresh to your dashboard.  
+- Task 3: Enable Data Activators.
+
 
 ### Task 1:  Real-Time Dashboard 
 In this task, you will build a real-time dashboard to visualize the streaming data and set it to refresh every 30 seconds. (Optionally) A pre-built version of the dashboard is available to download here, which can be imported and configured to your KQL Database data source.
@@ -232,3 +241,9 @@ In this task, you will create a Reflex Alert that will send a Teams Message when
     ![](media/image_task14_step03.png)
 
 1. The Reflex item will appear in your workspace and you can edit the Reflex trigger action. The same Reflex item can also trigger multiple actions.
+
+## Summary
+
+In this lab, you worked on 
+
+### You have successfully completed the Exercise

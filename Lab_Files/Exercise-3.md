@@ -1,5 +1,15 @@
 # Build A Fabric Real-Time Intelligence Solution in a Day 
+## Exercise - 03
 ## Estimated duration: 1 hours
+
+## Lab objectives: 
+In this lab, you will be able to complete the following tasks:
+
+- Task 1: Setting up the Lakehouse.
+- Task 2: Create delta tables in the lakehouse.
+- Task 3: Accessing Eventhouse data from the lakehouse. 
+- Task 4: Build the KQL DB schema.
+
 
 ### Task 1: Setting up the Lakehouse
 In this task, you will set up the Lakehouse that will contain additional information for our usecase and in which you will also make the data from the KQL Database accessible through the lakehouse.
@@ -252,3 +262,10 @@ In this task, you will create all the silver tables, functions and enable update
 1. Expand all folders in the database pane on the left. All tables and functions that have been created by the script can be found here.
 
     ![](media/image_task12_step012.png)
+
+
+## Summary
+
+In this lab, you worked on 
+
+### You have successfully completed the Exercise
