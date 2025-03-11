@@ -1,6 +1,9 @@
-# Build A Fabric Real-Time Intelligence Solution in a Day 
-## Exercise - 02
-## Estimated duration: 2 hours
+
+# Exercise 02: Real-Time Data Processing with Eventstream and Notebooks
+### Estimated duration: 180 minutes
+
+In this exercise, you will create an **Eventstream** while defining its topology for real-time data ingestion. Additionally, you will import and run a **Data Generator Notebook** to simulate streaming events.
+
 ## Lab objectives: 
 In this lab, you will be able to complete the following tasks:
 
@@ -226,8 +229,12 @@ In the , you will create the Eventstream topology that will insert the streamed 
 
     ![](media/image_task08_step21c.png)
 
-## Summary
+## Review
 
-In this lab, you worked on 
+In this lab, you worked on the following
+- Created a new Eventstream.
+- Imported Data Generator Notebook.
+- Run the notebook.
+- Defined Eventstream topology.
 
 ### You have successfully completed the Exercise
