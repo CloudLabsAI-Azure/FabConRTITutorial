@@ -1,7 +1,7 @@
-# Build A Fabric Real-Time Intelligence Solution in a Day 
-## Exercise - 03
-## Estimated duration: 1 hours
+# Exercise 03: Integrating Eventhouse Data with a Lakehouse and KQL Database
+### Estimated duration: 90 minutes
 
+In this exercise, you will set up a **Lakehouse**, and upload reference data to create delta tables. You will access **Eventhouse data from the Lakehouse**, build a **KQL Database schema**.
 ## Lab objectives: 
 In this lab, you will be able to complete the following tasks:
 
@@ -10,7 +10,6 @@ In this lab, you will be able to complete the following tasks:
 - Task 3: Accessing Eventhouse data from the lakehouse. 
 - Task 4: Build the KQL DB schema.
 
-
 ### Task 1: Setting up the Lakehouse
 In this task, you will set up the Lakehouse that will contain additional information for our usecase and in which you will also make the data from the KQL Database accessible through the lakehouse.
 
@@ -18,11 +17,11 @@ In this task, you will set up the Lakehouse that will contain additional informa
 
     ![](media/image_task09_step02.png)
 
-1. Click on the button **+ New Item** in the toolbar and in the popin window click on the tile **Lakehouse**.
+1. Click on the button **+ New Item (1)** in the toolbar and in the popin window click on the tile **Lakehouse (2)**.
 
     ![](media/image_task09_step03.png)
 
-1. In the dialog **New lakehouse** enter `WebSalesData_LH` as name for the new lakehouse. Ensure that the checkbox **Lakehouse schemas (Public Preview)** is not checked. Then click on the button **Create**
+1. In the dialog **New lakehouse** enter `WebSalesData_LH` (1) as name for the new lakehouse. Ensure that the checkbox **Lakehouse schemas (Public Preview)** is not checked. Then click on the button **Create (2)**
 
     ![](media/image_task09_step04.png)
 
@@ -33,7 +32,7 @@ After our lakehouse has been created the overview page of the lakehouse will be 
 
     ![](media/image_task10_step01.png)
 
-1. To upload the two files navigate to `C:\LabFiles` and select the two files **products.csv** and **productcategory.csv**. Then click on the button **Open**.
+1. To **upload (1)** the two files navigate to `C:\LabFiles` and select the two files **products.csv** and **productcategory.csv** (2). Then click on the button **Open (3)**.
 
     ![](media/image_task10_step02.png)
 
@@ -47,7 +46,7 @@ After our lakehouse has been created the overview page of the lakehouse will be 
 
     ![](media/image_task10_step04.png)
 
-1. Next we have to create delta tables in our Lakehouse from the files we uploaded. To do this access the context menu by clicking on the three dots (...). Select **Load to tables** from the context menu and in the submenu click on **New table**
+1. Next we have to create delta tables in our Lakehouse from the files we uploaded. To do this access the context menu by clicking on the three dots (...). Select **Load to tables (1)** from the context menu and in the submenu click on **New table (2)**
 
     ![](media/image_task10_step05.png)
 
@@ -73,7 +72,7 @@ In this task, you will make the Eventhouse tables form the KQL Database availabl
 
     ![](media/image_task11_step02.png)
 
-1. Select the KQL Database **WebEvents_EH** in the Window **Select a data source type** and click on the button **Next**.
+1. Select the KQL Database **WebEvents_EH (1)** in the Window **Select a data source type** and click on the button **Next (2)**.
 
     ![](media/image_task11_step03.png)
 
@@ -81,7 +80,7 @@ In this task, you will make the Eventhouse tables form the KQL Database availabl
 
     ![](media/image_task11_step04.png)
 
-1. You may return to this step to create additional shortcuts, after running the **createAll.kql** database script which will create additional tables. For now, you may proceed by selecting just the **BronzeClicks** and **BronzeImpressions** tables.
+1. You may return to this step to create additional shortcuts, after running the **createAll.kql** database script which will create additional tables. For now, you may proceed by selecting just the **BronzeClicks** and **BronzeImpressions** (1) tables and clicking on **next (2)**.
 
 1. Click on the **Create** button.
 
@@ -98,7 +97,7 @@ In this task, you will create all the silver tables, functions and enable update
 
     ![](media/image_task12_step01.png)
 
-1. Click on the button **+ New** in the top toolbar and choose **OneLake shortcut** from the drop down menu.
+1. Click on the button **+ New (1)** in the top toolbar and choose **OneLake shortcut (2)** from the drop down menu.
 
     ![](media/image_task12_step02.png)
 
@@ -110,11 +109,11 @@ In this task, you will create all the silver tables, functions and enable update
 
     ![](media/image_task12_step03.png)
 
-1. Select the lakehouse **WebSalesData_LH** and click on the button **Next**.
+1. Select the lakehouse **WebSalesData_LH (1)** and click on the button **Next (2)**.
 
     ![](media/image_task12_step04.png)
 
-1. Expand the folder **Tables**, select the table **products** table and click on the button **Create**. This will create a shortcut to the table **products** in your Lakehouse without copying the data from the Lakehouse to Eventhouse.
+1. Expand the folder **Tables**, select the table **products  (1)** table and click on the button **Create  (2)**. This will create a shortcut to the table **products** in your Lakehouse without copying the data from the Lakehouse to Eventhouse.
 
     ![](media/image_task12_step05.png)
 
@@ -264,8 +263,12 @@ In this task, you will create all the silver tables, functions and enable update
     ![](media/image_task12_step012.png)
 
 
-## Summary
+## Review
 
-In this lab, you worked on 
+In this lab, you worked on the following,
+- Created and setup up the Lakehouse.
+- Create ddelta tables in the lakehouse.
+- Accessed Eventhouse data from the lakehouse. 
+- Built the KQL DB schema.
 
 ### You have successfully completed the Exercise

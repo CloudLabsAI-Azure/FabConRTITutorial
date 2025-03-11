@@ -1,6 +1,7 @@
-# Build A Fabric Real-Time Intelligence Solution in a Day 
-## Exercise - 04
-## Estimated duration: 4 hours
+
+# Exercise 04: Building an Interactive Real-Time Dashboard with Live Data
+### Estimated duration: 240 minutes
+In this exercise, you will develop a **Real-Time Dashboard** with auto-refresh for live insights. Finally, you will use **Data Activator** to automate actions based on real-time data.
 
 ## Lab objectives: 
 In this lab, you will be able to complete the following tasks:
@@ -8,7 +9,6 @@ In this lab, you will be able to complete the following tasks:
 - Task 1: Real-Time Dashboard. 
 - Task 2: Enable Auto-refresh to your dashboard.  
 - Task 3: Enable Data Activators.
-
 
 ### Task 1:  Real-Time Dashboard 
 In this task, you will build a real-time dashboard to visualize the streaming data and set it to refresh every 30 seconds. (Optionally) A pre-built version of the dashboard is available to download here, which can be imported and configured to your KQL Database data source.
@@ -19,7 +19,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step01.png)
 
-1. To create a new realtime dashboard click on the button **+ New Item** and the select **Real-Time Dashboard**.
+1. To create a new realtime dashboard click on the button **+ New Item  (1)** and the select **Real-Time Dashboard  (2)**.
 
     ![](media/image_task13_step02.png)
 
@@ -31,11 +31,11 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step04.png)
 
-1. Click on the Button **Data source** and select **Eventhouse/KQL Database**.
+1. Click on the Button **Data source  (1)** and select **Eventhouse/KQL Database  (2)**.
 
     ![](media/image_task13_step05.png)
 
-1. In the Window **One Lake Data Hub** select the Eventhouse **WebEvents_EH**. Then click on **Connect**.
+1. In the Window **One Lake Data Hub** select the Eventhouse **WebEvents_EH  (1)**. Then click on **Connect  (2)**.
 
     ![](media/image_task13_step06.png)
 
@@ -55,15 +55,15 @@ In this task, you will build a real-time dashboard to visualize the streaming da
     | top 30 by date_count
     ```
 
-1. Replace the content of the textbox by the code above. Click on the time range parameter at the top of the screen and set it to **Last 7 days**. This parameter is referenced by the query in the `where` clause by using fields `_startTime` and `_endTime`. Click on the button Run. The query will be executed and the results will be shown in the table at the bottom. To create a visualisation click on the button **+ Add Visual**. This will open a pane at the right side of the browser.
+1. Replace the content of the textbox by the code above. Click on the time range parameter at the top of the screen and set it to **Last 7 days  (1)**. This parameter is referenced by the query in the `where` clause by using fields `_startTime` and `_endTime`. Click on the button **Run  (2)**. The query will be executed and the results will be shown in the table at the bottom. To create a visualisation click on the button **+ Add Visual  (3)**. This will open a pane at the right side of the browser.
 
     ![](media/image_task13_step08.png)
 
-1. Format the visual by entering `Click by hour` in the field **Title**. Select **Area chart** in the combobox **Visual type.** Then click on the button **Apply changes**.
+1. Format the visual by entering `Click by hour` (1) in the field **Title**. Select **Area chart  (2)** in the combobox **Visual type.** Then click on the button **Apply changes  (3)**.
 
     ![](media/image_task13_step09.png)
 
-1. While editing the dashboard, click on the tab **Manage** on the top left then click on the button **Parameters**.
+1. While editing the dashboard, click on the tab **Manage  (1)** on the top left then click on the button **Parameters  (2)**.
 
     ![](media/image_task13_step10.png)
 
@@ -71,13 +71,12 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step11.png)
 
-1. Select **Last 7 Days** in the combo box **Default value**. Then click on **Done**.
+1. Select **Last 7 Days  (1)** in the combo box **Default value**. Then click on **Done (2)**.
 
     ![](media/image_task13_step12.png)
 
 1. In the parameter pane click on the button **Close**.
 
-    ![](media/image_task13_step13.png)
 
 1. Click on the tab **Home** and then click on the button **New tile** again to proceed with the next visuals.
 
@@ -95,7 +94,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
     ```
     ![](media/fabrta53.png)
 
-1. Create an **Impressions by location** visualization with a **Map** as the visual type using the following query.
+1. Create an **Impressions by location** visualization in a new tile with **Map** as the visual type using the following query.
 
     ```kusto
     //Impressions by location
@@ -108,7 +107,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
    ![](media/fabrta54.png)
 
-1. Create an **Average Page Load Time** visualization with a **Timechart** as the visual type using the following query.
+1. Create an **Average Page Load Time** visualization in a new tile with **Timechart** as the visual type using the following query.
 
     ```kusto
     //Average Page Load time
@@ -143,7 +142,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step16.png)
 
-1. Click the 3-dots (...) at the top right of the tile you just created and select **Duplicate** from the context menu to duplicate it two more times.
+1. Click the 3-dots (...)  (1) at the top right of the tile you just created and select **Duplicate  (2)** from the **title options  (2)** to duplicate it two more times.
 
     ![](media/image_task13_step17.png)
 
@@ -185,7 +184,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step17b.png)
 
-1. Paste the following code in the text area and click on the button **Apply changes**.
+1. **Paste  (1)** the following code in the text area and click on the button **Apply changes  (2)**.
 
     ```kusto
     //Logo (Markdown Text Tile)
@@ -202,11 +201,11 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
 In this task, you will enable auto-refresh so the dashboard will be automatically updated while it is shown on screen.
 
-1. While editing the dashboard, click on the tab **Manage** and then click on the button **Auto refresh.** This will open a pane on the right side of the browser.
+1. While editing the dashboard, click on the tab **Manage  (1)** and then click on the button **Auto refresh (2)** This will open a pane on the right side of the browser.
 
     ![](media/image_task13_step19.png)
 
-1. In the pane **Auto refresh** set it to **Enabled** and set **Default refresh rate** to Continous. Then click on the button **Apply**.
+1. In the pane **Auto refresh  (1)** set it to **Enabled** and set **Default refresh rate** to Continous. Then click on the button **Apply  (2)**.
 
     ![](media/image_task13_step20.png)
 
@@ -225,25 +224,26 @@ In this task, you will create a Reflex Alert that will send a Teams Message when
 
     | Field                | Value                      |
     |----------------------|----------------------------|
-    | Check                | On each event grouped by   |
-    | Grouping field       | event_date                 |
-    | When                 | date_count                 |
-    | Condition            | Becomes greater than       |
-    | Value                | 250                        |
-    | Action               | Message me in teams        |
+    | Check                | On each event grouped by (1)  |
+    | Grouping field       | eventDate (2)                |
+    | When                 | date_count (3)                |
+    | Condition            | Becomes greater than (4)      |
+    | Value                | 250 (5)                     |
+    | Action               | Send me an email (6)           |
+
+1. In the combobox Workspace select the workspace. Ensure that in the combobox Item the value **Create a new item (7)** is selected. Insert **My activator (8)** as value for the field New item name. Then click on the button **Create(9)**.
 
    ![](media/image_task14_step02.png)
 
 1. You may choose your preferred option in your daily life, but for this lab, we will not be doing it as it is for demonstration purposes.
 
-1. In the combobox Workspace select the workspace. Ensure that in the combobox Item the value Create a new item is selected. Insert My Reflex as value for the field New item name. Then click on the button Create.
-
-    ![](media/image_task14_step03.png)
-
 1. The Reflex item will appear in your workspace and you can edit the Reflex trigger action. The same Reflex item can also trigger multiple actions.
 
-## Summary
+## Review
 
-In this lab, you worked on 
+In this lab, you worked on the following
+- Created a Real-Time Dashboard. 
+- Enabled Auto-refresh to your dashboard.  
+- Enabled Data Activators.
 
 ### You have successfully completed the Exercise

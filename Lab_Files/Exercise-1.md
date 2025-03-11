@@ -1,7 +1,6 @@
-# Build A Fabric Real-Time Intelligence Solution in a Day 
-## Exercise - 01
-## Estimated duration: 4 hours
-In this exercise, you will explore **Real-Time Intelligence** to gain insights from streaming data, and create a **Fabric Workspace** to organize and collaborate on your projects. You will set up an **Eventhouse** to efficiently store and analyze event-driven data, enable **OneLake Availability** for seamless data integration, and create an **Eventstream** while defining its topology for real-time data ingestion. Additionally, you will import and run a **Data Generator Notebook** to simulate streaming events, set up a **Lakehouse**, and upload reference data to create delta tables. You will access **Eventhouse data from the Lakehouse**, build a **KQL Database schema**, and develop a **Real-Time Dashboard** with auto-refresh for live insights. Finally, you will use **Data Activator** to automate actions based on real-time data.
+# Exercise 01: Creating a Fabric Workspace and Eventhouse for Real-Time Intelligence
+### Estimated duration: 90 minutes
+In this exercise, you will explore **Real-Time Intelligence** to gain insights from streaming data, and create a **Fabric Workspace** to organize and collaborate on your projects. You will set up an **Eventhouse** to efficiently store and analyze event-driven data, enable **OneLake Availability** for seamless data integration.
 ## Lab objectives: 
 In this lab, you will be able to complete the following tasks:
 
@@ -36,25 +35,25 @@ In this lab, you will be able to complete the following tasks:
 
 ### Task 2: Create a Fabric Workspace
 
-1. Now let’s create a workspace with Fabric license. Select **Workspaces** from the navigation bar on the left.
+1. Now let’s create a workspace with Fabric license. Select **Workspaces (1)** from the navigation bar on the left.
 
-1. Select  **+ New workspace**.
+1. Select  **+ New workspace (2)**.
 
     ![](media/workspace11.png)
 
 1. The **Create a workspace** dialog opens on the right side of the browser.
 
-1. In the **Name** field enter **RTI_<inject key="DeploymentID" enableCopy="false"></inject>**. 
+1. In the **Name** field enter **RTI_<inject key="DeploymentID" enableCopy="false"></inject>** (1). 
 
    >**Note**: The user ID will be unique for each user, and the workspace name must also be unique. Ensure that a green check mark with **"This name is available"** appears below the Name field.
 
 1. If you would like, you can enter a **Description** for the workspace. This is an optional field.
 
-1. Click on **Advanced** to expand the section.
+1. Click on **Advanced (2)** to expand the section.
 
     ![](media/RTI_username.png)
 
-1. Under **License mode**, ensure that **Trial** is selected (it should be the default option), then click **Apply** to create a new workspace.
+1. Under **License mode**, ensure that **Trial (1)** is selected (it should be the default option), then click **Apply (2)** to create a new workspace.
 
     ![](media/imag017-1.png)
 
@@ -73,7 +72,7 @@ In this task, you will create an Eventhouse, which is used for storing, processi
 
     ![](media/eventhouse-1.png)
 
-1. In the window that appears, give your Eventhouse the name, **WebEvents_EH** and click on **Create**.
+1. In the window that appears, give your Eventhouse the name, **WebEvents_EH (1)** and click on **Create (2)**.
 
     ![](media/image32.png)
 
@@ -97,8 +96,12 @@ In this task, you’ll enable OneLake Availability to automatically copy KQL Dat
     ![](media/image_task04_step03.png)
 
 
-## Summary
+## Review
 
-In this lab, you worked on 
+In this lab, you worked on the following
+- Experienced Real-Time Intelligence.  
+- Created a Fabric Workspace.
+- Created an Eventhouse.
+- Enabled OneLake Availability.
 
 ### You have successfully completed the Exercise
