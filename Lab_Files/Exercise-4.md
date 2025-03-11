@@ -1,6 +1,7 @@
-# Build A Fabric Real-Time Intelligence Solution in a Day 
-## Exercise - 04
-## Estimated duration: 4 hours
+
+# Exercise 04: Building an Interactive Real-Time Dashboard with Live Data
+### Estimated duration: 240 minutes
+In this exercise, you will develop a **Real-Time Dashboard** with auto-refresh for live insights. Finally, you will use **Data Activator** to automate actions based on real-time data.
 
 ## Lab objectives: 
 In this lab, you will be able to complete the following tasks:
@@ -8,7 +9,6 @@ In this lab, you will be able to complete the following tasks:
 - Task 1: Real-Time Dashboard. 
 - Task 2: Enable Auto-refresh to your dashboard.  
 - Task 3: Enable Data Activators.
-
 
 ### Task 1:  Real-Time Dashboard 
 In this task, you will build a real-time dashboard to visualize the streaming data and set it to refresh every 30 seconds. (Optionally) A pre-built version of the dashboard is available to download here, which can be imported and configured to your KQL Database data source.
@@ -77,7 +77,6 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
 1. In the parameter pane click on the button **Close**.
 
-    ![](media/image_task13_step13.png)
 
 1. Click on the tab **Home** and then click on the button **New tile** again to proceed with the next visuals.
 
@@ -95,7 +94,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
     ```
     ![](media/fabrta53.png)
 
-1. Create an **Impressions by location** visualization with a **Map** as the visual type using the following query.
+1. Create an **Impressions by location** visualization in a new tile with **Map** as the visual type using the following query.
 
     ```kusto
     //Impressions by location
@@ -108,7 +107,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
    ![](media/fabrta54.png)
 
-1. Create an **Average Page Load Time** visualization with a **Timechart** as the visual type using the following query.
+1. Create an **Average Page Load Time** visualization in a new tile with **Timechart** as the visual type using the following query.
 
     ```kusto
     //Average Page Load time
@@ -143,7 +142,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step16.png)
 
-1. Click the 3-dots (...) at the top right of the tile you just created and select **Duplicate** from the context menu to duplicate it two more times.
+1. Click the 3-dots (...) at the top right of the tile you just created and select **Duplicate** from the **title options** to duplicate it two more times.
 
     ![](media/image_task13_step17.png)
 
@@ -225,25 +224,26 @@ In this task, you will create a Reflex Alert that will send a Teams Message when
 
     | Field                | Value                      |
     |----------------------|----------------------------|
-    | Check                | On each event grouped by   |
-    | Grouping field       | event_date                 |
-    | When                 | date_count                 |
-    | Condition            | Becomes greater than       |
-    | Value                | 250                        |
-    | Action               | Message me in teams        |
+    | Check                | On each event grouped by (1)  |
+    | Grouping field       | eventDate (2)                |
+    | When                 | date_count (3)                |
+    | Condition            | Becomes greater than (4)      |
+    | Value                | 250 (5)                     |
+    | Action               | Send me an email (6)           |
+
+1. In the combobox Workspace select the workspace. Ensure that in the combobox Item the value **Create a new item (7)** is selected. Insert **My activator (8)** as value for the field New item name. Then click on the button **Create(9)**.
 
    ![](media/image_task14_step02.png)
 
 1. You may choose your preferred option in your daily life, but for this lab, we will not be doing it as it is for demonstration purposes.
 
-1. In the combobox Workspace select the workspace. Ensure that in the combobox Item the value Create a new item is selected. Insert My Reflex as value for the field New item name. Then click on the button Create.
-
-    ![](media/image_task14_step03.png)
-
 1. The Reflex item will appear in your workspace and you can edit the Reflex trigger action. The same Reflex item can also trigger multiple actions.
 
-## Summary
+## Review
 
-In this lab, you worked on 
+In this lab, you worked on the following
+- Created a Real-Time Dashboard. 
+- Enabled Auto-refresh to your dashboard.  
+- Enabled Data Activators.
 
 ### You have successfully completed the Exercise
