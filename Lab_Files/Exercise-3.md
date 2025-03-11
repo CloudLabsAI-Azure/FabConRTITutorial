@@ -15,8 +15,6 @@ In this task, you will set up the Lakehouse that will contain additional informa
 
 1. To create a **Lakehouse**, first return to your assigned workspace by clicking on its icon in the left toolbar.
 
-    ![](media/image_task09_step02.png)
-
 1. Click on the button **+ New Item (1)** in the toolbar and in the popin window click on the tile **Lakehouse (2)**.
 
     ![](media/image_task09_step03.png)
@@ -64,8 +62,6 @@ In this task, you will make the Eventhouse tables form the KQL Database availabl
 
 1. Click on the button **Get data** in the menu bar at the top. Choose **New shortcut** from the dropdown menu.
 
-    ![](media/image_task11_step01.png)
-
     >**Note:** If your Lakehouse is using Schemas you will see the schema dbo under the folder Tables. right-click the schema dbo and select the option New table shortcut from the context menu.
 
 1. Select **Microsoft OneLake**.
@@ -107,7 +103,7 @@ In this task, you will create all the silver tables, functions and enable update
 
 1. Select **Microsoft OneLake**.
 
-    ![](media/image_task12_step03.png)
+    ![](media/image_task11_step02.png)
 
 1. Select the lakehouse **WebSalesData_LH (1)** and click on the button **Next (2)**.
 
