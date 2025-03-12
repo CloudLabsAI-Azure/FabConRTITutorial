@@ -11,11 +11,12 @@ In this lab, you will be able to complete the following tasks:
 - Task 3: Enable Data Activators.
 
 ### Task 1:  Real-Time Dashboard 
+
 In this task, you will build a real-time dashboard to visualize the streaming data and set it to refresh every 30 seconds. (Optionally) A pre-built version of the dashboard is available to download here, which can be imported and configured to your KQL Database data source.
 
 ![](media/RealTimeDashboard.png)
 
-1. Switch to your assigned workspace by clicking on its icon in the left pane.
+1. Switch to your workspace **RTI_<inject key="DeploymentID" enableCopy="false"></inject>** by clicking on its icon in the left pane.
 
     ![](media/image_task13_step01.png)
 
@@ -214,6 +215,7 @@ In this task, you will enable auto-refresh so the dashboard will be automaticall
     ![](media/image_task13_step21.png)
 
 ### Task 3: Enable Data Activators
+
 In this task, you will create a Reflex Alert that will send a Teams Message when a value meets a certain threshold.
 
 1. While editing the dashboard, click on the three dots (...) of the tile **Click by hour**. Select **Set alert** from the context menu. This will open the pane **Set alert** at the right side in the browser.
@@ -231,7 +233,7 @@ In this task, you will create a Reflex Alert that will send a Teams Message when
     | Value                | 250 (5)                     |
     | Action               | Send me an email (6)           |
 
-1. In the combobox Workspace select the workspace. Ensure that in the combobox Item the value **Create a new item (7)** is selected. Insert **My activator (8)** as value for the field New item name. Then click on the button **Create(9)**.
+1. In the combobox Workspace select the workspace **RTI_<inject key="DeploymentID" enableCopy="false"></inject>**. Ensure that in the combobox Item the value **Create a new item (7)** is selected. Insert **My activator (8)** as value for the field New item name. Then click on the button **Create(9)**.
 
    ![](media/image_task14_step02.png)
 
@@ -240,8 +242,7 @@ In this task, you will create a Reflex Alert that will send a Teams Message when
 1. The Reflex item will appear in your workspace and you can edit the Reflex trigger action. The same Reflex item can also trigger multiple actions.
 
 ## Review
-
-In this lab, you worked on the following
+In this lab you have completed the following:
 - Created a Real-Time Dashboard. 
 - Enabled Auto-refresh to your dashboard.  
 - Enabled Data Activators.

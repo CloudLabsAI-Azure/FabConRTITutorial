@@ -1,6 +1,8 @@
 # Exercise 01: Creating a Fabric Workspace and Eventhouse for Real-Time Intelligence
 ### Estimated duration: 90 minutes
+
 In this exercise, you will explore **Real-Time Intelligence** to gain insights from streaming data, and create a **Fabric Workspace** to organize and collaborate on your projects. You will set up an **Eventhouse** to efficiently store and analyze event-driven data, enable **OneLake Availability** for seamless data integration.
+
 ## Lab objectives: 
 In this lab, you will be able to complete the following tasks:
 
@@ -10,6 +12,7 @@ In this lab, you will be able to complete the following tasks:
 - Task 4. Enable OneLake Availability.
 
 ### Task 1: Experience Real-Time Intelligence  
+In this task, you will explore Real-Time Intelligence and its categories, gaining an understanding of its various components and functionalities.
 
 1. Select **Workloads** icon on the left of your screen. A dialog with the list of Fabric experiences will open. The list of experiences includes Power BI, Data Factory, Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science and Data Warehouse. Let’s explore.
 
@@ -35,6 +38,8 @@ In this lab, you will be able to complete the following tasks:
 
 ### Task 2: Create a Fabric Workspace
 
+In this task, you will create a workspace to begin working with Real-Time Intelligence.
+
 1. Now let’s create a workspace with Fabric license. Select **Workspaces (1)** from the navigation bar on the left.
 
 1. Select  **+ New workspace (2)**.
@@ -58,7 +63,6 @@ In this lab, you will be able to complete the following tasks:
     ![](media/imag017-1.png)
 
     >**Note:** If the **Introducing task flows** dialog opens, click on **Got it**.
-
     ![](media/image28.png)
 
 ### Task 3: Create an Eventhouse
@@ -68,7 +72,7 @@ In this task, you will create an Eventhouse, which is used for storing, processi
 
     ![](media/new_item.png)
 
-1. Search for **Eventhouse(1)** and Select the **Eventhouse(2)** option from store data . As we have talked about this can be viewed  similarly to a Lakehouse in that we can store data but this Eventhouse is focused around real time data.
+1. Search for **Eventhouse(1)** and Select the **Eventhouse(2)** option from *Store data* . As we have talked about this can be viewed  similarly to a Lakehouse in that we can store data but this Eventhouse is focused around real time data.
 
     ![](media/eventhouse-1.png)
 
@@ -97,8 +101,7 @@ In this task, you’ll enable OneLake Availability to automatically copy KQL Dat
 
 
 ## Review
-
-In this lab, you worked on the following
+In this lab you have completed the following:
 - Experienced Real-Time Intelligence.  
 - Created a Fabric Workspace.
 - Created an Eventhouse.

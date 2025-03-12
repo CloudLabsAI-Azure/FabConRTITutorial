@@ -1,7 +1,8 @@
-# Exercise 03: Integrating Eventhouse Data with a Lakehouse and KQL Database
+# Exercise 03: Integrating Eventhouse with Lakehouse
 ### Estimated duration: 90 minutes
 
 In this exercise, you will set up a **Lakehouse**, and upload reference data to create delta tables. You will access **Eventhouse data from the Lakehouse**, build a **KQL Database schema**.
+
 ## Lab objectives: 
 In this lab, you will be able to complete the following tasks:
 
@@ -13,7 +14,7 @@ In this lab, you will be able to complete the following tasks:
 ### Task 1: Setting up the Lakehouse
 In this task, you will set up the Lakehouse that will contain additional information for our usecase and in which you will also make the data from the KQL Database accessible through the lakehouse.
 
-1. To create a **Lakehouse**, first return to your assigned workspace by clicking on its icon in the left toolbar.
+1. To create a **Lakehouse**, first return to your assigned workspace **RTI_<inject key="DeploymentID" enableCopy="false"></inject>** by clicking on its icon in the left toolbar.
 
 1. Click on the button **+ New Item (1)** in the toolbar and in the popin window click on the tile **Lakehouse (2)**.
 
@@ -261,7 +262,7 @@ In this task, you will create all the silver tables, functions and enable update
 
 ## Review
 
-In this lab, you worked on the following,
+In this lab you have completed the following:
 - Created and setup up the Lakehouse.
 - Create ddelta tables in the lakehouse.
 - Accessed Eventhouse data from the lakehouse. 
