@@ -35,7 +35,7 @@ In this task, you will be streaming events (impressions and clicks events) gener
 
     ![](media/image_task05_step05.png)
 
-1. To get the information we need for the Notebook, the name of the event hub and a connection string click on the Eventstream source named **WebEventsCustomSource**. In the area below the diagram click on **SAS Key Authentication (1)**. Then click on the copy icon besides the **Event hub name (2)**. Now the event hub name is copied to the clipborad.
+1. To get the information we need for the Notebook, the name of the event hub and a connection string click on the Eventstream source named **WebEventsCustomSource**. In the area below the diagram click on **SAS Key Authentication (1)**. Then click on the copy icon beside the **Event hub name (2)** and paste it into a notepad to use it in the later steps. 
 
     ![](media/image_task05_step06.png)
 
@@ -73,7 +73,7 @@ DO NOT use an InPrivate browser window. Recommend using a Personal browser windo
 
     ![](media/image_task07_step01.png)
 
-1. Paste in the values your copied in **Task 7 - Create Event Stream** as values for "" and `eventHubConnString` into the `notebook`.
+1. Paste in the values your copied in **Task 1 - Create Event Stream** as values for "" and `eventHubConnString` into the `notebook`.
 
     ![](media/image_task07_step02.png)
 
