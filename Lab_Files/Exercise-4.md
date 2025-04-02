@@ -206,7 +206,7 @@ In this task, you will enable auto-refresh so the dashboard will be automaticall
 
     ![](media/image_task13_step19.png)
 
-1. In the pane **Auto refresh  (1)** set it to **Enabled** and set **Default refresh rate** to Continous. Then click on the button **Apply  (2)**.
+1. In the pane **Auto refresh (1)** set it to **Enabled** and set **Default refresh rate** to **Continous (2)**. Then click on the button **Apply (3)**.
 
     ![](media/image_task13_step20.png)
 

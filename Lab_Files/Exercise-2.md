@@ -73,7 +73,7 @@ DO NOT use an InPrivate browser window. Recommend using a Personal browser windo
 
     ![](media/image_task07_step01.png)
 
-1. Paste in the values your copied in **Task 1 - Create Event Stream** as values for "" and `eventHubConnString` into the `notebook`.
+1. Paste in the values your copied in **Task 1 - Create Event Stream** as values for `eventHubNameevents` and `eventHubConnString` into the `notebook`.
 
     ![](media/image_task07_step02.png)
 

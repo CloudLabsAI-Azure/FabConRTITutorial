@@ -110,7 +110,7 @@ In this task, you will create all the silver tables, functions and enable update
 
     ![](media/image_task12_step04.png)
 
-1. Expand the folder **Tables**, select the table **products  (1)** table and click on the button **Create  (2)**. This will create a shortcut to the table **products** in your Lakehouse without copying the data from the Lakehouse to Eventhouse.
+1. Expand the folder **Tables**, select the table **products  (1)** table and click on the button **Next  (2)** then **Create** in next page. This will create a shortcut to the table **products** in your Lakehouse without copying the data from the Lakehouse to Eventhouse.
 
     ![](media/image_task12_step05.png)
 

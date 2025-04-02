@@ -89,13 +89,13 @@ In this task, you’ll enable OneLake Availability to automatically copy KQL Dat
 
     ![](media/image_task04_step01.png)
 
-2. After selecting the KQL Database click on the switch **availibility** to activate the OneLake availibility as shown in the screenshot.
+2. After selecting the KQL Database click on the switch **availibility** to enabled the OneLake availibility as shown in the screenshot.
 
     ![](media/image_task04_step02.png)
 
     >**Note:** Newly created tables will automatically inherit the "OneLake availability" setting from the Database level
 
-3. Now the dialog Turn on OneLake availibility is shown. Ensure that Apply to existing tables is checked and click on the button Turn on.
+3. Now the dialog enable OneLake availibility is shown. Ensure that Apply to existing tables is checked and click on the button **enable**.
 
     ![](media/image_task04_step03.png)
 
