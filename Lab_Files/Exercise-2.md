@@ -1,6 +1,6 @@
 
 # Exercise 02: Real-Time Data Processing with Eventstream and Notebooks
-### Estimated duration: 120 minutes
+### Estimated duration: 60 minutes
 
 In this exercise, you will create an **Eventstream** while defining its topology for real-time data ingestion. Additionally, you will import and run a **Data Generator Notebook** to simulate streaming events.
 
