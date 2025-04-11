@@ -72,7 +72,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
     ![](media/image029.png)
 
 
-1. Enter the following email/username, and then click on **Submit**.  
+1. Enter the following email/username **(1)**, and then click on **Submit (2)**.  
 
     - **Username/Email**:<inject key="AzureAdUserEmail"></inject>
 
@@ -89,9 +89,9 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
 
     To work with Fabric items, you will need a trial license and a workspace with a Fabric license. Let’s set this up.
 
-1. On the top right corner of the screen, select the **user** **icon**.
+1. On the top right corner of the screen, select the **user** **icon (1)**.
 
-1. Select **Free Trial**.
+1. Select **Free Trial (2)**.
 
     ![](media/image11upd1.png)
 
