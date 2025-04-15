@@ -83,7 +83,7 @@ In this task, you will create an Eventhouse, which is used to store, process, an
 1. The Eventhouse efficiently handles real-time data streams, enabling organizations to ingest, process, and analyze data in near real-time. It is optimized for time-based streaming events, automatically indexing and partitioning data based on ingestion time.
 
 ### Task 4. Enable OneLake Availability
-In this task, you’ll enable OneLake Availability to automatically copy KQL Database data to OneLake in Delta format, allowing seamless querying through Lakehouse and other tools. It’s best enabled before loading large datasets and can be set per table.
+In this task, you will enable OneLake Availability to automatically copy KQL Database data to OneLake in Delta format, allowing seamless querying through Lakehouse and other tools. It’s best enabled before loading large datasets and can be set per table.
 
 1. When an Eventhouse is created, a KQL Database with the same name is created as well. To open the KQL Database, click on the Database **WebEvents_EH** in the **KQL Databases** section.
 
