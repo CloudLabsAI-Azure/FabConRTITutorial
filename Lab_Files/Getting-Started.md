@@ -72,7 +72,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
     ![](media/image029.png)
 
 
-1. Enter the following email/username **(1)**, and then click on **Submit (2)**.  
+1. Enter the following email/username **(1)**, then click **Submit (2)**.  
 
     - **Username/Email**:<inject key="AzureAdUserEmail"></inject>
 
