@@ -20,7 +20,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step01.png)
 
-1. To create a new real-time dashboard click on **+ New Item  (1)** and select **Real-Time Dashboard (2)**.
+1. To create a new real-time dashboard, click on **+ New Item  (1)** and select **Real-Time Dashboard (2)**.
 
     ![](media/image_task13_step02.png)
 
@@ -28,7 +28,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step03.png)
 
-1. An empty dashboard will be displayed. To add visualizations click on **+ Add tile**.
+1. An empty dashboard will be displayed. To add visualizations, click on **+ Add tile**.
 
     ![](media/image_task13_step04.png)
 
@@ -36,7 +36,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step05.png)
 
-1. In the window **One Lake Data Hub,** select the Eventhouse **WebEvents_EH (1)**. Then click on **Connect (2)**.
+1. In the window, **One Lake Data Hub,** select the Eventhouse **WebEvents_EH (1)**. Then click on **Connect (2)**.
 
     ![](media/image_task13_step06.png)
 
@@ -56,7 +56,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
     | top 30 by date_count
     ```
 
-1. Replace the content of the textbox with the code above. Click on the time range parameter at the top of the screen and set it to **Last 7 days  (1)**. This parameter is referenced by the query in the `where` clause which uses `_startTime` and `_endTime`. Click on **Run (2)**. The query will be executed, and the results will be shown in the table at the bottom. To create a visualization, click **+ Add Visual (3)**. This will open a pane at the right side of the browser.
+1. Replace the content of the textbox with the code above. Click on the time range parameter at the top of the screen and set it to **Last 7 days  (1)**. This parameter is referenced by the query in the `where` clause that uses `_startTime` and `_endTime`. Click on **Run (2)**. The query will be executed, and the results will be shown in the table at the bottom. To create a visualization, click **+ Add Visual (3)**. This will open a pane at the right side of the browser.
 
     ![](media/image_task13_step08.png)
 
@@ -76,14 +76,14 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step12.png)
 
-1. In the parameter pane click on the button **Close**.
+1. In the parameter pane, click on the button **Close**.
 
 
 1. Click **Home** and select **New tile** to proceed with the next visuals.
 
     ![](media/image_task13_step14.png)
    
-1. We will create **Impressions by hour (3)** visualization with an **Area chart (4)** as the visual type  using the following query.
+1. We will create an **Impressions by hour (3)** visualization with an **Area chart (4)** as the visual type  using the following query.
 
     ```kusto
     //Impressions by hour
@@ -139,7 +139,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
     | project selected_date = dateOnly , impressions = imp_count , clicks = clck_count, CTR = clck_count * 100 / imp_count
     ```
 
-1. Enter **Impressions (3)** in the *field Tile name*. Select **Stat (4)** in the *combo box Visual type*. In combo box *Data Value column,* select **impressions (long) (5)**. Then click **Apply changes (6).**
+1. Enter **Impressions (3)** in the *field Tile name*. Select **Stat (4)** in the *combo box Visual type*. In the combo box *Data Value column,* select **impressions (long) (5)**. Then click **Apply changes (6).**
     ![](media/image_task13_step16.png)
 
 1. Click the **three-dots (...) (1)** at the top right of the tile you just created and select **Duplicate (3)** from the **title options (2)** to duplicate it two more times.
@@ -215,13 +215,13 @@ In this task, you will enable auto-refresh so the dashboard will be automaticall
 
 ### Task 3: Enable Data Activators
 
-In this task, you will create a Reflex Alert that will send a Teams Message when a value meets a certain threshold.
+In this task, you will create a Reflex Alert that will send a Teams message when a value meets a certain threshold.
 
 1. While editing the dashboard, click on the **three dots (...) (1)** of the tile **Click by hour**. Select **Set alert (2)** from the context menu. This will open the pane **Set alert** on the right side of the browser.
 
     ![](media/image_task14_step01.png)
 
-1. In the **Set alert** pane set the values as stated in the following table:
+1. In the **Set alert** pane, set the values as stated in the following table:
 
     | Field                | Value                      |
     |----------------------|----------------------------|
@@ -238,7 +238,7 @@ In this task, you will create a Reflex Alert that will send a Teams Message when
 
 1. You may choose your preferred option in your daily life, but for this lab, we will not be doing it as it is for demonstration purposes.
 
-1. The Reflex item will appear in your workspace and you can edit the Reflex trigger action. The same Reflex item can also trigger multiple actions.
+1. The Reflex item will appear in your workspace, and you can edit the Reflex trigger action. The same Reflex item can also trigger multiple actions.
 
 ## Review
 In this lab, you have completed the following:
