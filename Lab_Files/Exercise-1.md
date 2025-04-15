@@ -1,5 +1,5 @@
 # Exercise 01: Creating a Fabric Workspace and Eventhouse for Real-Time Intelligence
-### Estimated duration: 90 Minutes
+### Estimated Duration: 90 Minutes
 
 In this exercise, you will explore **Real-Time Intelligence** to gain insights from streaming data and create a **Fabric Workspace** to organize and collaborate on your projects. You will also set up an **Eventhouse** to efficiently store and analyze event-driven data, enabling **OneLake Availability** for seamless data integration.
 
@@ -24,13 +24,13 @@ In this task, you will explore Real-Time Intelligence and its categories, gainin
 
 1. You will be navigated to the **Real-Time Intelligence Home page**. You will see **Item types** under the **About**, and **Get started** categories. Within the **Item type** category, notice the items:
 
-    a. **Eventhouse:** Used to create a workspace of one or multiple KQL database(s) and share across projects. Also creates a KQL Database within the Eventhouse.
+    a. **Eventhouse:** Used to create a workspace of one or multiple KQL database(s) and share across projects. It also creates a KQL Database within the Eventhouse.
     
     b. **KQL** **Queryset:** Used to run queries on the data to produce shareable tables and visuals.
     
     c. **Real-Time Dashboard**: A collection of tiles, optionally organized in pages, where each tile has an underlying query and a visual representation.
     
-    d. **Eventstream:** Used to capture, transform, and route real-time event stream.
+    d. **Eventstream:** Used to capture, transform, and route real-time eventstream.
     
     e. **Activator:** To initiate automated actions when patterns or conditions are detected in changing data.
 
@@ -95,13 +95,13 @@ In this task, you’ll enable OneLake Availability to automatically copy KQL Dat
 
     >**Note:** Newly created tables will automatically inherit the "OneLake availability" setting from the Database level
 
-3. Now, the dialog "Enable OneLake availability" is shown. Ensure that "Apply to existing tables" is checked and click the button **enable**.
+3. Now, the dialog "Enable OneLake availability" is shown. Ensure that "Apply to existing tables" is checked and click **enable**.
 
     ![](media/image_task04_step03.png)
 
 
 ## Review
-In this lab you have completed the following:
+In this lab, you have completed the following:
 - Experienced Real-Time Intelligence.  
 - Created a Fabric Workspace.
 - Created an Eventhouse.
