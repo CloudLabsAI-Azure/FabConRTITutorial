@@ -7,8 +7,8 @@ In this exercise, you will set up a **Lakehouse** and upload reference data to c
 In this lab, you will be able to complete the following tasks:
 
 - Task 1: Setting up the Lakehouse.
-- Task 2: Create delta tables in the lakehouse.
-- Task 3: Accessing Eventhouse data from the lakehouse. 
+- Task 2: Create delta tables in the Lakehouse.
+- Task 3: Accessing Eventhouse data from the Lakehouse. 
 - Task 4: Build the KQL DB schema.
 
 ### Task 1: Setting up the Lakehouse
