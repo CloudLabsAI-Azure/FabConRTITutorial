@@ -3,7 +3,7 @@
 
 In this exercise, you will explore **Real-Time Intelligence** to gain insights from streaming data and create a **Fabric Workspace** to organize and collaborate on your projects. You will also set up an **Eventhouse** to efficiently store and analyze event-driven data, enabling **OneLake Availability** for seamless data integration.
 
-## Lab objectives: 
+## Lab Objectives: 
 In this lab, you will be able to complete the following tasks:
 
 - Task 1: Experience Real-Time Intelligence
