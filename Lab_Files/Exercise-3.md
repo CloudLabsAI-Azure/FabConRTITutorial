@@ -1,5 +1,6 @@
 # Exercise 03: Integrating Eventhouse with Lakehouse
-### Estimated Duration: 90 Minutes
+
+### Estimated duration: 60 Minutes
 
 In this exercise, you will set up a **Lakehouse** and upload reference data to create delta tables. You will access **Eventhouse data from the Lakehouse** and build a **KQL Database schema**.
 

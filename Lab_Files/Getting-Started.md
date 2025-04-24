@@ -1,6 +1,6 @@
+# Build A Fabric Real-Time Intelligence Solution in a Day 
+### Overall Estimated Duration: 4 Hours
 
-# Build a Fabric Real-Time Intelligence Solution in a Day 
-### Overall Estimated Duration: 8 Hours
 ## Overview
 
 In this lab, you will explore real-time intelligence, create a Fabric workspace, and set up an eventhouse for event-driven data. You will enable OneLake Availability, create an Eventstream, and run a Data Generator Notebook to simulate streaming events. Additionally, you will set up a Lakehouse, upload reference data, access Eventhouse data, build a KQL database schema, and develop a real-time dashboard with auto-refresh. Finally, you will use Data Activator to automate real-time actions.
