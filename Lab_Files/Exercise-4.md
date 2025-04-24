@@ -139,7 +139,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
     | project selected_date = dateOnly , impressions = imp_count , clicks = clck_count, CTR = clck_count * 100 / imp_count
     ```
 
-1. Enter **Impressions (1)** in the *field Tile name*. Select **Stat (2)** in the *combobox Visual type*. In combobox *Data Value column* select **impressions (long) (3)**. Then click on the button Apply changes.
+1. Enter **Impressions (3)** in the *field Tile name*. Select **Stat (4)** in the *combobox Visual type*. In combobox *Data Value column* select **impressions (long) (5)**. Then click on the button **Apply changes (6)**.
 
     ![](media/image_task13_step16.png)
 

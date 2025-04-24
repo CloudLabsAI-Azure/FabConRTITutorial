@@ -24,7 +24,7 @@ In this task, you will explore Real-Time Intelligence and its categories, gainin
 
 1. You will be navigated to **Real-Time Intelligence Home page**. You will see **Item types** under **About**, and **Get started** categories. With the **Item type** category notice the items:
 
-    a. **Eventhouse:** Used to create a workspace of one or multiple KQL database(s), which can be shared across projects. Also creates a KQL Database within the Eventhouse.
+    a. **Eventhouse:** Used to create a workspace of one or multiple KQL database(s), which can be shared across projects.
     
     b. **KQL** **Queryset:** Used to run queries on the data to produce shareable tables and visuals.
     
