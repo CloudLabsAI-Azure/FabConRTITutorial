@@ -78,12 +78,11 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
 1. In the parameter pane click on the button **Close**.
 
-
 1. Click on the tab **Home** and then click on the button **New tile** again to proceed with the next visuals.
 
     ![](media/image_task13_step14.png)
 
-1. We will create an **Impressions by hour** visualization with an **Area chart** as the visual type  using the following query.
+1. We will create an **Impressions by hour (3)** visualization with an **Area chart (4)** as the visual type  using the following query.
 
     ```kusto
     //Impressions by hour
@@ -95,7 +94,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
     ```
     ![](media/fabrta53.png)
 
-1. Create an **Impressions by location** visualization in a new tile with **Map** as the visual type using the following query.
+1. Create an **Impressions by location (3)** visualization in a new tile with **Map (4)** as the visual type using the following query.
 
     ```kusto
     //Impressions by location
@@ -108,7 +107,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
    ![](media/fabrta54.png)
 
-1. Create an **Average Page Load Time** visualization in a new tile with **Timechart** as the visual type using the following query.
+1. Create an **Average Page Load Time (3)** visualization in a new tile with **Timechart (4)** as the visual type using the following query.
 
     ```kusto
     //Average Page Load time
@@ -143,7 +142,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step16.png)
 
-1. Click the 3-dots (...)  (1) at the top right of the tile you just created and select **Duplicate  (2)** from the **title options  (2)** to duplicate it two more times.
+1. Click the 3-dots (...)  **(1)** at the top right of the tile you just created and select **Duplicate  (3)** from the **title options  (2)** to duplicate it two more times.
 
     ![](media/image_task13_step17.png)
 
