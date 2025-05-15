@@ -169,6 +169,8 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
 1. Create a **Strong Anomalies** visualization with a **Table** as the visual type using the following query.
 
+    ![](media/image_task13_step17(1).png)
+
     ```kusto
     //Strong Anomalies
     SilverImpressions

@@ -63,6 +63,8 @@ In this task, you will make the Eventhouse tables form the KQL Database availabl
 
 1. Click on the button **Get data** in the menu bar at the top. Choose **New shortcut** from the dropdown menu.
 
+    ![](media/image_task11_step01.png)
+
     >**Note:** If your Lakehouse is using Schemas you will see the schema dbo under the folder Tables. right-click the schema dbo and select the option New table shortcut from the context menu.
 
 1. Select **Microsoft OneLake**.
