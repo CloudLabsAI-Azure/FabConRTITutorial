@@ -18,7 +18,7 @@ In this task, you will set up the Lakehouse that will contain additional informa
 
 1. Click on the button **+ New Item (1)** in the toolbar and in the popin window click on the tile **Lakehouse (2)**.
 
-    ![](media/image_task09_step03.png)
+    ![](media/guide-30.png)
 
 1. In the dialog **New lakehouse** enter `WebSalesData_LH` (1) as name for the new lakehouse. Ensure that the checkbox **Lakehouse schemas (Public Preview)** is not checked. Then click on the button **Create (2)**
 
@@ -27,13 +27,13 @@ In this task, you will set up the Lakehouse that will contain additional informa
 ### Task 2: Create delta tables in the lakehouse
 After our lakehouse has been created the overview page of the lakehouse will be displayed. Next task we have to accomplish is to load static data into our new lakehouse. To do so please execute the following steps.
 
-1. Click on the button **Get data** in the toolbar and select **Upload Files** from the dropdown menu.
+1. Click on the button **Get data** in the **toolbar (1)** and select **Upload Files (2)** from the dropdown menu.
 
-    ![](media/image_task10_step01.png)
+    ![](media/guide-31.png)
 
 1. To **upload (1)** the two files navigate to `C:\LabFiles` and select the two files **products.csv** and **productcategory.csv** (2). Then click on the button **Open (3)**.
 
-    ![](media/image_task10_step02.png)
+    ![](media/guide-32.png)
 
     >**Note:** To select the two files at once you can just hold the key CTRL while you click the two files.
 
@@ -47,7 +47,7 @@ After our lakehouse has been created the overview page of the lakehouse will be 
 
 1. Next we have to create delta tables in our Lakehouse from the files we uploaded. To do this access the context menu by clicking on the three dots (...). Select **Load to tables (1)** from the context menu and in the submenu click on **New table (2)**
 
-    ![](media/image_task10_step05.png)
+    ![](media/guide-33.png)
 
 1. Retain all default values and click on the button **Load**.
 
@@ -63,17 +63,17 @@ In this task, you will make the Eventhouse tables form the KQL Database availabl
 
 1. Click on the button **Get data** in the menu bar at the top. Choose **New shortcut** from the dropdown menu.
 
-    ![](media/image_task11_step01.png)
+    ![](media/guide-34.png)
 
     >**Note:** If your Lakehouse is using Schemas you will see the schema dbo under the folder Tables. right-click the schema dbo and select the option New table shortcut from the context menu.
 
 1. Select **Microsoft OneLake**.
 
-    ![](media/image_task11_step02.png)
+    ![](media/guide-35.png)
 
 1. Select the KQL Database **WebEvents_EH (1)** in the Window **Select a data source type** and click on the button **Next (2)**.
 
-    ![](media/image_task11_step03.png)
+    ![](media/guide-36.png)
 
 1. Expand the folder **Tables** under **WebEvents_EH** in the window **New shortcut** and check both tables **BronzeClicks** and **BronzeImpressions**. Click on **Next**.
 
@@ -83,7 +83,7 @@ In this task, you will make the Eventhouse tables form the KQL Database availabl
 
 1. Click on the **Create** button.
 
-    ![](media/image_task11_step05.png)
+    ![](media/guide-37.png)
 
 1. Now you can see the shortcuts to the tables **BronzeClicks** and **BronzeImpressions** under the folder **Tables** in the lakehouse **WebSalesData_LH**.
 
@@ -98,7 +98,7 @@ In this task, you will create all the silver tables, functions and enable update
 
 1. Click on the button **+ New (1)** in the top toolbar and choose **OneLake shortcut (2)** from the drop down menu.
 
-    ![](media/image_task12_step02.png)
+    ![](media/guide-38.png)
 
 1. By now data has already streamed into you KQL-Database. You can see this by looking at the dashborad that is provided on the overview page of the KQL-Database    
 
@@ -106,29 +106,27 @@ In this task, you will create all the silver tables, functions and enable update
 
 1. Select **Microsoft OneLake**.
 
-    ![](media/image_task11_step02.png)
+    ![](media/guide-35.png)
 
 1. Select the lakehouse **WebSalesData_LH (1)** and click on the button **Next (2)**.
 
-    ![](media/image_task12_step04.png)
+    ![](media/guide-39.png)
 
-1. Expand the folder **Tables**, select the table **products  (1)** table and click on the button **Next  (2)** then **Create** in next page. This will create a shortcut to the table **products** in your Lakehouse without copying the data from the Lakehouse to Eventhouse.
+1. Expand the Tables folder, and select the **products** and **productcategory** (1) tables. Click the **Next** (2) button, then click **Create** on the next page. This will create shortcuts to the **products** and **productcategory** tables in your Lakehouse without copying the data from the Lakehouse to the Eventhouse.
 
-    ![](media/image_task12_step05.png)
-
-1. Repeat the steps above for the table **productcategory** to create a shortcut for this table as well.
+    ![](media/guide-40.png)
 
 1. Expand the folder **Shortcuts** in the tree of your Eventhouse **WebEvents_EH** to verify if the 2 shortcuts have been created correctly.
 
-    ![](media/image_task12_step06.png)
+    ![](media/guide-41.png)
 
 1. Click on the button **Query with code** at the top of the screen.
 
-    ![](media/image_task12_step07.png)
+    ![](media/guide-42.png)
 
 1. The popin window **Query with code** will be shown.
 
-    ![](media/image_task12_step07b.png)
+    ![](media/guide-43.png)
 
 1. Copy the below code, and paste it into the the Queryset and **Run** it.
 
@@ -247,7 +245,7 @@ In this task, you will create all the silver tables, functions and enable update
     }
     ```
 
-    ![](media/image_task12_step09.png)
+    ![](media/guide-44.png)
 
 1. The status of the execution of the commands from the file **createAll.kql** can be seen at the bottom of the pane. The result of each Command should be **Completed**.
 
@@ -255,11 +253,11 @@ In this task, you will create all the silver tables, functions and enable update
 
 1. Click on the pencil at the tab **WebEvents_EH** and rename the tab to **createAll**.
 
-    ![](media/image_task12_step09c.png)
+    ![](media/guide-45.png)
 
 1. Expand all folders in the database pane on the left. All tables and functions that have been created by the script can be found here.
 
-    ![](media/image_task12_step012.png)
+    ![](media/guide-46.png)
 
 
 ## Review
@@ -270,4 +268,4 @@ In this lab you have completed the following:
 - Accessed Eventhouse data from the lakehouse. 
 - Built the KQL DB schema.
 
-### You have successfully completed the Exercise
+### You have successfully completed the exercise. Click **Next >>** to continue.

@@ -17,31 +17,31 @@ In this task, you will be streaming events (impressions and clicks events) gener
 
 1. Navigate to your workspace **RTI_<inject key="DeploymentID" enableCopy="false"></inject>  (1)** from the left pane, then click on **+ New Item (2)**. In the popout window scroll a little bit down and select **Eventstream (3)**.
 
-    ![](media/image_task05_step01upd.png)
+    ![](media/guide-27.png)
 
-1. Give the Eventstream the name **WebEventsStream_ES (1)**. Make sure that the checkbox **Enhanced Capabilites** is selected and click on **Create (2)**.
+1. Give the Eventstream the name **WebEventsStream_ES (1)**. Click on **Create (2)**.
 
     ![](media/image_task05_step02.png)
 
-1. On the Screen **Design a flow to ingest, transform, and route streaming events** click on Use **Custom Endpoint**. This will create an event hub connected to the Eventstream.
+1. On the screen **Design a flow to ingest, transform, and route streaming events** click on **Use custom Endpoint**. This will create an event hub connected to the Eventstream.
 
-    ![](media/image_task05_step03.png)
+    ![](media/guide-28.png)
 
 1. Insert `WebEventsCustomSource`(1) as the source name and the click on **Add (2)**.
 
-    ![](media/image_task05_step04.png)
+    ![](media/guide-29.png)
 
 1. Click on **Publish** and now the Eventstream will be published and the Event Hub will be created.
 
-    ![](media/image_task05_step05.png)
+    ![](media/guide-04.png)
 
 1. To get the information we need for the Notebook, the name of the event hub and a connection string click on the Eventstream source named **WebEventsCustomSource**. In the area below the diagram click on **SAS Key Authentication (1)**. Then click on the copy icon beside the **Event hub name (2)** and paste it into a notepad to use it in the later steps. 
 
-    ![](media/image_task05_step06.png)
+    ![](media/guide-05.png)
 
 1. To copy the **Connection string** you first have to click on the view icon. After the connection string is revealed click on the copy icon and copy the connection string to Notepad as well.
 
-    ![](media/image_task05_step07.png)
+    ![](media/guide-06.png)
 
     >**Note:** To copy the connection string it must be visible.
 
@@ -52,15 +52,15 @@ We use a python notebook to generate a stream of artificial click events. The no
 
 1. Click on **Import (2)** and select **Notebook (3)** and click on **From this computer (4)**
 
-    ![](media/image_task06_step01.png)
+    ![](media/guide-07.png)
 
 1. In the pane **Import status** on the right side select **Upload**.
 
-    ![](media/image_task06_step02.png)
+    ![](media/guide-08.png)
 
 1. Browse to the **C:\LabFiles** folder and select the `Generate_synthetic_web_events`(1) notebook and click on the button **Open (2)**.
 
-    ![](media/image_task06_step03.png)
+    ![](media/guide-09.png)
 
 1. After the notebook has been uploaded Fabric will display a message that the notebook has been imported successfully.
 
@@ -96,7 +96,7 @@ DO NOT use an InPrivate browser window. Recommend using a Personal browser windo
 ### Task 4: Define Eventstream topology
 In this task, you will create the Eventstream topology that will insert the streamed data into your KQL database.
 
-1. Open your Eventstream in your Fabric Workspace by clicking on your **RTI_<inject key="DeploymentID" enableCopy="false"></inject> (1)** icon in the left pane, and then navigating to **Eventstream WebEventStream_ES (2)**.
+1. Open your Eventstream in your Fabric Workspace by clicking on your **RTI_<inject key="DeploymentID" enableCopy="false"></inject> (1)** icon in the left pane, and then navigating to **WebEventStream_ES (2)**.
 
     ![](media/image_task08_step01.png)
 
@@ -116,13 +116,14 @@ In this task, you will create the Eventstream topology that will insert the stre
 
     | Field                  | Value          |
     |------------------------|----------------|
-    | Operation name         | ClickEventsFilter (1) |
-    | Select a field to filter on | eventType (2)   |
-    | Keep events when the value | equals (3)     |
-    | value                  | CLICK  (4)        |
+    | Operation name         | **ClickEventsFilter** (1) |
+    | Select a field to filter on | **eventType** (2)   |
+    | Keep events when the value | **equals** (3)     |
+    | value                  | **CLICK**  (4)        |
 
-    ![](media/image_task08_step05.png)
-    > **Note:** CLICK is in ALL CAPS.
+    ![](media/guide-10.png)
+
+    >**Note:** Please write the **value** exactly as given in the lab guide; it must be in capital letters.
 
 1. The **ClickEventsFilter** node showing an **error** is expected. This indicates that there is no target for the outgoing data stream, which will be resolved in the next step.
 
@@ -136,39 +137,38 @@ In this task, you will create the Eventstream topology that will insert the stre
 
 1. Click on the **pencil (1)** in node **Stream** to go to edit mode. Enter `ClickEventsStream`(2) as name of the Eventstream in the field **Stream name**. Ensure that the **Input data format** is **Json**. Click on the Button **Save (3)**.
 
-    ![](media/image_task08_step08.png)
+    ![](media/guide-11.png)
 
-1. Click on **+** icon next to the node **ClickEventsStream**and select the option **Eventhouse** in the context menu.
+1. Click on **+** icon next to the node **ClickEventsStream** and select the option **Eventhouse** in the context menu.
 
     ![](media/image_task08_step10.png)
 
-1. Click the pencil in node **Eventhouse (1)** to enter edit mode. Provide the following values in the pane **Eventhouse (2)** and click the button **Save (3)** after you entered all the values.
+1. Click the pencil in node **Eventhouse (1)** to enter edit mode. Provide the following values in the pane eventhouse and click the button **Save (9)** after you entered all the values.
 
     | Field                           | Value                                                                                                 |
     |----------------------------------|-------------------------------------------------------------------------------------------------------|
-    | Event processing before ingestion| Ensure that this option is selected.                                                                  |
-    | Destination name                | ClickEventStore                                                                                       |
-    | Workspace                       | Select **RTI_<inject key="DeploymentID" enableCopy="false"></inject>**                                  |
-    | Eventhouse                       | Select the Eventhouse WebEvents_EH                                                                     |
-    | KQL Database                    | Select the KQL Database WebEvents_EH                                                                   |
-    | Destination table               | Click on Create new and enter BronzeClicks as name for the new table and click on Done.               |
-    | Input data format               | Ensure that the option Json is selected.                                                              |
+    | Event processing before ingestion| Ensure that this option is selected. **(2)**                                                                  |
+    | Destination name                | **ClickEventStore (3)**                                                                                       |
+    | Workspace                       | Select **RTI_<inject key="DeploymentID" enableCopy="false"></inject> (4)**                                  |
+    | Eventhouse                       | Select the Eventhouse **WebEvents_EH (5)**                                                                     |
+    | KQL Database                    | Select the KQL Database **WebEvents_EH (6)**                                                                   |
+    | Destination table               | Click on Create new and enter **BronzeClicks (7)** as name for the new table and click on Done.               |
+    | Input data format               | Ensure that the option **Json (8)** is selected.                                                              |
 
-    ![](media/image_task08_step11.png)
+    ![](media/guide-12.png)
 
-    ![](media/image_task08_step11b.png)
 
 1. Click on the highlighted sign next to the node **WebEventsStream_ES** in the image below.
 
-    ![](media/image_task08_step12.png)
+    ![](media/guide-13.png)
 
 1. Choose the option **Filter** from the context menu.
 
-    ![](media/image_task08_step13.png)
+    ![](media/guide-14.png)
 
 1. Delete the connection between the new filter node **Filter** and the node **ClickEventsFilter** by clicking on the trashcan icon.
 
-    ![](media/image_task08_step14.png)
+    ![](media/guide-15.png)
 
 1. Connect the output of the node **WebEventsStream_ES** to the input of the node **ClickEventsFilter**.
 
@@ -178,54 +178,54 @@ In this task, you will create the Eventstream topology that will insert the stre
 
     | Field                  | Value            |
     |------------------------|------------------|
-    | Operation name         | ImpressionEventsFilter |
-    | Select a field to filter on | eventType      |
-    | Keep events when the value | equals        |
-    | value                  | IMPRESSION       |
+    | Operation name         | **ImpressionEventsFilter** |
+    | Select a field to filter on | **eventType**      |
+    | Keep events when the value | **equals**        |
+    | value                  | **IMPRESSION**       |
 
     ![](media/image_task08_step16.png)
 
-    > **Note:** IMPRESSION is in ALL CAPS.
+    > **Note:** Please write the value exactly as given in the lab guide; it must be in capital letters.
 
 1. The **ImpressionEventsFilter** node showing an **error** is expected. This indicates that there is no target for the outgoing data stream, which will be resolved in the next step.
 
 1. Click on **+** sign next to the **ImpressionEventsFilter** node and choose **Stream** from the context menu.
 
-    ![](media/image_task08_step17.png)
+    ![](media/guide-16.png)
 
-1. Click on the **pencil(1)** icon in the node **Stream** to enter edit mode. Enter `ImpressionsEventsStream`(2) as name of the Eventstream in the field **Stream name**. Ensure that the **Input** data format is **Json**. Click on the Button **Save (3)**.
+1. Click on the **pencil (1)** icon in the node **Stream** to enter edit mode. Enter `ImpressionsEventsStream`(2) as name of the Eventstream in the field **Stream name**. Ensure that the **Input** data format is **Json**. Click on the Button **Save (3)**.
 
     ![](media/image_task08_step18.png)
 
-1. Click on + icon next to the node **ImpressionEventsStream** and select **Eventhouse** from the context menu.
+1. Click on **+** icon next to the node **ImpressionEventsStream** and select **Eventhouse** from the context menu.
 
-    ![](media/image_task08_step19.png)
+    ![](media/guide-17.png)
 
-1. Click the **pencil (1)** in node **Eventhouse** to enter edit mode. Provide the following values in the **pane Eventhouse (2)**, after providing these values click on the button **Save (3)**.
+1. Click the **pencil (1)** in node **Eventhouse** to enter edit mode. Provide the following values in the **pane (2)**, after providing these values click on the button **Save (3)**.
 
     | Field                           | Value                                                                                                 |
     |----------------------------------|-------------------------------------------------------------------------------------------------------|
-    | Event processing before ingestion| Ensure that this option is selected.                                                                  |
-    | Destination name                | ImpressionEventStore                                                                                  |
+    | Event processing before ingestion| Ensure that this option is selected.                                                               |
+    | Destination name                | **ImpressionEventStore**                                                                                  |
     | Workspace                       | Select **RTI_<inject key="DeploymentID" enableCopy="false"></inject>**      |
-    | Eventhouse                       | Select the Eventhouse WebEvents_EH                                                                     |
-    | KQL Database                    | Select the KQL Database WebEvents_EH                                                                   |
-    | Destination table               | Click on Create new and enter BronzeImpressions as name for the new table and click on Done.           |
-    | Input data format               | Ensure that the option Json is selected.                                                              |
+    | Eventhouse                       | Select the Eventhouse **WebEvents_EH**                                                                     |
+    | KQL Database                    | Select the KQL Database **WebEvents_EH**                                                                   |
+    | Destination table               | Click on Create new and enter **BronzeImpressions** as name for the new table and click on **Done**.           |
+    | Input data format               | Ensure that the option **Json** is selected.                                                              |
 
-    ![](media/image_task08_step20.png)
+    ![](media/guide-18.png)
 
 1. Click on the button **Publish** that is located in the toolbar at the top of the screen.
 
-    ![](media/image_task08_step21.png)
+    ![](media/guide-19.png)
 
 1. After a few minutes, you should see the nodes **ClickEventStore** and **ImpressionEventStore** change to mode **Active**.
 
-    ![](media/image_task08_step21b.png)
+    ![](media/guide-21.png)
 
 1. At the end your Eventstream toplogy should look like the image below.
 
-    ![](media/image_task08_step21c.png)
+    ![](media/guide-22.png)
 
 ## Review
 
@@ -235,4 +235,4 @@ In this lab you have completed the following:
 - Run the notebook.
 - Defined Eventstream topology.
 
-### You have successfully completed the Exercise
+### You have successfully completed the exercise. Click **Next >>** to continue.
