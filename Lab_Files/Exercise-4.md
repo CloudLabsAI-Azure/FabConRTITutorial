@@ -18,15 +18,15 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
 1. Switch to your workspace **RTI_<inject key="DeploymentID" enableCopy="false"></inject>** by clicking on its icon in the left pane.
 
-    ![](media/image_task13_step01.png)
+    ![](media/guide-47.png)
 
 1. To create a new realtime dashboard click on the button **+ New Item  (1)** and the select **Real-Time Dashboard  (2)**.
 
-    ![](media/image_task13_step02.png)
+    ![](media/guide-48.png)
 
-1. Enter the name as **Web Events Dashboard** in the field **New Real-Time Dashboard**. Then click on **Create**.
+1. Enter the name as **Web Events Dashboard (1)** in the field **New Real-Time Dashboard**. Then click on **Create (2)**.
 
-    ![](media/image_task13_step03.png)
+    ![](media/guide-49.png)
 
 1. An empty dashboard will be displayed. To add a visualisation click on the button **+ Add tile**.
 
@@ -34,15 +34,15 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
 1. Click on the Button **Data source  (1)** and select **Eventhouse/KQL Database  (2)**.
 
-    ![](media/image_task13_step05.png)
+    ![](media/guide-50.png)
 
 1. In the Window **One Lake Data Hub** select the Eventhouse **WebEvents_EH  (1)**. Then click on **Connect  (2)**.
 
-    ![](media/image_task13_step06.png)
+    ![](media/guide-51.png)
 
 1. Use **WebEvents_EH** as the name, set the database to **WebEvents_EH**, and click **Add**.
 
-    ![](media/image_task13_step07.png)
+    ![](media/guide-52.png)
 
 1. Proceed to paste each query below, add a visual, and apply changes.
 
@@ -66,11 +66,11 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
 1. While editing the dashboard, click on the tab **Manage  (1)** on the top left then click on the button **Parameters  (2)**.
 
-    ![](media/image_task13_step10.png)
+    ![](media/guide-53.png)
 
 1. To edit the parameter **Time range** click on the pencil icon. This will enter the edit mode for this parameter.
 
-    ![](media/image_task13_step11.png)
+    ![](media/guide-54.png)
 
 1. Select **Last 7 Days  (1)** in the combo box **Default value**. Then click on **Done (2)**.
 
@@ -186,13 +186,14 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step17b.png)
 
-1. **Paste  (1)** the following code in the text area and click on the button **Apply changes  (2)**.
+1. **Paste** the following code in the text area and click on the button **Apply changes  (2)**.
 
     ```kusto
     //Logo (Markdown Text Tile)
     ![AdventureWorks](https://vikasrajput.github.io/resources/PBIRptDev/AdventureWorksLogo.jpg "AdventureWorks")
     ```
-   ![](media/image_task13_step17c.png)
+   ![](media/guide-55.png)
+
    >**Note:** The title can be resized on the dashboard canvas directly, rather than writing code.
 
 1. After you added all the visuals and moved them to thier appropiate places your dashboard should look similar to the below image.
@@ -207,9 +208,9 @@ In this task, you will enable auto-refresh so the dashboard will be automaticall
 
     ![](media/image_task13_step19.png)
 
-1. In the pane **Auto refresh (1)** set it to **Enabled** and set **Default refresh rate** to **Continous (2)**. Then click on the button **Apply (3)**.
+1. In the pane **Auto refresh** set it to **Enabled (1)** and set **Default refresh rate** to **Continous (2)**. Then click on the button **Apply (3)**.
 
-    ![](media/image_task13_step20.png)
+    ![](media/guide-56.png)
 
 1. Click on the tab **Home** and then click on the button Save.
 
@@ -227,12 +228,12 @@ In this task, you will create a Reflex Alert that will send a Teams Message when
 
     | Field                | Value                      |
     |----------------------|----------------------------|
-    | Check                | On each event grouped by (1)  |
-    | Grouping field       | eventDate (2)                |
-    | When                 | date_count (3)                |
-    | Condition            | Becomes greater than (4)      |
-    | Value                | 250 (5)                     |
-    | Action               | Send me an email (6)           |
+    | Check                | **On each event grouped by** (1)  |
+    | Grouping field       | **eventDate** (2)                |
+    | When                 | **date_count** (3)                |
+    | Condition            | **Becomes greater than** (4)      |
+    | Value                | **250** (5)                     |
+    | Action               | **Send me an email** (6)           |
 
 1. In the combobox Workspace select the workspace **RTI_<inject key="DeploymentID" enableCopy="false"></inject>**. Ensure that in the combobox Item the value **Create a new item (7)** is selected. Insert **My activator (8)** as value for the field New item name. Then click on the button **Create(9)**.
 
@@ -248,4 +249,4 @@ In this lab you have completed the following:
 - Enabled Auto-refresh to your dashboard.  
 - Enabled Data Activators.
 
-### You have successfully completed the Exercise
+### You have successfully completed the labs.
