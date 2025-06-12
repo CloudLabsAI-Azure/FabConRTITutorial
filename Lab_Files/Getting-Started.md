@@ -69,14 +69,14 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
  
 1. Open the **Microsoft Edge browser** on your desktop and visit `https://app.fabric.microsoft.com/` in Incognito mode. You will be navigated to the login page.
 
-    ![](media/image029.png)
+    ![](media/guide-58.png)
 
 
 1. Enter the following email/username, and then click on **Submit**.  
 
     - **Username/Email**:<inject key="AzureAdUserEmail"></inject>
 
-      ![](media/image6.png)
+      ![](media/guide-59.png)
 
     - **Password**:<inject key="AzureAdUserPassword"></inject> 
 
@@ -84,7 +84,8 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
 
 1. You will be navigated to the **Fabric Home**.
 
-    ![](media/image10upd.png)
+    ![](media/guide-60.png)
+
     > **Note:** Click on **Cancel** in the Welcome to Fabric view pop-up.
 
     To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up.
@@ -101,7 +102,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
 
 1. You will be navigated back to the **Microsoft** **Fabric Home page**.
 
-    ![](media/image10upd.png)
+    ![](media/guide-60.png)
 
 ## Support Contact
 

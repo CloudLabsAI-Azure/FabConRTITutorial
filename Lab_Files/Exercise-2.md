@@ -77,9 +77,7 @@ DO NOT use an InPrivate browser window. Recommend using a Personal browser windo
 
     ![](media/image_task07_step02.png)
 
-1. Select the **Workspace default (2)** as the **Environment (1)** settings.
-
-    ![](media/image_task07_step02b.png)
+1. Select the **Workspace default** as the **Environment** settings.
 
 1. Click **Run all** at the top left to start generating streaming events.
 
@@ -135,7 +133,7 @@ In this task, you will create the Eventstream topology that will insert the stre
 
     ![](media/image_task08_step07.png)
 
-1. Click on the **pencil (1)** in node **Stream** to go to edit mode. Enter `ClickEventsStream`(2) as name of the Eventstream in the field **Stream name**. Ensure that the **Input data format** is **Json**. Click on the Button **Save (3)**.
+1. Click on the **pencil (1)** in node **Stream** to go to edit mode. Enter `ClickEventsStream`(2) as name of the Eventstream in the field **Stream name**. Ensure that the **Input data format** is **Json (3)**. Click on the Button **Save (4)**.
 
     ![](media/guide-11.png)
 
