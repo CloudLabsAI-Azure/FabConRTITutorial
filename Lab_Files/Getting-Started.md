@@ -45,7 +45,7 @@ The architecture for this lab involves the following key components:
 ## Getting Started with Lab
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-![](media/getting-started-1upd.png)
+![](media/guide-01.png)
 
 ## Virtual Machine & Lab Guide
 Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
@@ -89,9 +89,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
 
     To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up.
 
-1. On the top right corner of the screen, select the **user** **icon**.
-
-1. Select **Free Trial**.
+1. On the top right corner of the screen, select the **user** **icon (1)**. Select **Free Trial (2)**.
 
     ![](media/image11upd1.png)
 
