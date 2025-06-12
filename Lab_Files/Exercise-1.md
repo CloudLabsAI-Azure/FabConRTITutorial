@@ -16,11 +16,11 @@ In this task, you will explore Real-Time Intelligence and its categories, gainin
 
 1. Select **Workloads** icon on the left of your screen. A dialog with the list of Fabric experiences will open. The list of experiences includes Power BI, Data Factory, Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science and Data Warehouse. Let’s explore.
 
-    ![](media/workload1.png)
+    ![](media/guide-02.png)
 
 1. Click on the **Real-Time Intelligence** experience under **Workloads**.
 
-    ![](media/image17upd1.png)
+    ![](media/guide-03.png)
 
 1. You will be navigated to **Real-Time Intelligence Home page**. You will see **Item types** under **About**, and **Get started** categories. With the **Item type** category notice the items:
 
@@ -34,7 +34,7 @@ In this task, you will explore Real-Time Intelligence and its categories, gainin
     
     e. **Activator:** For automatically taking actions when patterns or conditions are detected in changing data.
 
-    ![](media/image18upd1.png)
+    ![](media/guide-24.png)
 
 ### Task 2: Create a Fabric Workspace
 
@@ -44,7 +44,7 @@ In this task, you will create a workspace to begin working with Real-Time Intell
 
 1. Select  **+ New workspace (2)**.
 
-    ![](media/workspace11.png)
+    ![](media/guide-23.png)
 
 1. The **Create a workspace** dialog opens on the right side of the browser.
 
@@ -56,29 +56,30 @@ In this task, you will create a workspace to begin working with Real-Time Intell
 
 1. Click on **Advanced (2)** to expand the section.
 
-    ![](media/RTI_username.png)
+    ![](media/guide-20.png)
 
 1. Under **License mode**, ensure that **Trial (1)** is selected (it should be the default option), then click **Apply (2)** to create a new workspace.
 
-    ![](media/imag017-1.png)
+    ![](media/guide-25.png)
 
     >**Note:** If the **Introducing task flows** dialog opens, click on **Got it**.
-    ![](media/image28.png)
 
 ### Task 3: Create an Eventhouse
 In this task, you will create an Eventhouse, which is used for storing, processing, and analyzing real-time streaming data efficiently within Microsoft Fabric.
 
 1. Click the **+ New item** box to open a new pane that has all the items you can create in this Fabric workspace.
 
-    ![](media/new_item.png)
+    ![](media/guide-26.png)
 
-1. Search for **Eventhouse(1)** and Select the **Eventhouse(2)** option from *Store data* . As we have talked about this can be viewed  similarly to a Lakehouse in that we can store data but this Eventhouse is focused around real time data.
+1. Search for **Eventhouse (1)** and Select the **Eventhouse (2)** option from *Store data* . As we have talked about this can be viewed  similarly to a Lakehouse in that we can store data but this Eventhouse is focused around real time data.
 
     ![](media/eventhouse-1.png)
 
 1. In the window that appears, give your Eventhouse the name, **WebEvents_EH (1)** and click on **Create (2)**.
 
     ![](media/image32.png)
+
+    >**Note:** if the pop-up appears select **Got started**.
 
 1. The Eventhouse efficiently handles real-time data streams, enabling organizations to ingest, process, and analyze data in near real-time. It is optimized for time-based, streaming events, automatically indexing and partitioning data based on ingestion time.
 
@@ -107,4 +108,4 @@ In this lab you have completed the following:
 - Created an Eventhouse.
 - Enabled OneLake Availability.
 
-### You have successfully completed the Exercise
+### You have successfully completed the exercise. Click **Next >>** to continue.
