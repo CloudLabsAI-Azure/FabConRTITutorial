@@ -96,19 +96,19 @@ In this task, you will create the Eventstream topology that will insert the stre
 
     ![](media/image_task08_step01.png)
 
-1. Click on **Edit** in the top toolbar.
+2. Click on **Edit** in the top toolbar.
 
-1. Click on the node **Transform events or add destination (1)** and select **Filter (2)** from the menu.
+3. Click on the node **Transform events or add destination (1)** and select **Filter (2)** from the menu.
 
     ![](media/image_task08_step03.png)
 
     >**Note**: Check the table at the bottom of the screen to view events streamed by the notebook to the Eventstream.
 
-1. Click on the pencil icon in the node **Filter** to enter edit mode.
+4. Click on the pencil icon in the node **Filter** to enter edit mode.
 
     ![](media/image_task08_step04.png)
 
-1. Provide the following values in the pane Filter on the left side. Then click on **Save (5)**.
+5. Provide the following values in the pane Filter on the left side. Then click on **Save (5)**.
 
     | Field                  | Value          |
     |------------------------|----------------|
@@ -121,25 +121,25 @@ In this task, you will create the Eventstream topology that will insert the stre
 
     >**Note:** Please write the **value** exactly as given in the lab guide; it must be in capital letters.
 
-1. The **ClickEventsFilter** node showing an **error** is expected. This indicates that there is no target for the outgoing data stream, which will be resolved in the next step.
+6. The **ClickEventsFilter** node showing an **error** is expected. This indicates that there is no target for the outgoing data stream, which will be resolved in the next step.
 
-1. Click on **+ (1)** icon next to the **ClickEventsFilter** node.
+7. Click on **+ (1)** icon next to the **ClickEventsFilter** node.
 
     ![](media/image_task08_step06.png)
 
-1. Choose **Stream** from the context menu.
+8. Choose **Stream** from the context menu.
 
     ![](media/image_task08_step07.png)
 
-1. Click on the **pencil (1)** in node **DerivedStream** to go to edit mode. In the right pane, Enter `ClickEventsStream` **(2)** as name of the Eventstream in the field **Stream name**. Ensure that the **Input data format** is **Json (3)**. Click on the button **Save (4)**.
+9. Click on the **pencil (1)** in node **DerivedStream** to go to edit mode. In the right pane, Enter `ClickEventsStream` **(2)** as name of the Eventstream in the field **Stream name**. Ensure that the **Input data format** is **Json (3)**. Click on the button **Save (4)**.
 
     ![](media/guide-11.png)
 
-1. Click on **+** icon next to the node **ClickEventsStream** and select the option **Eventhouse** in the context menu.
+10. Click on **+** icon next to the node **ClickEventsStream** and select the option **Eventhouse** in the context menu.
 
     ![](media/image_task08_step10.png)
 
-1. Click the pencil in node **Eventhouse (1)** to enter edit mode. Provide the following values in the pane eventhouse and click the button **Save (9)** after you entered all the values.
+11. Click the pencil in node **Eventhouse (1)** to enter edit mode. Provide the following values in the pane eventhouse and click the button **Save (9)** after you entered all the values.
 
     | Field                           | Value                                                                                                 |
     |----------------------------------|-------------------------------------------------------------------------------------------------------|
@@ -154,23 +154,23 @@ In this task, you will create the Eventstream topology that will insert the stre
     ![](media/guide-12.png)
 
 
-1. Click on the highlighted sign next to the node **WebEventsStream_ES** in the image below.
+12. Click on the highlighted sign next to the node **WebEventsStream_ES** in the image below.
 
     ![](media/guide-13.png)
 
-1. Choose the option **Filter** from the context menu.
+13. Choose the option **Filter** from the context menu.
 
     ![](media/guide-14.png)
 
-1. Delete the connection between the new filter node **Filter** and the node **ClickEventsFilter** by clicking on the trashcan icon.
+14. Delete the connection between the new filter node **Filter** and the node **ClickEventsFilter** by clicking on the trashcan icon.
 
     ![](media/guide-15.png)
 
-1. Connect the output of the node **WebEventsStream_ES** to the input of the node **ClickEventsFilter**.
+15. Connect the output of the node **WebEventsStream_ES** to the input of the node **ClickEventsFilter**.
 
     ![](media/image_task08_step15.gif)
 
-1. Click on the **pencil** icon of the new node **Filter** to enter edit mode. Provide the following values in the pane **Filter (2)** on the right  side. Then click on **Save (2)**.
+16. Click on the **pencil** icon of the new node **Filter** to enter edit mode. Provide the following values in the pane **Filter (2)** on the right  side. Then click on **Save (2)**.
 
     | Field                  | Value            |
     |------------------------|------------------|
@@ -183,21 +183,21 @@ In this task, you will create the Eventstream topology that will insert the stre
 
     > **Note:** Please write the value exactly as given in the lab guide; it must be in capital letters.
 
-1. The **ImpressionEventsFilter** node showing an **error** is expected. This indicates that there is no target for the outgoing data stream, which will be resolved in the next step.
+17. The **ImpressionEventsFilter** node showing an **error** is expected. This indicates that there is no target for the outgoing data stream, which will be resolved in the next step.
 
-1. Click on **+** sign next to the **ImpressionEventsFilter** node and choose **Stream** from the context menu.
+18. Click on **+** sign next to the **ImpressionEventsFilter** node and choose **Stream** from the context menu.
 
     ![](media/guide-16.png)
 
-1. Click on the **pencil (1)** icon in the node **Stream** to enter edit mode. Enter `ImpressionsEventsStream` **(2)** as name of the Eventstream in the field **Stream name**. Ensure that the **Input** data format is **Json**. Click on the button **Save (3)**.
+19. Click on the **pencil (1)** icon in the node **Stream** to enter edit mode. Enter `ImpressionsEventsStream` **(2)** as name of the Eventstream in the field **Stream name**. Ensure that the **Input** data format is **Json**. Click on the button **Save (3)**.
 
     ![](media/image_task08_step18.png)
 
-1. Click on **+** icon next to the node **ImpressionEventsStream** and select **Eventhouse** from the context menu.
+20. Click on **+** icon next to the node **ImpressionEventsStream** and select **Eventhouse** from the context menu.
 
     ![](media/guide-17.png)
 
-1. Click the **pencil (1)** in node **Eventhouse** to enter edit mode. Provide the following values in the **pane (2)**, after providing these values click on the button **Save (3)**.
+21. Click the **pencil (1)** in node **Eventhouse** to enter edit mode. Provide the following values in the **pane (2)**, after providing these values click on the button **Save (3)**.
 
     | Field                           | Value                                                                                                 |
     |----------------------------------|-------------------------------------------------------------------------------------------------------|
@@ -210,16 +210,15 @@ In this task, you will create the Eventstream topology that will insert the stre
     | Input data format               | Ensure that the option **Json** is selected.                                                              |
 
     ![](media/guide-18.png)
-
-1. Click on the button **Publish** that is located in the toolbar at the top of the screen.
+22. Click on the button **Publish** that is located in the toolbar at the top of the screen.
 
     ![](media/guide-19.png)
 
-1. After a few minutes, you should see the nodes **ClickEventStore** and **ImpressionEventStore** change to mode **Active**.
+23. After a few minutes, you should see the nodes **ClickEventStore** and **ImpressionEventStore** change to mode **Active**.
 
     ![](media/guide-21.png)
 
-1. At the end your Eventstream toplogy should look like the image below.
+24. At the end your Eventstream toplogy should look like the image below.
 
     ![](media/guide-22.png)
 
