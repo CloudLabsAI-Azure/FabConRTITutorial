@@ -1,5 +1,5 @@
 # Exercise 01: Creating a Fabric Workspace and Eventhouse for Real-Time Intelligence
-### Estimated duration: 30 minutes
+### Estimated duration: 30 Minutes
 
 In this exercise, you will explore **Real-Time Intelligence** to gain insights from streaming data, and create a **Fabric Workspace** to organize and collaborate on your projects. You will set up an **Eventhouse** to efficiently store and analyze event-driven data, enable **OneLake Availability** for seamless data integration.
 
@@ -9,7 +9,7 @@ In this lab, you will be able to complete the following tasks:
 - Task 1: Experience Real-Time Intelligence.  
 - Task 2: Create a Fabric Workspace.
 - Task 3: Create an Eventhouse.
-- Task 4. Enable OneLake Availability.
+- Task 4: Enable OneLake Availability.
 
 ### Task 1: Experience Real-Time Intelligence  
 In this task, you will explore Real-Time Intelligence and its categories, gaining an understanding of its various components and functionalities.
@@ -48,7 +48,7 @@ In this task, you will create a workspace to begin working with Real-Time Intell
 
 1. The **Create a workspace** dialog opens on the right side of the browser.
 
-1. In the **Name** field enter **RTI_<inject key="DeploymentID" enableCopy="false"></inject>** (1). 
+1. In the **Name** field enter **RTI_<inject key="DeploymentID" enableCopy="false"></inject>** **(1)**. 
 
    >**Note**: The user ID will be unique for each user, and the workspace name must also be unique. Ensure that a green check mark with **"This name is available"** appears below the Name field.
 
@@ -71,7 +71,7 @@ In this task, you will create an Eventhouse, which is used for storing, processi
 
     ![](media/guide-26.png)
 
-1. Search for **Eventhouse (1)** and Select the **Eventhouse (2)** option from *Store data* . As we have talked about this can be viewed  similarly to a Lakehouse in that we can store data but this Eventhouse is focused around real time data.
+1. Search for **Eventhouse (1)** and Select the **Eventhouse (2)** option from Store data . As we have talked about this can be viewed  similarly to a Lakehouse in that we can store data but this Eventhouse is focused around real time data.
 
     ![](media/eventhouse-1.png)
 
@@ -90,13 +90,13 @@ In this task, you’ll enable OneLake Availability to automatically copy KQL Dat
 
     ![](media/image_task04_step01.png)
 
-2. After selecting the KQL Database click on the switch **availibility** to enabled the OneLake availibility as shown in the screenshot.
+2. After selecting the KQL Database click on the switch **Availability** to enabled the OneLake availibility as shown in the screenshot.
 
     ![](media/image_task04_step02.png)
 
     >**Note:** Newly created tables will automatically inherit the "OneLake availability" setting from the Database level
 
-3. Now the dialog enable OneLake availibility is shown. Ensure that Apply to existing tables is checked and click on the button **enable**.
+3. Now the dialog **Enable OneLake Availability** is shown. Ensure that Apply to existing tables is checked and click on the button **Enable**.
 
     ![](media/image_task04_step03.png)
 
