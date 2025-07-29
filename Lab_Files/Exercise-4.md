@@ -1,6 +1,6 @@
 
 # Exercise 04: Building an Interactive Real-Time Dashboard with Live Data
-### Estimated duration: 90 minutes
+### Estimated duration: 90 Minutes
 In this exercise, you will develop a **Real-Time Dashboard** with auto-refresh for live insights. Finally, you will use **Data Activator** to automate actions based on real-time data.
 
 ## Lab objectives: 
@@ -24,7 +24,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/guide-48.png)
 
-1. Enter the name as **Web Events Dashboard (1)** in the field **New Real-Time Dashboard**. Then click on **Create (2)**.
+1. Enter the name as **Web Events Dashboard (1)** in the field under **New Real-Time Dashboard**. Then click on **Create (2)**.
 
     ![](media/guide-49.png)
 
@@ -32,15 +32,15 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step04.png)
 
-1. Click on the Button **Data source  (1)** and select **Eventhouse/KQL Database  (2)**.
+1. Click on the button **Data source  (1)** and select **Eventhouse/KQL Database  (2)**.
 
     ![](media/guide-50.png)
 
-1. In the Window **One Lake Data Hub** select the Eventhouse **WebEvents_EH  (1)**. Then click on **Connect  (2)**.
+1. In the window **OneLake catalog**, Select the Eventhouse database **WebEvents_EH  (1)**. Then click on **Connect  (2)**.
 
     ![](media/guide-51.png)
 
-1. Use **WebEvents_EH** as the name, set the database to **WebEvents_EH**, and click **Add**.
+1. Use **WebEvents_EH** as the Display name, set the Database to **WebEvents_EH**, and click **Add**.
 
     ![](media/guide-52.png)
 
@@ -60,11 +60,11 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step08.png)
 
-1. Format the visual by entering `Click by hour` (1) in the field **Title**. Select **Area chart  (2)** in the combobox **Visual type.** Then click on the button **Apply changes  (3)**.
+1. Format the visual by entering `Click by hour` **(1)** in the field **Tile name**. Select **Area chart  (2)** under **Visual type.** Then click on the button **Apply changes  (3)**.
 
     ![](media/image_task13_step09.png)
 
-1. While editing the dashboard, click on the tab **Manage  (1)** on the top left then click on the button **Parameters  (2)**.
+1. While editing the dashboard, Click on the tab **Manage  (1)** on the top left then click on the button **Parameters  (2)**.
 
     ![](media/guide-53.png)
 
@@ -138,11 +138,11 @@ In this task, you will build a real-time dashboard to visualize the streaming da
     | project selected_date = dateOnly , impressions = imp_count , clicks = clck_count, CTR = clck_count * 100 / imp_count
     ```
 
-1. Enter **Impressions (3)** in the *field Tile name*. Select **Stat (4)** in the *combobox Visual type*. In combobox *Data Value column* select **impressions (long) (5)**. Then click on the button **Apply changes (6)**.
+1. Enter **Impressions (3)** in the field **Tile name**. Select **Stat (4)** in the combobox **Visual type**. In combobox **Data** Value column select **impressions (long) (5)**. Then click on the button **Apply changes (6)**.
 
     ![](media/image_task13_step16.png)
 
-1. Click the 3-dots (...)  **(1)** at the top right of the tile you just created and select **Duplicate  (3)** from the **title options  (2)** to duplicate it two more times.
+1. Click the 3-dots (...)  **(1)** at the top right of the tile you just created and select **Duplicate  (3)** from the **Tile options  (2)** and duplicate it two more times.
 
     ![](media/image_task13_step17.png)
 
@@ -150,11 +150,11 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/fabrta57.png)
 
-1. Name the 3rd **Click Through Rate (1)**, set the *Data value* column to **CTR (2)**, then click on the button **Apply changes (3)**.
+1. Name the 3rd **Click Through Rate (1)**, set the Data value column to **CTR (2)**, then click on the button **Apply changes (3)**.
 
     ![](media/fabrta58.png)
 
-1. Create an **Average Page Load Time Anomalies** visualization with an **Anomaly chart** as the visual type using the following query.
+1. Create an **Average Page Load Time Anomalies** visualization with an **Anomaly Chart** as the visual type using the following query.
 
     ```kusto
     //Avg Page Load Time Anomalies
@@ -186,7 +186,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step17b.png)
 
-1. **Paste** the following code in the text area and click on the button **Apply changes  (2)**.
+1. Paste the following code in the text area and click on the button **Apply changes**.
 
     ```kusto
     //Logo (Markdown Text Tile)
@@ -212,7 +212,7 @@ In this task, you will enable auto-refresh so the dashboard will be automaticall
 
     ![](media/guide-56.png)
 
-1. Click on the tab **Home** and then click on the button Save.
+1. Click on the tab **Home** and then click on the button **Save**.
 
     ![](media/image_task13_step21.png)
 
@@ -235,7 +235,7 @@ In this task, you will create a Reflex Alert that will send a Teams Message when
     | Value                | **250** (5)                     |
     | Action               | **Send me an email** (6)           |
 
-1. In the combobox Workspace select the workspace **RTI_<inject key="DeploymentID" enableCopy="false"></inject>**. Ensure that in the combobox Item the value **Create a new item (7)** is selected. Insert **My activator (8)** as value for the field New item name. Then click on the button **Create(9)**.
+1. In the combo box Workspace select the workspace **RTI_<inject key="DeploymentID" enableCopy="false"></inject>**. Ensure that in the combo box Item the value **Create a new item (7)** is selected. Insert **My activator (8)** as value for the field New item name. Then click on the button **Create(9)**.
 
    ![](media/image_task14_step02.png)
 
