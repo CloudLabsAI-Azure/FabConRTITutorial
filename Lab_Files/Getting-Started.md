@@ -98,7 +98,7 @@ Feel free to **Start**, **Stop**, or **Restart** your virtual machine as needed 
 
     ![](media/image12upd1.png)
 
-7. The "Successfully upgraded to Microsoft Fabric" dialog will appear. Click on **Fabric Home Page**..      
+7. The "Successfully upgraded to Microsoft Fabric" dialog will appear. Click on **Fabric Home Page**.      
 
 8. You will be navigated back to the **Microsoft** **Fabric Home page**.
 
