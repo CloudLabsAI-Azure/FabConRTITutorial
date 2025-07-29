@@ -27,7 +27,7 @@ In this task, you will be streaming events (impressions and clicks events) gener
 
     ![](media/guide-28.png)
 
-1. Insert `WebEventsCustomSource` **(1)** as the source name and the click on **Add (2)**.
+1. Insert `WebEventsCustomSource` **(1)** as the Source name and the click on **Add (2)**.
 
     ![](media/guide-29.png)
 
