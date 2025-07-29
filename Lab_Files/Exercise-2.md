@@ -139,7 +139,7 @@ In this task, you will create the Eventstream topology that will insert the stre
 
     ![](media/image_task08_step10.png)
 
-11. Click the pencil in node **Eventhouse (1)** to enter edit mode. Provide the following values in the pane eventhouse and click the button **Save (9)** after you entered all the values.
+11. Click the pencil in node **Eventhouse (1)** to enter edit mode. Provide the following values in the pane Eventhouse and click the button **Save (9)** after you entered all the values.
 
     | Field                           | Value                                                                                                 |
     |----------------------------------|-------------------------------------------------------------------------------------------------------|
