@@ -189,7 +189,7 @@ In this task, you will create the Eventstream topology that will insert the stre
 
     ![](media/guide-16.png)
 
-19. Click on the **pencil (1)** icon in the node **Stream** to enter edit mode. Enter `ImpressionsEventsStream` **(2)** as name of the Eventstream in the field **Stream name**. Ensure that the **Input** data format is **Json**. Click on the button **Save (3)**.
+19. Click on the **pencil (1)** icon in the node **Stream** to enter edit mode. Enter `ImpressionsEventsStream` **(2)** as name of the Eventstream in the field **Stream name**. Ensure that the **Input data format** is **Json**. Click on the button **Save (3)**.
 
     ![](media/image_task08_step18.png)
 
