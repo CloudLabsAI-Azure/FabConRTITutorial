@@ -96,7 +96,7 @@ In this task, you will create the Eventstream topology that will insert the stre
 
     ![](media/image_task08_step01.png)
 
-2. Click on **Edit** in the top toolbar.
+2. Click on **Edit** button located in the top-right corner.
 
 3. Click on the node **Transform events or add destination (1)** and select **Filter (2)** from the menu.
 
