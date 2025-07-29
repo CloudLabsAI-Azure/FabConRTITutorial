@@ -94,7 +94,7 @@ Feel free to **Start**, **Stop**, or **Restart** your virtual machine as needed 
 
     ![](media/image11upd1.png)
 
-6. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Activate**.
+6. **Activate your 60-day free Fabric trial capacity** dialog opens. Select **Activate**.
 
     ![](media/image12upd1.png)
 
