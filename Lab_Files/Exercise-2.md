@@ -39,7 +39,7 @@ In this task, you will be streaming events (impressions and clicks events) gener
 
     ![](media/guide-05.png)
 
-1. To copy the **Connection string** you first have to click on the view icon. After the connection string is revealed click on the copy icon and copy the connection string to Notepad as well.
+1. To copy the **Connection string-primary key** you first have to click on the view icon. After the connection string is revealed click on the copy icon and copy the connection string to Notepad as well.
 
     ![](media/guide-06.png)
 
