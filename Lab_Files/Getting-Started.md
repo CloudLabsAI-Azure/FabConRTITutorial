@@ -20,8 +20,8 @@ Understand how to leverage **Microsoft Fabric** for real-time data processing, a
 
 Participants should have:  
 
-- **Basic understanding of Microsoft Fabric** – Familiarity with Fabric’s data processing, storage, and analytics capabilities.  
-- **Familiarity with real-time data processing concepts** – Understanding of streaming data, event-driven architectures, and analytics workflows.  
+- **Basic understanding of Microsoft Fabric**: Familiarity with Fabric’s data processing, storage, and analytics capabilities.  
+- **Familiarity with real-time data processing concepts**: Understanding of streaming data, event-driven architectures, and analytics workflows.  
 
 ## Architecture
 
@@ -35,12 +35,12 @@ In this lab, you will build a Real-Time Intelligence Solution in Microsoft Fabri
 
 The architecture for this lab involves the following key components:
 
-- **Notebook** – Generates and ingests streaming data into the system.  
-- **Eventstream** – Acts as a streaming data pipeline, ingesting events from the Notebook into **Eventhouse**.  
-- **Eventhouse** – A real-time analytics store that processes and structures streaming data for further use.  
-- **Lakehouse** – Serves as a storage layer for structured and unstructured data, accessible via shortcuts from **Eventhouse**.  
-- **Real-Time Dashboard** – Visualizes real-time data from **Eventhouse** for monitoring and insights.  
-- **Data Activator** – Automates responses and alerts based on real-time streaming data.  
+- **Notebook**: Generates and ingests streaming data into the system.  
+- **Eventstream**: Acts as a streaming data pipeline, ingesting events from the Notebook into **Eventhouse**.  
+- **Eventhouse**: A real-time analytics store that processes and structures streaming data for further use.  
+- **Lakehouse**: Serves as a storage layer for structured and unstructured data, accessible via shortcuts from **Eventhouse**.  
+- **Real-Time Dashboard**: Visualizes real-time data from **Eventhouse** for monitoring and insights.  
+- **Data Activator**: Automates responses and alerts based on real-time streaming data.  
 
 ## Getting Started with Lab
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
@@ -61,18 +61,18 @@ For convenience, you can open the lab guide in a separate window by selecting th
 ![](media/getting-started-3upd.png)
 
 ## Managing Your Virtual Machine
-Feel free to start, stop, or restart your virtual machine as needed from the Resources tab. Your experience is in your hands!
+Feel free to **Start**, **Stop**, or **Restart** your virtual machine as needed from the Resources tab. Your experience is in your hands!
 
 ![](media/getting-started-5upd.png)
 
 ## Let's Get Started with Microsoft Fabric portal
  
-1. Open the **Microsoft Edge browser** on your desktop and visit `https://app.fabric.microsoft.com/` in Incognito mode. You will be navigated to the login page.
+1. Open the **Microsoft Edge browser** on your desktop and visit `https://app.fabric.microsoft.com/`. You will be navigated to the login page.
 
     ![](media/guide-58.png)
 
 
-1. Enter the following email/username, and then click on **Submit**.  
+2. Enter the following **Username/Email**, and then click on **Submit**.  
 
     - **Username/Email**:<inject key="AzureAdUserEmail"></inject>
 
@@ -80,9 +80,9 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
 
     - **Password**:<inject key="AzureAdUserPassword"></inject> 
 
-1. Click **Sign in** and follow the prompts to sign into Fabric.
+3. Click **Sign in** and follow the prompts to sign into Fabric.
 
-1. You will be navigated to the **Fabric Home**.
+4. You will be navigated to the **Fabric Home Page**.
 
     ![](media/guide-60.png)
 
@@ -90,17 +90,17 @@ Feel free to start, stop, or restart your virtual machine as needed from the Res
 
     To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up.
 
-1. On the top right corner of the screen, select the **user** **icon (1)**. Select **Free Trial (2)**.
+5. On the top right corner of the screen, Select the **User** **icon (1)**. Select **Free trial (2)**.
 
     ![](media/image11upd1.png)
 
-1. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Activate**.
+6. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Activate**.
 
     ![](media/image12upd1.png)
 
-1. The "Successfully Upgraded to Microsoft Fabric" dialog will appear. Click on **Fabric Home Page**..      
+7. The "Successfully upgraded to Microsoft Fabric" dialog will appear. Click on **Fabric Home Page**..      
 
-1. You will be navigated back to the **Microsoft** **Fabric Home page**.
+8. You will be navigated back to the **Microsoft** **Fabric Home page**.
 
     ![](media/guide-60.png)
 
