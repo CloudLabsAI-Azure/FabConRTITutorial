@@ -45,7 +45,7 @@ The architecture for this lab involves the following key components:
 ## Getting Started with Lab
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
-![](media/guide-01.png)
+![](media/guide-01up2.png)
 
 ## Virtual Machine & Lab Guide
 Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
@@ -53,38 +53,40 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
 ## Exploring Your Lab Resources
 To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
 
-![](media/getting-started-2upd.png)
+![](media/getting-started-2upd2.png)
 
 ## Utilizing the Split Window Feature
 For convenience, you can open the lab guide in a separate window by selecting the Split Window button from the top right corner.
 
-![](media/getting-started-3upd.png)
+![](media/getting-started-3upd2.png)
 
 ## Managing Your Virtual Machine
 Feel free to **Start**, **Stop**, or **Restart** your virtual machine as needed from the Resources tab. Your experience is in your hands!
 
-![](media/getting-started-5upd.png)
+![](media/getting-started-5upd2.png)
 
 ## Let's Get Started with Microsoft Fabric portal
  
 1. Open the **Microsoft Edge browser** on your desktop and visit `https://app.fabric.microsoft.com/`. You will be navigated to the login page.
 
-    ![](media/guide-58.png)
+    ![](media/guide-58up.png)
 
 
 2. Enter the following **Username/Email**, and then click on **Submit**.  
 
     - **Username/Email**:<inject key="AzureAdUserEmail"></inject>
 
-      ![](media/guide-59.png)
+      ![](media/guide-59up.png)
 
     - **Password**:<inject key="AzureAdUserPassword"></inject> 
+
+      ![](media/loginpwazureportal.png)
 
 3. Click **Sign in** and follow the prompts to sign into Fabric.
 
 4. You will be navigated to the **Fabric Home Page**.
 
-    ![](media/guide-60.png)
+    ![](media/guide-60up.png)
 
     > **Note:** Click on **Cancel** in the Welcome to Fabric view pop-up.
 
@@ -92,17 +94,17 @@ Feel free to **Start**, **Stop**, or **Restart** your virtual machine as needed 
 
 5. On the top right corner of the screen, Select the **User** **icon (1)**. Select **Free trial (2)**.
 
-    ![](media/image11upd1.png)
+    ![](media/image11upd2.png)
 
 6. **Activate your 60-day free Fabric trial capacity** dialog opens. Select **Activate**.
 
-    ![](media/image12upd1.png)
+    ![](media/image12upd2.png)
 
 7. The "Successfully upgraded to Microsoft Fabric" dialog will appear. Click on **Fabric Home Page**.      
 
 8. You will be navigated back to the **Microsoft** **Fabric Home page**.
 
-    ![](media/guide-60.png)
+    ![](media/guide-60up2.png)
 
 ## Support Contact
 
