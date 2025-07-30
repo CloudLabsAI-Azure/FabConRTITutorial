@@ -71,17 +71,17 @@ Now we have to run the notebook to create the stream of artificial click events 
 
     ![](media/image_task07_step01up2.png)
 
-1. Select the **Workspace default** as the **Environment** settings.
+2. Select the **Workspace default** as the **Environment** settings.
 
     ![](media/workspacedefaultsettingup2.png)     
 
-1. Paste in the values your copied in **Task 1 - Create Event Stream** as values for `eventHubNameevents` and `eventHubConnString` into the `notebook`.
+3. Paste in the values your copied in **Task 1 - Create Event Stream** as values for `eventHubNameevents` and `eventHubConnString` into the `notebook`.
 
     ![](media/image_task07_step02up2.png)
 
 
 
-1. Click **Run all** at the top left to start generating streaming events.
+4. Click **Run all** at the top left to start generating streaming events.
 
     ![](media/image_task07_step03up2.png)
 
@@ -90,7 +90,7 @@ Now we have to run the notebook to create the stream of artificial click events 
     ![](media/image_task07_errorsup2.png)
     >**Note:** Wait a few minutes for the first code cell to finish and it will proceed to next code cells automatically.
 
-1. Scroll to the last code cell, where the generated synthetic events should begin printing in JSON format. If the output matches the provided screenshot, the notebook is successfully streaming artificial click data to the Event Hub.Let the last query run in the background, we will proceed to the next task.
+5. Scroll to the last code cell, where the generated synthetic events should begin printing in JSON format. If the output matches the provided screenshot, the notebook is successfully streaming artificial click data to the Event Hub.Let the last query run in the background, we will proceed to the next task.
     ![](media/image_task07_step04up2.png)
 
 ### Task 4: Define Eventstream topology
