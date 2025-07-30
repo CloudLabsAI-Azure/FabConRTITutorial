@@ -16,11 +16,11 @@ In this task, you will explore Real-Time Intelligence and its categories, gainin
 
 1. Select **Workloads** icon on the left of your screen. A dialog with the list of Fabric experiences will open. The list of experiences includes Power BI, Data Factory, Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science and Data Warehouse. Let’s explore.
 
-    ![](media/guide-02.png)
+    ![](media/guide-02up2.png)
 
 1. Click on the **Real-Time Intelligence** experience under **Workloads**.
 
-    ![](media/guide-03.png)
+    ![](media/guide-03up2.png)
 
 1. You will be navigated to **Real-Time Intelligence Home page**. You will see **Item types** under **About**, and **Get started** categories. With the **Item type** category notice the items:
 
@@ -34,7 +34,7 @@ In this task, you will explore Real-Time Intelligence and its categories, gainin
     
     e. **Activator:** For automatically taking actions when patterns or conditions are detected in changing data.
 
-    ![](media/guide-24.png)
+    ![](media/guide-24up2.png)
 
 ### Task 2: Create a Fabric Workspace
 
@@ -44,7 +44,7 @@ In this task, you will create a workspace to begin working with Real-Time Intell
 
 1. Select  **+ New workspace (2)**.
 
-    ![](media/guide-23.png)
+    ![](media/guide-23up2.png)
 
 1. The **Create a workspace** dialog opens on the right side of the browser.
 
@@ -56,11 +56,11 @@ In this task, you will create a workspace to begin working with Real-Time Intell
 
 1. Click on **Advanced (2)** to expand the section.
 
-    ![](media/guide-20.png)
+    ![](media/guide-20up2.png)
 
 1. Under **License mode**, ensure that **Trial (1)** is selected (it should be the default option), then click **Apply (2)** to create a new workspace.
 
-    ![](media/guide-25.png)
+    ![](media/guide-25up2.png)
 
     >**Note:** If the **Introducing task flows** dialog opens, click on **Got it**.
 
@@ -69,17 +69,17 @@ In this task, you will create an Eventhouse, which is used for storing, processi
 
 1. Click the **+ New item** box to open a new pane that has all the items you can create in this Fabric workspace.
 
-    ![](media/guide-26.png)
+    ![](media/guide-26up2.png)
 
 1. Search for **Eventhouse (1)** and Select the **Eventhouse (2)** option from Store data . As we have talked about this can be viewed  similarly to a Lakehouse in that we can store data but this Eventhouse is focused around real time data.
 
-    ![](media/eventhouse-1.png)
+    ![](media/eventhouse-1up2.png)
 
 1. In the window that appears, give your Eventhouse the name, **WebEvents_EH (1)** and click on **Create (2)**.
 
-    ![](media/image32.png)
+    ![](media/image32up2.png)
 
-    >**Note:** if the pop-up appears select **Got started**.
+    >**Note:** if Welcome to Eventhouse! pop-up appears. Click on **Get started**.
 
 1. The Eventhouse efficiently handles real-time data streams, enabling organizations to ingest, process, and analyze data in near real-time. It is optimized for time-based, streaming events, automatically indexing and partitioning data based on ingestion time.
 
@@ -88,17 +88,17 @@ In this task, you’ll enable OneLake Availability to automatically copy KQL Dat
 
 1. When an Eventhouse is created, a KQL Database with the same name is created as well. To open the KQL Database click on the Database **WebEvents_EH** in the section **KQL Databases**.
 
-    ![](media/image_task04_step01.png)
+    ![](media/image_task04_step01up2.png)
 
 2. After selecting the KQL Database. Click on the switch **Availability** to enable the OneLake availibility as shown in the screenshot.
 
-    ![](media/image_task04_step02.png)
+    ![](media/image_task04_step02up2.png)
 
     >**Note:** Newly created tables will automatically inherit the "OneLake availability" setting from the Database level
 
 3. Now the dialog **Enable OneLake Availability** is shown. Ensure that Apply to existing tables is checked and click on the button **Enable**.
 
-    ![](media/image_task04_step03.png)
+    ![](media/image_task04_step03up2.png)
 
 
 ## Review
