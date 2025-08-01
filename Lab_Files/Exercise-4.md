@@ -237,9 +237,9 @@ In this task, you will create a Reflex Alert that will send a Teams Message when
 
 1. In the combo box Workspace select the workspace **RTI_<inject key="DeploymentID" enableCopy="false"></inject>**. Ensure that in the combo box Item the value **Create a new item (7)** is selected. Insert **My activator (8)** as value for the field New item name. Then click on the button **Create(9)**.
 
+   > **Note:** You may choose your preferred option in your daily life, but for this lab, we will not be doing it as it is for demonstration purposes.
+    
    ![](media/image_task14_step02.png)
-
-1. You may choose your preferred option in your daily life, but for this lab, we will not be doing it as it is for demonstration purposes.
 
 1. The Reflex item will appear in your workspace and you can edit the Reflex trigger action. The same Reflex item can also trigger multiple actions.
 
