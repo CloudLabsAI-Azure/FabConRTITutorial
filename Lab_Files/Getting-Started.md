@@ -42,6 +42,9 @@ The architecture for this lab involves the following key components:
 - **Real-Time Dashboard**: Visualizes real-time data from **Eventhouse** for monitoring and insights.  
 - **Data Activator**: Automates responses and alerts based on real-time streaming data.  
 
+**Fabric trial provides access to most features, but excludes Copilot, private links, and trusted workspace access ([learn more](https://learn.microsoft.com/en-us/fabric/fundamentals/fabric-trial#overview-of-the-trial-capacity)).**
+
+
 ## Getting Started with Lab
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
 
@@ -120,4 +123,5 @@ Click **Next** from the bottom right corner to embark on your Lab journey!
 ![](media/up4.png)
 
 ### Happy Learning!!
+
 
