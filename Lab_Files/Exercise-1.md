@@ -108,4 +108,4 @@ In this lab you have completed the following:
 - Created an Eventhouse.
 - Enabled OneLake Availability.
 
-### You have successfully completed the exercise. Click **Next >>** to continue.
+### You have successfully completed the exercise. Click Next >> to continue.

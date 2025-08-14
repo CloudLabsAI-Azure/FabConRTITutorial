@@ -154,7 +154,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/fabrta58up2.png)
 
-1. Create an **Average Page Load Time Anomalies** visualization with an **Anomaly Chart** as the visual type using the following query.
+1. Create an **Average Page Load Time Anomalies(3)** visualization with an **Anomaly Chart(4)** as the visual type using the following query.
 
     ```kusto
     //Avg Page Load Time Anomalies
@@ -167,7 +167,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
    ![](media/pageloadanomaliesup2.png)
 
-1. Create a **Strong Anomalies** visualization with a **Table** as the visual type using the following query.
+1. Create a **Strong Anomalies(3)** visualization with a **Table(4)** as the visual type using the following query.
     
     ```kusto
     //Strong Anomalies
@@ -220,7 +220,7 @@ In this task, you will enable auto-refresh so the dashboard will be automaticall
 
 In this task, you will create a Reflex Alert that will send a Teams Message when a value meets a certain threshold.
 
-1. While editing the dashboard, click on the three dots (...) of the tile **Click by hour**. Select **Set alert** from the context menu. This will open the pane **Set alert** at the right side in the browser.
+1. While editing the dashboard, click on the three dots **(...) (1)** of the tile **Click by hour**. Select **Set alert(2)** from the context menu. This will open the pane **Set alert** at the right side in the browser.
 
     ![](media/image_task14_step01up2.png)
 
@@ -250,3 +250,5 @@ In this lab you have completed the following:
 - Enabled Data Activators.
 
 ### You have successfully completed the labs.
+
+By completing this lab **Build A Fabric Real-Time Intelligence Solution in a Day**, you establish an end-to-end real-time data analytics solution in Microsoft Fabric. Starting with creating a collaborative workspace and setting up an Eventhouse, you integrate data seamlessly using OneLake and Eventstream, simulate and process streaming data, and organize it efficiently in a Lakehouse with tables. Leveraging KQL for structured querying, you transform raw event data into actionable insights, culminating in the development of an interactive real-time dashboard and automated event driven actions through Data Activator, enabling timely and informed decision making.

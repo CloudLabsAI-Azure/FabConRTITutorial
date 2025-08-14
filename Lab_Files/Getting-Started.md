@@ -54,28 +54,28 @@ Once you're ready to dive in, your virtual machine and lab guide will be right a
 Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
 
 ## Exploring Your Lab Resources
-To get a better understanding of your lab resources and credentials, navigate to the **Environment Details** tab.
+To get a better understanding of your lab resources and credentials, navigate to the **Environment** details tab.
 
 ![](media/getting-started-2upd2.png)
 
 ## Utilizing the Split Window Feature
-For convenience, you can open the lab guide in a separate window by selecting the Split Window button from the top right corner.
+For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
 
 ![](media/getting-started-3upd2.png)
 
 ## Managing Your Virtual Machine
-Feel free to **Start**, **Stop**, or **Restart** your virtual machine as needed from the Resources tab. Your experience is in your hands!
+Feel free to **Start**, **Stop**, or **Restart** **(2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
 ![](media/getting-started-5upd2.png)
 
 ## Let's Get Started with Microsoft Fabric portal
  
-1. Open the **Microsoft Edge browser** on your desktop and visit `https://app.fabric.microsoft.com/`. You will be navigated to the login page.
+1. Open the **Microsoft Edge browser** on your desktop of the **LabVM** and visit `https://app.fabric.microsoft.com/`. You will be navigated to the login page.
 
     ![](media/guide-58up.png)
 
 
-2. Enter the following **Username/Email** **1**, and then click on **Submit** **2**.  
+2. Enter the following **Username/Email** **(1)**, and then click on **Submit** **(2)**.  
 
     - **Username/Email**:<inject key="AzureAdUserEmail"></inject>
 
