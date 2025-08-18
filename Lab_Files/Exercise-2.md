@@ -58,7 +58,7 @@ We use a python notebook to generate a stream of artificial click events. The no
 
     ![](media/guide-08up2.png)
 
-1. Browse to the **C:\LabFiles** folder and select the `Generate_synthetic_web_events` **(1)** notebook and click on the button **Open (2)**.
+1. Browse to the **C:\LabFiles** folder and select the **Generate_synthetic_web_events(1)** notebook and click on the button **Open (2)**.
 
     ![](media/guide-09up2.png)
 
@@ -137,7 +137,7 @@ In this task, you will create the Eventstream topology that will insert the stre
 
     ![](media/image_task08_step07up2.png)
 
-9. Click on the **pencil (1)** in node **DerivedStream** to go to edit mode. In the right pane, Enter `ClickEventsStream` **(2)** as name of the Eventstream in the field **Stream name**. Ensure that the **Input data format** is **Json (3)**. Click on the button **Save (4)**.
+9. Click on the **Pencil (1)** in node **DerivedStream** to go to edit mode. In the right pane, Enter `ClickEventsStream` **(2)** as name of the Eventstream in the field **Stream name**. Ensure that the **Input data format** is **Json (3)**. Click on the button **Save (4)**.
 
     ![](media/guide-11up2.png)
 
@@ -236,4 +236,4 @@ In this lab you have completed the following:
 - Run the notebook.
 - Defined Eventstream topology.
 
-### You have successfully completed the exercise. Click **Next >>** to continue.
+### You have successfully completed the exercise. Click Next >> to continue.

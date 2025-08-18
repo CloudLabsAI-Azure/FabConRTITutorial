@@ -61,7 +61,7 @@ After our lakehouse has been created the overview page of the lakehouse will be 
 ### Task 3: Accessing Eventhouse data from the lakehouse 
 In this task, you will make the Eventhouse tables from the KQL Database available in our Lakehouse. This will be accomplished by creating shortcuts.
 
-1. Click on the button **Get data** in the menu bar at the top. Choose **New shortcut** from the dropdown menu.
+1. Click on the button **Get data(1)** in the menu bar at the top. Choose **New shortcut(2)** from the dropdown menu.
 
     ![](media/guide-34up2.png)
 
@@ -75,7 +75,7 @@ In this task, you will make the Eventhouse tables from the KQL Database availabl
 
     ![](media/guide-36.png)
 
-1. Expand the folder **Tables** under **WebEvents_EH** in the window **New shortcut** and check both tables **BronzeClicks** and **BronzeImpressions**. Click on **Next**.
+1. Expand the folder **Tables** under **WebEvents_EH** in the window **New shortcut** and check both tables **BronzeClicks and BronzeImpressions (1)**. Click on **Next(2)**.
 
     ![](media/image_task11_step04up2.png)
 
@@ -268,4 +268,4 @@ In this lab you have completed the following:
 - Accessed Eventhouse data from the lakehouse. 
 - Built the KQL DB schema.
 
-### You have successfully completed the exercise. Click **Next >>** to continue.
+### You have successfully completed the exercise. Click Next >> to continue.
