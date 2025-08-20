@@ -29,7 +29,7 @@ In this lab, you will build a Real-Time Intelligence Solution in Microsoft Fabri
 
 ## Architecture Diagram
 
-![](media/architecture3.png)
+![](media/architecture4.png)
 
 ## Explanation of Components
 
@@ -123,6 +123,7 @@ Click **Next** from the bottom right corner to embark on your Lab journey!
 ![](media/up4.png)
 
 ### Happy Learning!!
+
 
 
 
