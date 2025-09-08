@@ -35,7 +35,7 @@ In this task, you will be streaming events (impressions and clicks events) gener
 
     ![](media/guide-04up2.png)
 
-1. To get the information we need for the Notebook, the name of the event hub and a connection string. Click on the Eventstream source named **WebEventsCustomSource** **(1)**. In the area below the diagram, click on **SAS Key Authentication (2)**. Then click on the copy icon beside the **Event hub name (3)** and paste it into a notepad to use it in the later steps. 
+1. Now, we need to collect the required information for the Notebook to use later: the event hub name and a connection string. Click on the Eventstream source named **WebEventsCustomSource** **(1)**. In the area below the diagram, click on **SAS Key Authentication (2)**. Then click on the **copy** icon beside the **Event hub name (3)** and **paste** it into a **notepad** to use it in the later steps. 
 
     ![](media/guide-05up2.png)
 
@@ -50,7 +50,7 @@ We use a python notebook to generate a stream of artificial click events. The no
 
 1. Navigate back to your workspace **RTI_<inject key="DeploymentID" enableCopy="false"></inject> (1)** that you have created.
 
-1. Click on **Import (2)** option at the top center and select **Notebook (3)** and click on **From this computer (4)** option to import notebook files from your local drive.
+1. Click on **Import (2)** option at the top center and select **Notebook (3)** and click on **From this computer (4)** option to import notebook file from your local drive.
 
     ![](media/guide-07up2.png)
 
@@ -65,7 +65,7 @@ We use a python notebook to generate a stream of artificial click events. The no
 1. After the notebook has been uploaded Fabric will display a message that the notebook has been imported successfully.
 
 ### Task 3: Run the notebook
-Now we have to run the notebook to create the stream of artificial click events for our lab. In order for the Notebook to send the events to the correct Event Hub we have to insert the information we have saved in Task 5 - Create Event Stream.To run the notebook and create our datastream please proceed with the following steps.
+Now we have to run the notebook to create the stream of artificial click events for our lab. In order for the Notebook to send the events to the correct Event Hub we have to insert the information we have saved in Task Create Event Stream.To run the notebook and create our datastream please proceed with the following steps.
 
 1. Click on the Notebook **Generate_synthetic_web_events** in your Fabric Workspace to open it.
 
@@ -88,9 +88,9 @@ Now we have to run the notebook to create the stream of artificial click events 
     >**Note:** Errors in Cell 1 may occur due to pre-installed libraries in the environment. These can be safely ignored, as they will not impact the successful execution of the notebook.
 
     ![](media/image_task07_errorsup2.png)
-    >**Note:** Wait a few minutes for the first code cell to finish and it will proceed to next code cells automatically.
+    >**Note:** Wait a few minutes for the first code cell to finish and it will proceed to next code cells automatically. Please note that some cells may take 5 minutes or longer to execute.
 
-5. Scroll to the last code cell, where the generated synthetic events should begin printing in JSON format. If the output matches the provided screenshot, the notebook is successfully streaming artificial click data to the Event Hub.Let the last query run in the background, we will proceed to the next task.
+5. Scroll to the last code cell, where the generated synthetic events should begin printing in JSON format. If the output matches the provided screenshot, the notebook is successfully streaming artificial click data to the Event Hub. Let the last query run in the background, we will proceed to the next task.
     ![](media/image_task07_step04up2.png)
 
 ### Task 4: Define Eventstream topology
