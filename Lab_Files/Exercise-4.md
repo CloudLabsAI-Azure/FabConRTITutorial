@@ -105,7 +105,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
     | render scatterchart with (kind = map) //, xcolumn=lon, ycolumns=lat)
     ```
 
-   ![](media/fabrta54up2.png)\
+   ![](media/fabrta54up2.png)
 
    >**Note:** Click on **New Tile** again to create additional visualizations as outlined in the steps below. The New Tile option lets you paste and execute your query.
 
