@@ -178,7 +178,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
     | make-series average_loadtime = avg(page_loading_seconds) on eventDate from _startTime to _endTime+4h step 1h
     | extend anomalies = series_decompose_anomalies(average_loadtime,2.5)
     | mv-expand eventDate, average_loadtime, anomalies
-    | where anomalies <> 0
+    | where anomalies <> 1
     | project-away anomalies
     ```
 
