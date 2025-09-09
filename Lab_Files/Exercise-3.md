@@ -37,7 +37,7 @@ After our lakehouse has been created the overview page of the lakehouse will be 
 
     >**Note:** To select the two files at once you can just hold the key CTRL while you click the two files.
 
-1. In the popin window **Upload files**, Click on the button **Upload**. Now the files will be uploaded.
+1. In the popup window **Upload files**, Click on the button **Upload**. Now the files will be uploaded.
 
     ![](media/image_task10_step03up2.png)
 
