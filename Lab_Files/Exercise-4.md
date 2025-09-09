@@ -20,7 +20,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/guide-47up2.png)
 
-1. To create a new realtime dashboard click on the button **+ New Item  (1)** and the select **Real-Time Dashboard  (2)**.
+1. To create a new realtime dashboard click on the button **+ New Item  (1)**, search for Real-Time Dashboard and select **Real-Time Dashboard  (2)**.
 
     ![](media/guide-48up2.png)
 
@@ -94,7 +94,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
     ```
     ![](media/fabrta53up2.png)
 
-1. Create an **Impressions by location (3)** visualization in a new tile with **Map (4)** as the visual type using the following query.
+1. Click on **New Tile** and create an **Impressions by location (3)** visualization in a new tile with **Map (4)** as the visual type using the following query.
 
     ```kusto
     //Impressions by location
@@ -106,6 +106,8 @@ In this task, you will build a real-time dashboard to visualize the streaming da
     ```
 
    ![](media/fabrta54up2.png)
+
+   >**Note:** Click on **New Tile** again to create additional visualizations as outlined in the steps below. The New Tile option lets you paste and execute your query.
 
 1. Create an **Average Page Load Time (3)** visualization in a new tile with **Timechart (4)** as the visual type using the following query.
 
@@ -176,7 +178,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
     | make-series average_loadtime = avg(page_loading_seconds) on eventDate from _startTime to _endTime+4h step 1h
     | extend anomalies = series_decompose_anomalies(average_loadtime,2.5)
     | mv-expand eventDate, average_loadtime, anomalies
-    | where anomalies <> 0
+    | where anomalies <> 1
     | project-away anomalies
     ```
 

@@ -16,7 +16,7 @@ In this task, you will set up the Lakehouse that will contain additional informa
 
 1. To create a **Lakehouse**, first return to your assigned workspace **RTI_<inject key="DeploymentID" enableCopy="false"></inject>** by clicking on its icon in the left toolbar.
 
-1. Click on the button **+ New Item (1)** in the toolbar and in the pop-in window click on the tile **Lakehouse (2)**.
+1. Click on the button **+ New Item (1)** in the toolbar and in the pop-in window, search for Lakehouse and click on the tile **Lakehouse (2)**.
 
     ![](media/guide-30up2.png)
 
@@ -37,7 +37,7 @@ After our lakehouse has been created the overview page of the lakehouse will be 
 
     >**Note:** To select the two files at once you can just hold the key CTRL while you click the two files.
 
-1. In the popin window **Upload files**, Click on the button **Upload**. Now the files will be uploaded.
+1. In the popup window **Upload files**, Click on the button **Upload**. Now the files will be uploaded.
 
     ![](media/image_task10_step03up2.png)
 
@@ -96,13 +96,14 @@ In this task, you will create all the silver tables, functions and enable update
 
     ![](media/image_task12_step01up2.png)
 
+1. By now data has already streamed into you KQL-Database. You can see this by looking at the dashboard that is provided on the overview page of the KQL-Database    
+
+    ![](media/image_task12_step02bup2.png)
+
 1. Click on the button **+ New (1)** in the top toolbar and choose **OneLake shortcut (2)** from the drop down menu.
 
     ![](media/guide-38up2.png)
 
-1. By now data has already streamed into you KQL-Database. You can see this by looking at the dashboard that is provided on the overview page of the KQL-Database    
-
-    ![](media/image_task12_step02bup2.png)
 
 1. Select **Microsoft OneLake**.
 
@@ -264,7 +265,7 @@ In this task, you will create all the silver tables, functions and enable update
 
 In this lab you have completed the following:
 - Created and setup up the Lakehouse.
-- Create ddelta tables in the lakehouse.
+- Create delta tables in the lakehouse.
 - Accessed Eventhouse data from the lakehouse. 
 - Built the KQL DB schema.
 
