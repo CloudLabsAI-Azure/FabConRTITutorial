@@ -38,7 +38,7 @@ In this task, you will explore Real-Time Intelligence and its categories, gainin
 
     g. **Digital Twin Builder (preview):** Digital Twin Builder lets you create digital replicas of physical environments, assets, and processes. These replicas-called digital twins-are built using an ontology, which is a structured model of entities and their relationships.
 
-    ![](media/guide22.png)
+    ![](media/guide_22.png)
 
 ### Task 2: Create a Fabric Workspace
 
