@@ -18,7 +18,7 @@ In this task, you will explore Real-Time Intelligence and its categories, gainin
 
     ![](media/guide-02up2.png)
 
-1. Click on the **Real-Time Intelligence** experience under **Workloads**.
+1. Scroll down to the bottom and select **Real-Time Intelligence** under Workloads.
 
     ![](media/guide-03up2.png)
 
@@ -90,7 +90,7 @@ In this task, you’ll enable OneLake Availability to automatically copy KQL Dat
 
     ![](media/image_task04_step01up2.png)
 
-2. After selecting the KQL Database. Click on the switch **Availability** to enable the OneLake availibility as shown in the screenshot.
+2. After selecting the KQL Database. Click on the switch **Availability** under **Databases details** to enable the OneLake availibility as shown in the screenshot.
 
     ![](media/image_task04_step02up2.png)
 
