@@ -265,7 +265,7 @@ In this task, you will create all the silver tables, functions and enable update
 
 In this lab you have completed the following:
 - Created and setup up the Lakehouse.
-- Create ddelta tables in the lakehouse.
+- Create delta tables in the lakehouse.
 - Accessed Eventhouse data from the lakehouse. 
 - Built the KQL DB schema.
 
