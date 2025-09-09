@@ -16,7 +16,7 @@ In this task, you will set up the Lakehouse that will contain additional informa
 
 1. To create a **Lakehouse**, first return to your assigned workspace **RTI_<inject key="DeploymentID" enableCopy="false"></inject>** by clicking on its icon in the left toolbar.
 
-1. Click on the button **+ New Item (1)** in the toolbar and in the pop-in window click on the tile **Lakehouse (2)**.
+1. Click on the button **+ New Item (1)** in the toolbar and in the pop-in window, search for Lakehouse and click on the tile **Lakehouse (2)**.
 
     ![](media/guide-30up2.png)
 
