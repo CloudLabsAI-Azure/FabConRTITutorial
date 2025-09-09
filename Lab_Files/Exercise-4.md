@@ -20,7 +20,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/guide-47up2.png)
 
-1. To create a new realtime dashboard click on the button **+ New Item  (1)** and the select **Real-Time Dashboard  (2)**.
+1. To create a new realtime dashboard click on the button **+ New Item  (1)**, search for Real-Time Dashboard and select **Real-Time Dashboard  (2)**.
 
     ![](media/guide-48up2.png)
 
