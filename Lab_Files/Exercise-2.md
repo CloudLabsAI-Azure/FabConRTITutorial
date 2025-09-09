@@ -91,6 +91,7 @@ Now we have to run the notebook to create the stream of artificial click events 
     >**Note:** Wait a few minutes for the first code cell to finish and it will proceed to next code cells automatically. Please note that some cells may take 5 minutes or longer to execute.
 
 5. Scroll to the last code cell, where the generated synthetic events should begin printing in JSON format. If the output matches the provided screenshot, the notebook is successfully streaming artificial click data to the Event Hub. **Let the last query run in the background, and proceed to the next task.**
+   
     ![](media/image_task07_step04up2.png)
    
     >**Note:** You may see a notebook execution or notebook save failure due to size limitations. This can be safely ignored as the data will continue to generate in the background and may exceed the allowed size.
