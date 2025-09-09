@@ -158,7 +158,7 @@ In this task, you will create the Eventstream topology that will insert the stre
     | Workspace                       | Select **RTI_<inject key="DeploymentID" enableCopy="false"></inject> (4)**                                  |
     | Eventhouse                       | Select the Eventhouse **WebEvents_EH (5)**                                                                     |
     | KQL Database                    | Select the KQL Database **WebEvents_EH (6)**                                                                   |
-    | KQL Destination table               | Click on Create new and enter **BronzeClicks (7)** as name for the new table and click on Done.               |
+    | KQL Destination table               | Click on **Create new** and enter **BronzeClicks (7)** as name for the new table and click on Done.               |
     | Input data format               | Ensure that the option **Json (8)** is selected.                                                              |
 
     ![](media/guide-12up2.png)
