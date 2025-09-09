@@ -34,7 +34,11 @@ In this task, you will explore Real-Time Intelligence and its categories, gainin
     
     e. **Activator:** For automatically taking actions when patterns or conditions are detected in changing data.
 
-    ![](media/guide-24up2.png)
+    f. **Event Schema Set (preview):** The Event Schema Set (preview) in Microsoft Fabric’s Real-Time Intelligence is designed to help you manage and standardize the structure of streaming data.
+
+    g. **Digital Twin Builder (preview):** Digital Twin Builder lets you create digital replicas of physical environments, assets, and processes. These replicas-called digital twins-are built using an ontology, which is a structured model of entities and their relationships.
+
+    ![](media/guide_22.png)
 
 ### Task 2: Create a Fabric Workspace
 
