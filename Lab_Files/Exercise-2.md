@@ -90,8 +90,10 @@ Now we have to run the notebook to create the stream of artificial click events 
     ![](media/image_task07_errorsup2.png)
     >**Note:** Wait a few minutes for the first code cell to finish and it will proceed to next code cells automatically. Please note that some cells may take 5 minutes or longer to execute.
 
-5. Scroll to the last code cell, where the generated synthetic events should begin printing in JSON format. If the output matches the provided screenshot, the notebook is successfully streaming artificial click data to the Event Hub. Let the last query run in the background, we will proceed to the next task.
+5. Scroll to the last code cell, where the generated synthetic events should begin printing in JSON format. If the output matches the provided screenshot, the notebook is successfully streaming artificial click data to the Event Hub. **Let the last query run in the background, and proceed to the next task.**
     ![](media/image_task07_step04up2.png)
+   
+    >**Note:** You may see a notebook execution or notebook save failure due to size limitations. This can be safely ignored as the data will continue to generate in the background and may exceed the allowed size.
 
 ### Task 4: Define Eventstream topology
 In this task, you will create the Eventstream topology that will insert the streamed data into your KQL database.
@@ -107,8 +109,6 @@ In this task, you will create the Eventstream topology that will insert the stre
 3. Click on the node **Transform events or add destination (1)** and select **Filter (2)** from the menu.
 
     ![](media/image_task08_step03up2.png)
-
-    >**Note**: Check the table at the bottom of the screen to view events streamed by the notebook to the Eventstream.
 
 4. Click on the pencil icon in the node **Filter** to enter edit mode.
 
@@ -129,6 +129,10 @@ In this task, you will create the Eventstream topology that will insert the stre
 
 6. The **ClickEventsFilter** node showing an **error** is expected. This indicates that there is no target for the outgoing data stream, which will be resolved in the next step.
 
+    >**Note**: Check the table at the bottom of the screen to view events streamed by the notebook to the Eventstream. If no data is visible, please refresh the Test Results section, you should then be able to see the data.
+
+    ![](media/image_task04_step6.png)
+  
 7. Click on **+ (1)** icon next to the **ClickEventsFilter** node.
 
     ![](media/image_task08_step06up2.png)
