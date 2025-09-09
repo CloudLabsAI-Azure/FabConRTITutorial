@@ -96,13 +96,14 @@ In this task, you will create all the silver tables, functions and enable update
 
     ![](media/image_task12_step01up2.png)
 
+1. By now data has already streamed into you KQL-Database. You can see this by looking at the dashboard that is provided on the overview page of the KQL-Database    
+
+    ![](media/image_task12_step02bup2.png)
+
 1. Click on the button **+ New (1)** in the top toolbar and choose **OneLake shortcut (2)** from the drop down menu.
 
     ![](media/guide-38up2.png)
 
-1. By now data has already streamed into you KQL-Database. You can see this by looking at the dashboard that is provided on the overview page of the KQL-Database    
-
-    ![](media/image_task12_step02bup2.png)
 
 1. Select **Microsoft OneLake**.
 
