@@ -94,7 +94,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
     ```
     ![](media/fabrta53up2.png)
 
-1. Create an **Impressions by location (3)** visualization in a new tile with **Map (4)** as the visual type using the following query.
+1. Click on **New Tile** and create an **Impressions by location (3)** visualization in a new tile with **Map (4)** as the visual type using the following query.
 
     ```kusto
     //Impressions by location
@@ -105,7 +105,9 @@ In this task, you will build a real-time dashboard to visualize the streaming da
     | render scatterchart with (kind = map) //, xcolumn=lon, ycolumns=lat)
     ```
 
-   ![](media/fabrta54up2.png)
+   ![](media/fabrta54up2.png)\
+
+   >**Note:** Click on **New Tile** again to create additional visualizations as outlined in the steps below. The New Tile option lets you paste and execute your query.
 
 1. Create an **Average Page Load Time (3)** visualization in a new tile with **Timechart (4)** as the visual type using the following query.
 
