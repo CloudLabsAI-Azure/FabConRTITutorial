@@ -45,6 +45,12 @@ In this task, you will be streaming events (impressions and clicks events) gener
 
     >**Note:** To copy the connection string it must be visible.
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="a91da02e-d4db-41ec-815d-2d9466790f8b" />
+
 ### Task 2: Import Data Generator Notebook
 We use a python notebook to generate a stream of artificial click events. The notebook can be found in **C:\LabFiles** directory.
 

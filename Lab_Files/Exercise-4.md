@@ -202,6 +202,12 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step18up2.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="02a20e12-54b5-4b37-9c8f-d4198f9f4430" />
+
 ### Task 2: Enable Auto-refresh to your dashboard.
 
 In this task, you will enable auto-refresh so the dashboard will be automatically updated while it is shown on screen.

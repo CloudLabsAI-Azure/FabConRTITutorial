@@ -68,6 +68,12 @@ In this task, you will create a workspace to begin working with Real-Time Intell
 
     >**Note:** If the **Introducing task flows** dialog opens, click on **Got it**.
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="0cf9b162-7a65-422c-b1f0-86178c692f30" />
+
 ### Task 3: Create an Eventhouse
 In this task, you will create an Eventhouse, which is used for storing, processing, and analyzing real-time streaming data efficiently within Microsoft Fabric.
 
@@ -86,6 +92,12 @@ In this task, you will create an Eventhouse, which is used for storing, processi
     >**Note:** if Welcome to Eventhouse! pop-up appears. Click on **Get started**.
 
 1. The Eventhouse efficiently handles real-time data streams, enabling organizations to ingest, process, and analyze data in near real-time. It is optimized for time-based, streaming events, automatically indexing and partitioning data based on ingestion time.
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="e0e12ffc-7d34-4768-aaef-c3d89d6e615f" />
 
 ### Task 4: Enable OneLake Availability
 In this task, you’ll enable OneLake Availability to automatically copy KQL Database data to OneLake in Delta format, allowing seamless querying through Lakehouse and other tools. It’s best enabled before loading large datasets and can be set per table.

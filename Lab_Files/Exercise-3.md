@@ -24,6 +24,12 @@ In this task, you will set up the Lakehouse that will contain additional informa
 
     ![](media/image_task09_step04up1.png)
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="36131701-01b8-4da8-bb9d-b1a686ec3df5" />
+
 ### Task 2: Create delta tables in the lakehouse
 After our lakehouse has been created the overview page of the lakehouse will be displayed. Next task we have to accomplish is to load static data into our new lakehouse. To do so please execute the following steps.
 
