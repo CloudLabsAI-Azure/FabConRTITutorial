@@ -110,7 +110,6 @@ In this task, you will create all the silver tables, functions and enable update
 
     ![](media/guide-38up2.png)
 
-
 1. Select **Microsoft OneLake**.
 
     ![](media/guide-35up342.png)
