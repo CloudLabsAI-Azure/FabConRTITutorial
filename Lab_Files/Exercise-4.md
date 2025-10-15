@@ -200,7 +200,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
 1. After you added all the visuals and moved them to thier appropiate places your dashboard should look similar to the below image.
 
-    ![](media/image_task13_step18up2.png)
+    ![](media/5.29.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 

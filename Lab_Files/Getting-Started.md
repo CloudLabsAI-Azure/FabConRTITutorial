@@ -81,9 +81,9 @@ Feel free to **Start**, **Stop**, or **Restart** **(2)** your virtual machine as
 
       ![](media/guide-59up.png)
 
-    - **Password**:<inject key="AzureAdUserPassword"></inject> 
+    - **Temporary Access Pass**:<inject key="AzureAdUserPassword"></inject> 
 
-      ![](media/loginpwazureportal.png)
+      ![](media/1.2Pass.png)
 
 3. Click **Sign in** and follow the prompts to sign into Fabric.
 
@@ -107,7 +107,7 @@ Feel free to **Start**, **Stop**, or **Restart** **(2)** your virtual machine as
 
 8. You will be navigated back to the **Microsoft** **Fabric Home page**.
 
-    ![](media/guide-60up2.png)
+    ![](media/1.4.png)
 
 ## Support Contact
 

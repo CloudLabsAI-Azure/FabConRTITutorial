@@ -104,11 +104,11 @@ In this task, you’ll enable OneLake Availability to automatically copy KQL Dat
 
 1. When an Eventhouse is created, a KQL Database with the same name is created as well. To open the KQL Database click on the Database **WebEvents_EH** in the section **KQL Databases**.
 
-    ![](media/image_task04_step01up2.png)
+    ![](media/2.4.1.png)
 
 2. After selecting the KQL Database. Click on the switch **Availability** under **Database details** to enable the OneLake availibility as shown in the screenshot.
 
-    ![](media/image_task04_step02up2.png)
+    ![](media/2.4.2.png)
 
     >**Note:** Newly created tables will automatically inherit the "OneLake availability" setting from the Database level
 
