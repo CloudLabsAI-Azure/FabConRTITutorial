@@ -32,6 +32,8 @@ On the **Resources (1)** tab, use the **Action buttons (2)** next to your VM. Fe
 
 To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
+![](media/zoomnew1.png)
+
 ## Let's Get Started with Microsoft Fabric portal
  
 1. Open the **Microsoft Edge browser** on your desktop of the **LabVM** and visit `https://app.fabric.microsoft.com/`. You will be navigated to the login page.
