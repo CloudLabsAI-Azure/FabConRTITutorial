@@ -8,95 +8,69 @@ Welcome to Copilot Hackathon, We've prepared a seamless environment for you to e
 
 Once you're ready to dive in, your virtual machine and Challenge guide will be right at your fingertips within your web browser.
 
-  ![02](media/12062025(0)new.png)
+![](media/guide-01up2.png)
 
 ### Exploring Your Challenge Resources
 
 To get a better understanding of your Challenge resources and credentials, navigate to the **Environment** tab.
 
-   ![image](media/power-02new.png)
+![](media/getting-started-2upd2.png)
 
 ### Utilizing the Split Window Feature
 
 For convenience, you can open the Challenge guide in a separate window by selecting the Split Window button from the Top right corner
 
-   ![image](media/power-03new.png)
-   
+![](media/getting-started-3upd2.png)
+
 ## Managing Your Virtual Machine
 
 On the **Resources (1)** tab, use the **Action buttons (2)** next to your VM. Feel free to **start**, **stop**, or **restart** your Virtual Machine as needed. Your experience is in your hands!
 
-   ![image](media/power-04new.png)
+![](media/getting-started-5upd2.png)
 
 ## Lab Guide Zoom In/Zoom Out
 
 To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-   ![image](media/zoomnew1.png)
-
-## Let's Get Started with Power BI Portal
+## Let's Get Started with Microsoft Fabric portal
  
-1. On the Lab VM, open **Microsoft Edge** from the desktop. In a new tab, navigate to **Microsoft Fabric** by copying and pasting the following URL into the address bar:
+1. Open the **Microsoft Edge browser** on your desktop of the **LabVM** and visit `https://app.fabric.microsoft.com/`. You will be navigated to the login page.
 
-   ```
-   https://app.powerbi.com/
-   ```
+  ![](media/guide-58up.png)
 
-2. On the **Enter your email, we'll check if you need to create a new account** tab, you will see the login screen, in that enter the following email/username, and click on **Submit**.
- 
-   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
- 
-     ![image](https://github.com/user-attachments/assets/f38ad1be-223e-4973-907b-d1e3c4af5e5a)
+1. Enter the following **Username/Email** **(1)**, and then click on **Submit** **(2)**.  
 
-3. Now enter the following password and click on **Sign in**.
- 
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
- 
-     ![image](https://github.com/user-attachments/assets/33088d9e-37b0-4c5e-95d7-9c991ab8ced3)
-     
-1. If you see the pop-up **Stay Signed in?**, select **No**.
+    - **Username/Email**:<inject key="AzureAdUserEmail"></inject>
 
-   ![02](media/12062025(3).png)
+      ![](media/guide-59up.png)
 
-1. You should be able to view the Power BI Portal.
+    - **Temporary Access Pass**:<inject key="AzureAdUserPassword"></inject> 
 
-1. Once logged in, navigate to **Settings (1)** icon and select **Admin portal (2)** under **Governance and insights** section.
+      ![](media/1.2Pass.png)
 
-    ![02](media/15.png) 
+1. Click **Sign in** and follow the prompts to sign into Fabric.
 
-1. In the **Tenant settings** (**(1)**), search for **map** **(2)**, then expand the **Map and filled map visuals** **(3)**. If the toggle is not already enabled, switch it to **Enabled** **(4)**, and click **Apply** **(5)** to save the changes.
+1. You will be navigated to the **Fabric Home Page**.
 
-    ![](media/image103.png) 
+    ![](media/guide-60up.png)
 
-1. Open the **Power BI Desktop** located on the desktop of your lab environment.
+    > **Note:** Click on **Cancel** in the Welcome to Fabric view pop-up.
 
-    ![](media/image105.png) 
+    To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up.
 
-1. Click on the **Sign-in icon** located in the top-right corner.
+1. On the top right corner of the screen, Select the **User** **icon (1)**. Select **Free trial (2)**.
 
-    ![](media/image200.png) 
+    ![](media/image11upd2.png)
 
-1. Once the "Enter your email address" dialog appears, copy the **Username** and paste it into the **Email** field of the dialog and select **Continue**.
+1. **Activate your 60-day free Fabric trial capacity** dialog opens. Select **Activate**.
 
-   * Email/Username: <inject key="AzureAdUserEmail"></inject>
+    ![](media/image12upd2.png)
 
-     ![02](media/image106.png)
+1. The "Successfully upgraded to Microsoft Fabric" dialog will appear. Click on **Fabric Home Page**.      
 
-1. After clicking Continue, you will be prompted to sign in again. Please use the credentials provided below to log in.
+1. You will be navigated back to the **Microsoft** **Fabric Home page**.
 
-   * Email/Username: <inject key="AzureAdUserEmail"></inject>
-
-     ![02](media/image101.png)
-
-1. Enter password and **Sign in**
-
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
-
-     ![02](media/image102.png)
-
-1. For the pop-up **Automatically sign in to all desktop apps and websites on this device?** window, select **No,this app only**
-
-   ![02](media/image107.png)
+    ![](media/1.4.png)
 
 1. Keep this browser tab open, you will be using this further.
 
