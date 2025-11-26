@@ -32,7 +32,7 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step04up2.png)
 
-1. Select **WebEvents_EH** *KQL Database* listed under Suggested fromt the workspace
+1. Select **WebEvents_EH** *KQL Database* listed under Suggested from the workspace
 
     ![](media/ex4task1imgstep5.png)
 
