@@ -229,13 +229,15 @@ In this task, you will create the Eventstream topology that will insert the stre
     ![](media/guide-18up2.png)
 22. Click on the button **Publish** that is located in the toolbar at the top of the screen.
 
+    >**Note**: If you see any errors, please resolve them before publishing. Click on the pencil (edit) on the nodes where the error appears, reselect the missing fields, and save. You should then be able to publish successfully.
+
     ![](media/guide-19up2.png)
 
-23. After a few minutes, you should see the nodes **ClickEventStore** and **ImpressionEventStore** change to mode **Active**.
+24. After a few minutes, you should see the nodes **ClickEventStore** and **ImpressionEventStore** change to mode **Active**.
 
     ![](media/guide-21up2.png)
 
-24. At the end your Eventstream toplogy should look like the image below.
+25. At the end your Eventstream toplogy should look like the image below.
 
     ![](media/guide-22up2.png)
 
