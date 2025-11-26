@@ -47,6 +47,7 @@ In this task, you will explore Real-Time Intelligence and its categories, gainin
      * Interactive anomaly exploration: Visualize detected anomalies and adjust model sensitivity.
      * Continuous monitoring: Set up real-time anomaly detection with automated notifications.
      * Reanalysis with new data: Update your models as new data arrives to improve accuracy.
+       
    
     ![](media/Ex1task1realtimeintell01.png)
 
