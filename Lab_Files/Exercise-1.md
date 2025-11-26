@@ -117,7 +117,7 @@ In this task, you’ll enable OneLake Availability to automatically copy KQL Dat
 
     ![](media/2.4.1.png)
 
-2. After selecting the KQL Database. Click on the switch **Availability** under **Database details** to **enable** (Change the setting from Disable to Enable) the OneLake availibility as shown in the screenshot.
+2. After selecting the KQL Database. Click on the switch **Availability** ((Change the setting from Disable to Enable) under **Database details** to **enable** the OneLake availibility as shown in the screenshot.
 
     ![](media/2.4.2.png)
 
