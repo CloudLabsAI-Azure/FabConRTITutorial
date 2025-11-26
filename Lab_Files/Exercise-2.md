@@ -27,7 +27,7 @@ In this task, you will be streaming events (impressions and clicks events) gener
 
     ![](media/guide-28up2.png)
 
-1. Insert `WebEventsCustomSource` **(1)** as the Source name and then click on **Add (2)**. **Note**: Leave the Schema association option disabled. Do not select or activate the Activate checkbox. 
+1. Insert `WebEventsCustomSource` **(1)** as the Source name and then click on **Add (2)**. **Note**: Leave the Schema association option disabled. Do not select the Activate checkbox. 
 
     ![](media/guide-29up2.2.png)
 
