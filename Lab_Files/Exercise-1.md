@@ -43,6 +43,7 @@ In this task, you will explore Real-Time Intelligence and its categories, gainin
      * Interactive anomaly exploration: Visualize detected anomalies and adjust model sensitivity.
      * Continuous monitoring: Set up real-time anomaly detection with automated notifications.
      * Reanalysis with new data: Update your models as new data arrives to improve accuracy.
+       
 
     i. **Operations agent**: Operations agents in Fabric Real-Time Intelligence automate the observe → analyze → decide → act cycle, helping organizations turn real-time data into immediate, actionable decisions. Instead of relying on manual monitoring and intervention, these agents continuously track key metrics, surface insights, and recommend targeted actions. They enable teams to respond quickly and optimize operations at scale. Each operations agent is a dedicated Fabric item, designed for a specific business process.
 
