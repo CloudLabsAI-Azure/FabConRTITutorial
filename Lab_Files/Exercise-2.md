@@ -29,7 +29,7 @@ In this task, you will be streaming events (impressions and clicks events) gener
 
 1. Insert `WebEventsCustomSource` **(1)** as the Source name and then click on **Add (2)**. **Note**: Leave the Schema association option disabled. Do not select the Activate checkbox. 
 
-    ![](media/guide-29up2.2.png)
+    ![](media/guide-29up2new.png)
 
 1. Click on **Publish** and now the Eventstream will be published and the Event Hub will be created.
 
