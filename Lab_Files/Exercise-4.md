@@ -32,17 +32,9 @@ In this task, you will build a real-time dashboard to visualize the streaming da
 
     ![](media/image_task13_step04up2.png)
 
-1. Click on the button **Data source  (1)** and select **Eventhouse/KQL Database  (2)**.
+1. Select **WebEvents_EH** *KQL Database* listed under Suggested fromt the workspace
 
-    ![](media/guide-50up2.png)
-
-1. In the window **OneLake catalog**, Select the Eventhouse database **WebEvents_EH  (1)**. Then click on **Connect  (2)**.
-
-    ![](media/guide-51up2.png)
-
-1. Use **WebEvents_EH** as the Display name, set the Database to **WebEvents_EH**, and click **Add**.
-
-    ![](media/guide-52up2.png)
+    ![](media/ex4task1imgstep5.png)
 
 1. Proceed to paste each query below, add a visual, and apply changes.
 
