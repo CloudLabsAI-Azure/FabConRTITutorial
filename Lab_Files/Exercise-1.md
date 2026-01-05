@@ -1,10 +1,12 @@
 # Exercise 01: Creating a Fabric Workspace and Eventhouse for Real-Time Intelligence
+
 ### Estimated duration: 30 Minutes
 
 In this exercise, you will explore **Real-Time Intelligence** to gain insights from streaming data, and create a **Fabric Workspace** to organize and collaborate on your projects. You will set up an **Eventhouse** to efficiently store and analyze event-driven data, enable **OneLake Availability** for seamless data integration.
 
-## Lab objectives: 
-In this lab, you will be able to complete the following tasks:
+## Lab objectives:
+
+In this exercise, you will be able to complete the following tasks:
 
 - Task 1: Experience Real-Time Intelligence.  
 - Task 2: Create a Fabric Workspace.
