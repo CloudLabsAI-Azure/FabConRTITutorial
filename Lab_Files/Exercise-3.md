@@ -38,9 +38,9 @@ In this task, you will set up the Lakehouse that will contain additional informa
 
 After our lakehouse has been created the overview page of the lakehouse will be displayed. Next task we have to accomplish is to load static data into our new lakehouse. To do so please execute the following steps.
 
-1. Click on the button **Get data** in the **toolbar (1)** and select **Upload files (2)** from the dropdown menu.
+1. Click on the button **Get data (1)** in the toolbar and select **Upload files (2)** from the dropdown menu.
 
-    ![](media/guide-31up2.png)
+    ![](media/new/27.png)
 
 1. To **Upload (1)** the two files navigate to `C:\LabFiles` and select the two files **products.csv** and **productcategory.csv** **(2)**. Then click on the button **Open (3)**.
 
