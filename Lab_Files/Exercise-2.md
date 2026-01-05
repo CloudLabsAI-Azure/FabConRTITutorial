@@ -108,7 +108,7 @@ Now we have to run the notebook to create the stream of artificial click events 
    
     >**Note:** You may see a notebook execution or notebook save failure due to size limitations. This can be safely ignored as the data will continue to generate in the background and may exceed the allowed size.
 
-### Task 4: Define Eventstream topology
+## Task 4: Define Eventstream topology
 In this task, you will create the Eventstream topology that will insert the streamed data into your KQL database.
 
 1. Open your Eventstream in your Fabric Workspace by clicking on your **RTI_<inject key="DeploymentID" enableCopy="false"></inject> (1)** icon in the left pane, and then navigating to **WebEventStream_ES (2)**.
