@@ -3,8 +3,9 @@
 ### Estimated duration: 90 Minutes
 In this exercise, you will develop a **Real-Time Dashboard** with auto-refresh for live insights. Finally, you will use **Data Activator** to automate actions based on real-time data.
 
-## Lab objectives: 
-In this lab, you will be able to complete the following tasks:
+## Lab objectives:
+
+In this exercise, you will be able to complete the following tasks:
 
 - Task 1: Real-Time Dashboard. 
 - Task 2: Enable Auto-refresh to your dashboard.  
@@ -272,6 +273,10 @@ In this task, you will create a Reflex Alert that will send a Teams Message when
 
     ![](media/image_task14_step01up2.png)
 
+1. Enter a rule name.
+
+    ![](media/new/64.png)
+
 1. In the pane **Set alert** set the values as stated in the following table
 
     | Field                | Value                      |
@@ -279,19 +284,26 @@ In this task, you will create a Reflex Alert that will send a Teams Message when
     | Check                | **On each event grouped by** (1)  |
     | Grouping field       | **eventDate** (2)                |
     | When                 | **date_count** (3)                |
-    | Condition            | **Becomes greater than** (4)      |
+    | Condition            | **is greater than** (4)      |
     | Value                | **250** (5)                     |
-    | Action               | **Send me an email** (6)           |
+    | Occurance            | **None** (6)           |
 
-1. In the combo box Workspace select the workspace **RTI_<inject key="DeploymentID" enableCopy="false"></inject>**. Ensure that in the combo box Item the value **Create a new item (7)** is selected. Insert **My activator (8)** as value for the field New item name. Then click on the button **Create(9)**.
+    ![](media/new/60.png)
+
+1. Under **Actions** select action as **Email**.
+
+    ![](media/new/61.png)
+
+1. In the combo box Workspace select the workspace **RTI_<inject key="DeploymentID" enableCopy="false"></inject>**. Ensure that in the combo box Item the value **Create a new item (1)** is selected. Insert **My activator (2)** as value for the field New item name. Then click on the button **Create (3)**.
 
    > **Note:** You may choose your preferred option in your daily life, but for this lab, we will not be doing it as it is for demonstration purposes.
     
-   ![](media/image_task14_step02.png)
+   ![](media/new/63.png)
 
 1. The Reflex item will appear in your workspace and you can edit the Reflex trigger action. The same Reflex item can also trigger multiple actions.
 
 ## Review
+
 In this lab you have completed the following:
 - Created a Real-Time Dashboard. 
 - Enabled Auto-refresh to your dashboard.  
