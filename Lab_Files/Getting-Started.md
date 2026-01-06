@@ -1,11 +1,10 @@
-
 # Build A Fabric Real-Time Intelligence Solution in a Day 
 ### Overall Estimated Duration: 4 Hours
 ## Overview
 
 In this lab, you will explore Real-Time Intelligence, create a Fabric Workspace, and set up an Eventhouse for event-driven data. You will enable OneLake Availability, create an Eventstream, and run a Data Generator Notebook to simulate streaming events. Additionally, you will set up a Lakehouse, upload reference data, access Eventhouse data, build a KQL Database schema, and develop a Real-Time Dashboard with auto-refresh. Finally, you will use Data Activator to automate real-time actions.
 
-## Objective  
+## Objectives
 
 Understand how to leverage **Microsoft Fabric** for real-time data processing, analytics, and automation. By the end of this lab, you will have knowledge on:  
 
@@ -70,24 +69,29 @@ Feel free to **Start**, **Stop**, or **Restart** **(2)** your virtual machine as
 
 ## Let's Get Started with Microsoft Fabric portal
  
-1. Open the **Microsoft Edge browser** on your desktop of the **LabVM** and visit `https://app.fabric.microsoft.com/`. You will be navigated to the login page.
+1. Open the **Microsoft Edge** browser from the desktop of **LabVM** 
+
+    ![](media/new/edge.png)
+
+1. Visit `https://app.fabric.microsoft.com/`. You will be navigated to the login page.
 
     ![](media/guide-58up.png)
 
+1. Enter the following **Username/Email**, and then click on **Submit** **(2)**.  
 
-2. Enter the following **Username/Email** **(1)**, and then click on **Submit** **(2)**.  
-
-    - **Username/Email**:<inject key="AzureAdUserEmail"></inject>
+    - **Username/Email (1)**:<inject key="AzureAdUserEmail"></inject>
 
       ![](media/guide-59up.png)
 
-    - **Temporary Access Pass**:<inject key="AzureAdUserPassword"></inject> 
+1. Enter the following **Temporary Password**, and then click on **Sign in** **(2)**.  
 
-      ![](media/1.2Pass.png)
+    - **Temporary Access Pass (1)**:<inject key="AzureAdUserPassword"></inject> 
 
-3. Click **Sign in** and follow the prompts to sign into Fabric.
+      ![](media/new/pass.png)
 
-4. You will be navigated to the **Fabric Home Page**.
+1. Click **Sign in** and follow the prompts to sign into Fabric.
+
+1. You will be navigated to the **Fabric Home Page**.
 
     ![](media/guide-60up.png)
 
@@ -95,17 +99,19 @@ Feel free to **Start**, **Stop**, or **Restart** **(2)** your virtual machine as
 
     To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up.
 
-5. On the top right corner of the screen, Select the **User** **icon (1)**. Select **Free trial (2)**.
+1. On the top right corner of the screen, Select the **User** **icon (1)**. Select **Free trial (2)**.
 
     ![](media/image11upd2.png)
 
-6. **Activate your 60-day free Fabric trial capacity** dialog opens. Select **Activate**.
+1. **Activate your 60-day free Fabric trial capacity** dialog opens. Select **Activate**.
 
     ![](media/image12upd2.png)
 
-7. The "Successfully upgraded to Microsoft Fabric" dialog will appear. Click on **Fabric Home Page**.      
+1. The "Successfully upgraded to Microsoft Fabric" dialog will appear. Click on **OK**.      
 
-8. You will be navigated back to the **Microsoft** **Fabric Home page**.
+    ![](media/new/1.png)
+
+1. You will be navigated back to the **Microsoft** **Fabric Home page**.
 
     ![](media/1.4.png)
 
@@ -118,9 +124,9 @@ Learner Support Contacts:
 - Email Support: cloudlabs-support@spektrasystems.com
 - Live Chat Support: https://cloudlabs.ai/labs-support
 
-Click **Next** from the bottom right corner to embark on your Lab journey!
+Click **Next >>** from the bottom right corner to embark on your Lab journey!
 
-![](media/up4.png)
+![](media/new/next.png)
 
 ### Happy Learning!!
 
