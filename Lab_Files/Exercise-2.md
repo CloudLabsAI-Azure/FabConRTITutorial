@@ -95,7 +95,7 @@ Now we have to run the notebook to create the stream of artificial click events 
 
     ![](media/new/E2T3S2-1802.png)     
 
-3. IN the second cell, paste in the values your copied in **Task 1 - Create Event Stream** as values for `eventHubNameevents` and `eventHubConnString` into the `notebook`.
+3. In the second cell, paste in the values your copied in **Task 1 - Create Event Stream** as values for `eventHubNameevents` and `eventHubConnString` into the `notebook`.
 
     ![](media/image_task07_step02up2.png)
 
@@ -123,7 +123,7 @@ In this task, you will create the Eventstream topology that will insert the stre
 
 2. Click on **Edit** button located at the top-center.
 
-    ![](media/editattopcenterup2.png)
+    ![](media/E2T4S2.png)
 
 3. Click on the node **Transform events or add destination (1)** and select **Filter (2)** from the menu.
 
@@ -168,7 +168,7 @@ In this task, you will create the Eventstream topology that will insert the stre
 
     ![](media/new/13.png)
 
-    ![](media/image_task08_step10up2.png)
+    ![](media/E2T4S10-2.png)
 
 11. Click the pencil in node **Eventhouse (1)** to enter edit mode. Provide the following values in the pane Eventhouse and click the button **Save (11)** after you entered all the values.
 
@@ -230,7 +230,7 @@ In this task, you will create the Eventstream topology that will insert the stre
 
     ![](media/new/15.png)
 
-    ![](media/guide-34224up2.png)
+    ![](media/E2T4S20-2.png)
 
 21. Click the **pencil (1)** in node **Eventhouse** to enter edit mode. Provide the following values in the **pane (2)**, after providing these values click on the button **Save (3)**.
 
