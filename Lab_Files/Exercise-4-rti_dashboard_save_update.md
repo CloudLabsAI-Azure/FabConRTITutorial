@@ -245,7 +245,7 @@ In this section, we will build a real-time dashboard to visualize the streaming 
 
     ```kusto
     //Logo (Markdown Text Tile)
-    ![AdventureWorks](https://vikasrajput.github.io/resources/PBIRptDev/AdventureWorksLogo.jpg "AdventureWorks")
+    ![AdventureWorks](https://raw.githubusercontent.com/CloudLabsAI-Azure/FabConRTITutorial/main/Lab_Files/media/AdventureWorksLogo.png "AdventureWorks")
     ```
    ![](media/guide-55up2.png)
 
