@@ -247,7 +247,7 @@ In this section, we will build a real-time dashboard to visualize the streaming 
     //Logo (Markdown Text Tile)
     ![AdventureWorks](https://raw.githubusercontent.com/CloudLabsAI-Azure/FabConRTITutorial/main/Lab_Files/media/AdventureWorksLogo.png "AdventureWorks")
     ```
-   ![](media/guide-55up2.png)
+   ![](media/E4T1S39.png)
 
    >**Note:** The title can be resized on the dashboard canvas directly, rather than writing code.
 
