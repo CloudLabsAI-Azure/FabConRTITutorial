@@ -268,7 +268,7 @@ In this task, you will enable auto-refresh so the dashboard will be automaticall
 
 1. Click on the tab **Manage  (1)** and then click on the button **Auto refresh (2)** This will open a pane on the right side of the browser.
 
-    ![](media/image_task13_step19up2.png)
+    ![](media/E4T2S1.png)
 
 1. In thr **Auto refresh** window which opens on the righ side, set it to **Enabled (1)** and set **Default refresh rate** to **Continous (2)**. Then click on the button **Apply (3)**.
 
@@ -297,7 +297,7 @@ In this task, you will create a Reflex Alert that will send a Teams Message when
     | Check                | **On each event grouped by** (1)  |
     | Grouping field       | **eventDate** (2)                |
     | When                 | **date_count** (3)                |
-    | Condition            | **is greater than** (4)      |
+    | Condition            | **Number State- is greater than** (4)      |
     | Value                | **250** (5)                     |
     | Occurance            | **None** (6)           |
 

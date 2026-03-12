@@ -21,13 +21,13 @@ In this task, you will explore Real-Time Intelligence and its categories, gainin
 
 1. Select **Workloads** icon on the left of your screen. A dialog with the list of Fabric experiences will open. The list of experiences includes Power BI, Data Factory, Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science and Data Warehouse. Let’s explore.
 
-    ![](media/guide-02up2.png)
+    ![](media/E1T1S1.png)
 
     >**Note:** If you do not see Workloads icon, click on the three horizontal dots at the bottom of the left navigation pane to expand and find Workloads.
 
 1. Scroll down to the bottom and select **Real-Time Intelligence** under Workloads.
 
-    ![](media/guide-03up2.png)
+    ![](media/E1T1S2.png)
 
 1. You will be navigated to **Real-Time Intelligence Home page**. You will see **Item types** under **About**, and **Get started** categories. With the **Item type** category notice the items:
 
@@ -66,7 +66,7 @@ In this task, you will create a workspace to begin working with Real-Time Intell
 
 1. Select  **+ New workspace (2)**.
 
-    ![](media/guide-23up2.png)
+    ![](media/E1T2S1.png)
 
 1. The **Create a workspace** dialog opens on the right side of the browser.
 
@@ -98,7 +98,7 @@ In this task, you will create an Eventhouse, which is used for storing, processi
 
 1. Click the **+ New item** box to open a new pane that has all the items you can create in this Fabric workspace.
 
-    ![](media/guide-26up2.png)
+    ![](media/E1T3S1.png)
 
 1. Search for **Eventhouse (1)** and Select the **Eventhouse (2)** option from Store data . As we have talked about this can be viewed  similarly to a Lakehouse in that we can store data but this Eventhouse is focused around real time data.
 
