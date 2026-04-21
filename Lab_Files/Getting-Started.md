@@ -1,4 +1,4 @@
-# Build A Fabric Real-Time Intelligence Solution in a Day 
+# Build A Fabric Real-Time Intelligence Solution in a Day
 ### Overall Estimated Duration: 4 Hours
 ## Overview
 
@@ -6,21 +6,21 @@ In this lab, you will explore Real-Time Intelligence, create a Fabric Workspace,
 
 ## Objectives
 
-Understand how to leverage **Microsoft Fabric** for real-time data processing, analytics, and automation. By the end of this lab, you will have knowledge on:  
+Understand how to leverage **Microsoft Fabric** for real-time data processing, analytics, and automation. By the end of this lab, you will have knowledge of:  
 
-- **Setting Up a Fabric Workspace and Eventhouse**: Create a **Fabric Workspace** for project collaboration and set up an **Eventhouse** to efficiently store and process event-driven data.  
-- **Integrating Data with OneLake and Eventstream**: Enable **OneLake Availability** for seamless data integration and create a **new Eventstream**, defining its topology to manage real-time data ingestion.  
-- **Simulating and Processing Streaming Data**: Import and run a **Data Generator Notebook** to simulate streaming events, then define the **Eventstream topology** for structured data flow.  
-- **Building a Lakehouse for Data Storage and Processing**: Set up a **Lakehouse**, upload reference data files, and create **Delta tables** for efficient data storage and processing.  
-- **Querying and Structuring Data with KQL**: Access **Eventhouse data** from the Lakehouse and build a **KQL Database schema** to structure and query real-time data effectively.  
-- **Creating Real-Time Dashboards and Automating Insights**: Develop a **Real-Time Dashboard**, enable **auto-refresh**, and use **Data Activator** to automate actions based on real-time events.  
+- **Setting Up a Fabric Workspace and Eventhouse:** Create a **Fabric Workspace** for project collaboration and set up an **Eventhouse** to efficiently store and process event-driven data.  
+- **Integrating Data with OneLake and Eventstream:** Enable **OneLake Availability** for seamless data integration and create a **new Eventstream**, defining its topology to manage real-time data ingestion.  
+- **Simulating and Processing Streaming Data:** Import and run a **Data Generator Notebook** to simulate streaming events, then define the **Eventstream topology** for structured data flow.  
+- **Building a Lakehouse for Data Storage and Processing:** Set up a **Lakehouse**, upload reference data files, and create **Delta tables** for efficient data storage and processing.  
+- **Querying and Structuring Data with KQL:** Access **Eventhouse data** from the Lakehouse and build a **KQL Database schema** to structure and query real-time data effectively.  
+- **Creating Real-Time Dashboards and Automating Insights:** Develop a **Real-Time Dashboard**, enable **auto-refresh**, and use **Data Activator** to automate actions based on real-time events.  
 
 ## Pre-requisites
 
 Participants should have:  
 
-- **Basic understanding of Microsoft Fabric**: Familiarity with Fabric’s data processing, storage, and analytics capabilities.  
-- **Familiarity with real-time data processing concepts**: Understanding of streaming data, event-driven architectures, and analytics workflows.  
+- **Basic understanding of Microsoft Fabric:** Familiarity with Fabric’s data processing, storage, and analytics capabilities.  
+- **Familiarity with real-time data processing concepts:** Understanding of streaming data, event-driven architectures, and analytics workflows.  
 
 ## Architecture
 
@@ -34,12 +34,12 @@ In this lab, you will build a Real-Time Intelligence Solution in Microsoft Fabri
 
 The architecture for this lab involves the following key components:
 
-- **Python Notebook**: Generates and ingests streaming data into the system.  
-- **Eventstream**: Acts as a streaming data pipeline, ingesting events from the Notebook into **Eventhouse**.  
-- **Eventhouse**: A real-time analytics store that processes and structures streaming data for further use.  
-- **Lakehouse**: Serves as a storage layer for structured and unstructured data, accessible via shortcuts from **Eventhouse**.  
-- **Real-Time Dashboard**: Visualizes real-time data from **Eventhouse** for monitoring and insights.  
-- **Data Activator**: Automates responses and alerts based on real-time streaming data.  
+- **Python Notebook:** Generates and ingests streaming data into the system.  
+- **Eventstream:** Acts as a streaming data pipeline, ingesting events from the Notebook into **Eventhouse**.  
+- **Eventhouse:** A real-time analytics store that processes and structures streaming data for further use.  
+- **Lakehouse:** Serves as a storage layer for structured and unstructured data, accessible via shortcuts from **Eventhouse**.  
+- **Real-Time Dashboard:** Visualizes real-time data from **Eventhouse** for monitoring and insights.  
+- **Data Activator:** Automates responses and alerts based on real-time streaming data.  
 
 ## Getting Started with Lab
 Once you're ready to dive in, your virtual machine and lab guide will be right at your fingertips within your web browser.
@@ -52,12 +52,12 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
 ## Exploring Your Lab Resources
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** details tab.
 
-![](media/getting-started-2upd2.png)
+![](media/20042026(1).jpg)
 
 ## Utilizing the Split Window Feature
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
 
-![](media/getting-started-3upd2.png)
+![](media/20042026(2).png)
 
 ## Managing Your Virtual Machine
 Feel free to **Start**, **Stop**, or **Restart** **(2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
@@ -70,7 +70,8 @@ Feel free to **Start**, **Stop**, or **Restart** **(2)** your virtual machine as
 
     ![](media/new/edge.png)
 
-1. Copy the below link and paste it in the address bar and hit enter to navigate to sign in page of **Microsoft Fabric portal**.
+1. Copy the link below and paste it in the address bar and hit enter to navigate to sign in page of **Microsoft Fabric portal**.
+
     ```
     https://app.fabric.microsoft.com/
     ```
@@ -79,13 +80,13 @@ Feel free to **Start**, **Stop**, or **Restart** **(2)** your virtual machine as
 
 1. Enter the following **Username/Email**, and then click on **Submit** **(2)**.  
 
-    - **Username/Email (1)**:<inject key="AzureAdUserEmail"></inject>
+    - **Username/Email (1):** <inject key="AzureAdUserEmail"></inject>
 
       ![](media/guide-59up.png)
 
 1. Enter the following **Temporary Password**, and then click on **Sign in** **(2)**.  
 
-    - **Temporary Access Pass (1)**:<inject key="AzureAdUserPassword"></inject> 
+    - **Temporary Access Pass (1):** <inject key="AzureAdUserPassword"></inject> 
 
       ![](media/new/pass.png)
 
@@ -97,9 +98,9 @@ Feel free to **Start**, **Stop**, or **Restart** **(2)** your virtual machine as
 
     > **Note:** Click on **Cancel** in the Welcome to Fabric view pop-up.
 
-    To work with Fabric items, you will need a trial license and a workspace that has Fabric license. Let’s set this up.
+    To work with Fabric items, you will need a trial license and a workspace that has a Fabric license. Let’s set this up.
 
-1. On the top right corner of the screen, Select the **User** **icon (1)**. Select **Free trial (2)**.
+1. On the top right corner of the screen, select the **User** **icon (1)**. Select **Free trial (2)**.
 
     ![](media/image11upd2.png)
 
@@ -135,7 +136,5 @@ Click **Next >>** from the bottom right corner to embark on your Lab journey!
 ![](media/new/next.png)
 
 ### Happy Learning!!
-
-
 
 

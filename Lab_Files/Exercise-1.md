@@ -55,14 +55,13 @@ In this task, you will explore Real-Time Intelligence and its categories, gainin
      * Continuous monitoring: Set up real-time anomaly detection with automated notifications.
      * Reanalysis with new data: Update your models as new data arrives to improve accuracy.
        
-   
-    ![](media/new/2.png)
+       ![](media/new/2.png)
 
 ## Task 2: Create a Fabric Workspace
 
 In this task, you will create a workspace to begin working with Real-Time Intelligence.
 
-1. Now let’s create a workspace with Fabric license. Select **Workspaces (1)** from the navigation bar on the left.
+1. Now, let’s create a workspace with a Fabric license. Select **Workspaces (1)** from the navigation bar on the left.
 
 1. Select  **+ New workspace (2)**.
 
@@ -73,8 +72,6 @@ In this task, you will create a workspace to begin working with Real-Time Intell
 1. In the **Name** field enter **RTI_<inject key="DeploymentID" enableCopy="false"></inject>** **(1)**. 
 
    >**Note**: The user ID will be unique for each user, and the workspace name must also be unique. Ensure that a green check mark with **"This name is available"** appears below the Name field.
-
-1. If you would like, you can enter a **Description** for the workspace. This is an optional field.
 
 1. Click on **Advanced (2)** to expand the section.
 
@@ -100,11 +97,11 @@ In this task, you will create an Eventhouse, which is used for storing, processi
 
     ![](media/E1T3S1.png)
 
-1. Search for **Eventhouse (1)** and Select the **Eventhouse (2)** option from Store data . As we have talked about this can be viewed  similarly to a Lakehouse in that we can store data but this Eventhouse is focused around real time data.
+1. Search for **Eventhouse (1)** and Select the **Eventhouse (2)** option from Store data . As we have talked about, this can be viewed  similarly to a Lakehouse in that we can store data, but this Eventhouse is focused on real-time data.
 
     ![](media/eventhouse-1up2.png)
 
-1. In the window that appears, give your Eventhouse the name, **WebEvents_EH (1)** and click on **Create (2)**.
+1. In the window that appears, give your Eventhouse the name, **WebEvents_EH (1)**, and click on **Create (2)**.
 
     ![](media/image32up2.png)
 
@@ -122,11 +119,11 @@ In this task, you will create an Eventhouse, which is used for storing, processi
 ## Task 4: Enable OneLake Availability
 In this task, you’ll enable OneLake Availability to automatically copy KQL Database data to OneLake in Delta format, allowing seamless querying through Lakehouse and other tools. It’s best enabled before loading large datasets and can be set per table.
 
-1. When an Eventhouse is created, a KQL Database with the same name is created as well. To open the KQL Database click on the Database **WebEvents_EH** in the section **KQL Databases**.
+1. When an Eventhouse is created, a KQL Database with the same name is created as well. To open the KQL Database, click on the Database **WebEvents_EH** in the section **KQL Databases**.
 
     ![](media/new/3.png)
 
-2. After selecting the KQL Database. Click on the switch **Availability** (Change the setting from Disable to Enable) under **Database details** to **enable** the OneLake availibility as shown in the screenshot.
+2. After selecting the KQL Database. Click on the switch **Availability** (Change the setting from Disable to Enable) under **Database details** to **enable** the OneLake availability as shown in the screenshot.
 
     ![](media/new/4.png)
 
@@ -140,6 +137,6 @@ In this task, you’ll enable OneLake Availability to automatically copy KQL Dat
 
 In this exercise, you have explored the Real-Time Intelligence experience in Microsoft Fabric, created a Fabric Workspace, set up an Eventhouse for real-time data storage and analysis, and enabled OneLake Availability for seamless data integration. These foundational steps will allow you to effectively manage and analyze streaming data within Microsoft Fabric.
 
-### You have successfully completed the exercise. Now, click on **Next >>** from the lower right corner to proceed on to the next exercise.
+### You have successfully completed the exercise. Now, click on **Next >>** from the lower right corner to proceed to the next exercise.
 
 ![](media/new/next.png)
