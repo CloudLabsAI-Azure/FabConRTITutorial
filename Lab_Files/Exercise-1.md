@@ -35,7 +35,7 @@ In this task, you will explore Real-Time Intelligence and its categories, gainin
     
     b. **KQL** **Queryset:** Used to run queries on the data to produce shareable tables and visuals.
     
-    c. **Real-Time Dashboard**: A collection of tiles, optionally organized in pages, where each tile has an underlying query and a visual representation.
+    c. **Real-Time Dashboard:** A collection of tiles, optionally organized in pages, where each tile has an underlying query and a visual representation.
     
     d. **Eventstream:** Used to capture, transform, and route real-time event stream.
     
@@ -43,13 +43,14 @@ In this task, you will explore Real-Time Intelligence and its categories, gainin
 
     f. **Event Schema Set (preview):** The Event Schema Set (preview) in Microsoft Fabric’s Real-Time Intelligence is designed to help you manage and standardize the structure of streaming data.
        
-    g. **Operations agent**: Operations agents in Fabric Real-Time Intelligence automate the observe → analyze → decide → act cycle, helping organizations turn real-time data into immediate, actionable decisions. Instead of relying on manual monitoring and intervention, these agents continuously track key metrics, surface insights, and recommend targeted actions. They enable teams to respond quickly and optimize operations at scale. Each operations agent is a dedicated Fabric item, designed for a specific business process.
+    g. **Operations agent:** Operations agents in Fabric Real-Time Intelligence automate the observe → analyze → decide → act cycle, helping organizations turn real-time data into immediate, actionable decisions. Instead of relying on manual monitoring and intervention, these agents continuously track key metrics, surface insights, and recommend targeted actions. They enable teams to respond quickly and optimize operations at scale. Each operations agent is a dedicated Fabric item, designed for a specific business process.
 
-    h. **Map (preview)**: Map (preview) is a powerful geospatial visualization platform that transforms spatial data, whether static or real-time, into actionable intelligence. By uncovering patterns, relationships, and trends across space and time, Map reveals insights often missed in traditional charts and tables, helping you make informed decisions with greater clarity.
+    h. **Map (preview):** Map (preview) is a powerful geospatial visualization platform that transforms spatial data, whether static or real-time, into actionable intelligence. By uncovering patterns, relationships, and trends across space and time, Map reveals insights often missed in traditional charts and tables, helping you make informed decisions with greater clarity.
 
     i. **Digital Twin Builder (preview):** Digital Twin Builder lets you create digital replicas of physical environments, assets, and processes. These replicas-called digital twins-are built using an ontology, which is a structured model of entities and their relationships.
 
-    j. **Anomaly detection(Preview)**: It provides below recommended models and allows you to set up continuous monitoring with automated actions.
+    j. **Anomaly detection (preview):** It provides below recommended models and allows you to set up continuous monitoring with automated actions.
+
      * Model recommendations: Suggests the best algorithms and parameters for your data.
      * Interactive anomaly exploration: Visualize detected anomalies and adjust model sensitivity.
      * Continuous monitoring: Set up real-time anomaly detection with automated notifications.
@@ -71,7 +72,7 @@ In this task, you will create a workspace to begin working with Real-Time Intell
 
 1. In the **Name** field enter **RTI_<inject key="DeploymentID" enableCopy="false"></inject>** **(1)**. 
 
-   >**Note**: The user ID will be unique for each user, and the workspace name must also be unique. Ensure that a green check mark with **"This name is available"** appears below the Name field.
+   >**Note:** The user ID will be unique for each user, and the workspace name must also be unique. Ensure that a green check mark with **"This name is available"** appears below the Name field.
 
 1. Click on **Advanced (2)** to expand the section.
 
@@ -93,11 +94,11 @@ In this task, you will create a workspace to begin working with Real-Time Intell
 ## Task 3: Create an Eventhouse
 In this task, you will create an Eventhouse, which is used for storing, processing, and analyzing real-time streaming data efficiently within Microsoft Fabric.
 
-1. Click the **+ New item** box to open a new pane that has all the items you can create in this Fabric workspace.
+1. Click the **+ New item** button to open a new pane that has all the items you can create in this Fabric workspace.
 
     ![](media/E1T3S1.png)
 
-1. Search for **Eventhouse (1)** and Select the **Eventhouse (2)** option from Store data . As we have talked about, this can be viewed  similarly to a Lakehouse in that we can store data, but this Eventhouse is focused on real-time data.
+1. Search for **Eventhouse (1)** and Select the **Eventhouse (2)** option from Store data. As we have talked about, this can be viewed  similarly to a Lakehouse in that we can store data, but this Eventhouse is focused on real-time data.
 
     ![](media/eventhouse-1up2.png)
 

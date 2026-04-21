@@ -318,6 +318,6 @@ In this task, you will create a Reflex Alert that will send a Teams Message when
 
 In this exercise, you have built a real-time dashboard in Microsoft Fabric to visualize streaming data. You created various visuals such as time charts, maps, anomaly charts, and tables to gain insights from the data. Additionally, you enabled auto-refresh to ensure that the dashboard updates in real-time as new data arrives. Finally, you set up a Data Activator to automate actions based on specific conditions in your data, allowing for proactive responses to important events.
 
-### You have successfully completed the labs.
+### You have successfully completed the lab!
 
 By completing this lab, **Build A Fabric Real-Time Intelligence Solution in a Day**, you establish an end-to-end real-time data analytics solution in Microsoft Fabric. Starting with creating a collaborative workspace and setting up an Eventhouse, you integrate data seamlessly using OneLake and Eventstream, simulate and process streaming data, and organize it efficiently in a Lakehouse with tables. Leveraging KQL for structured querying, you transform raw event data into actionable insights, culminating in the development of an interactive real-time dashboard and automated event-driven actions through Data Activator, enabling timely and informed decision-making.

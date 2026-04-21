@@ -10,10 +10,10 @@ In this exercise, you will set up a **Lakehouse** and upload reference data to c
 
 In this exercise, you will be able to complete the following tasks:
 
-- Task 1: Setting up the Lakehouse.
-- Task 2: Create delta tables in the lakehouse.
-- Task 3: Accessing Eventhouse data from the lakehouse. 
-- Task 4: Build the KQL DB schema.
+- Task 1: Setting up the Lakehouse
+- Task 2: Create delta tables in the lakehouse
+- Task 3: Accessing Eventhouse data from the lakehouse 
+- Task 4: Build the KQL DB schema
 
 ## Task 1: Setting up the Lakehouse
 
@@ -94,7 +94,7 @@ In this task, you will make the Eventhouse tables from the KQL Database availabl
 
     ![](media/guide-35up2.png)
 
-1. Select the KQL Database **WebEvents_EH (1)** in the window **Select a data source type** and click on the button **Next (2)**.
+1. Select the KQL Database **WebEvents_EH (1)** and click on **Next (2)**.
 
     ![](media/new/17.png)
 
@@ -102,7 +102,7 @@ In this task, you will make the Eventhouse tables from the KQL Database availabl
 
     ![](media/image_task11_step04up2.png)
 
-1. Click on the **Create** button.
+1. Click on **Create** button.
 
     ![](media/E3T3S6-1802.png)
 
@@ -114,7 +114,7 @@ In this task, you will make the Eventhouse tables from the KQL Database availabl
 
 In this task, you will create all the silver tables, functions and enable update policies in our Eventhouse KQL Database. Two of the tables (`product` and `productCategory)` are shortcuts to the lakehouse, and the data is not being copied into our KQL Database.
 
-1. From the left navigation pane, select your workspace **RTI_<inject key="DeploymentID" enableCopy="false"></inject>** **(2)**,  then select the KQL Database **WebEvents_EH**.
+1. From the left navigation pane, select your workspace **RTI_<inject key="DeploymentID" enableCopy="false"></inject>** **(1)**,  then select the KQL Database **WebEvents_EH (2)**.
 
     ![](media/new/18.png)
 
@@ -279,7 +279,7 @@ In this task, you will create all the silver tables, functions and enable update
 
     ![](media/image_task12_step09bup2.png)
 
-1. Click on the pencil icon beside **Tab**  and rename the tab to **createAll**.
+1. Click on the pencil icon beside **Tab** and rename the tab to **createAll**.
 
     ![](media/guide-45up2.png)
 

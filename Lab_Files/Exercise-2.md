@@ -10,10 +10,10 @@ In this exercise, you will create an **Eventstream** while defining its topology
 
 In this exercise, you will be able to complete the following tasks:
 
-- Task 1: Create a new Eventstream.
-- Task 2: Import Data Generator Notebook.
-- Task 3: Run the notebook.
-- Task 4: Define Eventstream topology.
+- Task 1: Create a new Eventstream
+- Task 2: Import Data Generator Notebook
+- Task 3: Run the notebook
+- Task 4: Define Eventstream topology
 
 ## Task 1: Create a new Eventstream
 
@@ -27,7 +27,7 @@ In this task, you will be streaming events (impressions and click events) genera
 
     ![](media/new/E2T1S2-1802.png)
 
-1. Give the Eventstream the name **WebEventsStream_ES (1)**. Click on **Create (2)**.
+1. Give the Eventstream the name **WebEventsStream_ES (1)** and then click on **Create (2)**.
 
     ![](media/image_task05_step02up2.png)
 
@@ -76,7 +76,7 @@ We use a Python notebook to generate a stream of artificial click events. The no
 
     ![](media/guide-08up2.png)
 
-1. Browse to the **C:\LabFiles** folder and select the **Generate_synthetic_web_events(1)** notebook and click on the button **Open (2)**.
+1. Browse to the **C:\LabFiles** folder and select the **Generate_synthetic_web_events (1)** notebook and click on **Open (2)** button.
 
     ![](media/guide-09up2.png)
 
@@ -91,7 +91,7 @@ Now we have to run the notebook to create the stream of artificial click events 
 
     >**Note:** If prompted with **Enhance your notebook experience with AI tools** pop-up, click on **Skip tour**.
 
-2. In the **Environment (1)** settings, click on the dropdown menu **(2)** and select **Change to workspace default(3)**.
+2. In the **Environment (1)** settings, click on the dropdown menu **(2)** and select **Change to workspace default (3)**.
 
     ![](media/new/E2T3S2-1802.png)     
 
@@ -246,7 +246,7 @@ In this task, you will create the Eventstream topology that will insert the stre
 
     ![](media/guide-18up2.png)
     
-22. Click on the button **Publish** that is located in the toolbar at the top of the screen.
+22. Click on **Publish** button that is located in the toolbar at the top of the screen.
 
     >**Note**: If you see any errors, please resolve them before publishing. Click on the pencil (edit) on the nodes where the error appears, reselect the missing fields, and save. You should then be able to publish successfully.
 
