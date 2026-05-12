@@ -42,7 +42,7 @@ In this task, we will build a real-time dashboard to visualize the streaming dat
 
      ![](media/20042026(6).jpg)
 
-1. From the **Home (1)** tab, click on the button **New tile (2)** to create a new tile for the dashboard.
+1. From the **Home (1)** tab, click on the button **Add visual (2)** to create a new tile for the dashboard.
 
     ![](media/new/E4T1S6-1802.png)
 
@@ -80,7 +80,7 @@ In this task, we will build a real-time dashboard to visualize the streaming dat
 
     ![](media/new/35.png)
 
-1. Click on the **Home (1)** tab and then click on the button **New tile (2)** to proceed with the next visuals.
+1. Click on the **Home (1)** tab and then click on the button **Add visual (2)** to proceed with the next visuals.
 
     ![](media/new/36.png)
 
@@ -101,7 +101,7 @@ In this task, we will build a real-time dashboard to visualize the streaming dat
 
     ![](media/new/38.png)
 
-1. From the **Home** tab, click on the **New tile** button again to proceed with the next visuals.
+1. From the **Home (1)** tab, click on the button **Add visual (2)** button again to proceed with the next visuals.
 
     ![](media/new/E4T1S17-1802.png)
 
@@ -122,7 +122,7 @@ In this task, we will build a real-time dashboard to visualize the streaming dat
 
     ![](media/new/40.png)
 
-1. From the **Home** tab, click on the **New tile** button again to proceed with the next visuals.
+1. From the **Home** tab, click on the **Add visual** button again to proceed with the next visuals.
 
     ![](media/new/E4T1S20-1802.png)
 
@@ -144,7 +144,7 @@ In this task, we will build a real-time dashboard to visualize the streaming dat
 
     ![](media/new/42.png)
 
-1. From the **Home** tab, click on the **New tile** button again to proceed with the next visuals.
+1. From the **Home** tab, click on the **Add visual** button again to proceed with the next visuals.
 
     ![](media/new/E4T1S23-1802.png)
 
@@ -193,7 +193,7 @@ In this task, we will build a real-time dashboard to visualize the streaming dat
 
     ![](media/fabrta58up2.png)
 
-1. From the **Home** tab, click on the **New tile** button again to proceed with the next visuals.
+1. From the **Home** tab, click on the **Add visual** button again to proceed with the next visuals.
 
     ![](media/new/E4T1S31-1802.png)
 
@@ -214,7 +214,7 @@ In this task, we will build a real-time dashboard to visualize the streaming dat
 
    ![](media/new/48.png)
 
-1. From the **Home** tab, click on the **New tile** button again to proceed with the next visuals.
+1. From the **Home** tab, click on the **Add visual** button again to proceed with the next visuals.
 
     ![](media/new/E4T1S33-1802.png)
 
@@ -237,7 +237,7 @@ In this task, we will build a real-time dashboard to visualize the streaming dat
 
     ![](media/new/50.png)
 
-1. To add a **Logo**, click on the **New text tile** button from the top menu bar.
+1. To add a **Logo**, click on the **Add Markdown** button from the top menu bar.
 
     ![](media/new/E4T1S37-1802.png)
 
@@ -283,7 +283,7 @@ In this task, you will enable auto-refresh so the dashboard will be automaticall
 
 In this task, you will create a Reflex Alert that will send a Teams Message when a value meets a certain threshold.
 
-1. Click on the **ellipsis** **(...) (1)** of the tile **Click by hour**. Select **Set alert (2)** from the context menu. This will open the **Add Rule** pane on the right side in the browser.
+1. Click on the **ellipsis** **(...) (1)** of the tile **Click by hour**. Select **Add alert (2)** from the context menu. This will open the **Add Rule** pane on the right side in the browser.
 
     ![](media/image_task14_step01up2.png)
 
@@ -295,12 +295,12 @@ In this task, you will create a Reflex Alert that will send a Teams Message when
 
     | Field                | Value                      |
     |----------------------|----------------------------|
-    | Check **(1)**               | **On each event grouped by**  |
+    | Check **(1)**               | **On each event when**  |
     | Grouping field **(2)**      | **eventDate**                |
     | When **(3)**                 | **date_count**                |
     | Condition **(4)**            | **Number State- is greater than**      |
     | Value **(5)**                | **250**                     |
-    | Occurance **(6)**           | **None**           |
+    | Occurance **(6)**           | **Every time the condition is met**           |
 
     ![](media/new/60.png)
 
