@@ -177,7 +177,7 @@ In this task, you will create the Eventstream topology that will insert the stre
 
     ![](media/new/E2T4S10a-1606.png)
 
-    ![](media/E2T4S10b-1606.png)
+    ![](media/new/E2T4S10b-1606.png)
 
 11. Click the pencil in node **Eventhouse (1)** to enter edit mode. Provide the following values in the pane Eventhouse and click the button **Save (11)** after you have entered all the values.
 
