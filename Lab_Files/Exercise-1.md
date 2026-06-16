@@ -104,13 +104,13 @@ In this task, you will create an Eventhouse, which is used for storing, processi
 
 1. Search for **Eventhouse (1)** and select the **Eventhouse (2)**. The Eventhouse provides a scalable repository optimized for storing and querying streaming event data. It serves as the primary analytical store for the website events generated later in the lab.
 
-    ![](media/E1T3S2-1606)
+    ![](media/E1T3S2a-1606.png)
 
 1. In the window that appears, give your Eventhouse the name, **WebEvents_EH (1)**, and click on **Create (2)**.
 
     ![](media/image32up2.png)
 
-    >**Note:** if Welcome to Eventhouse! pop-up appears. Click on **Get started** and close the pop-up windows which appears after it.
+    >**Note:** Welcome to Eventhouse! pop-up appears. Click on **Get started** and close the pop-up windows that appear after it.
 
 1. The Eventhouse efficiently handles real-time data streams, enabling organizations to ingest, process, and analyze data in near real-time. It is optimized for time-based, streaming events, automatically indexing and partitioning data based on ingestion time.
 
