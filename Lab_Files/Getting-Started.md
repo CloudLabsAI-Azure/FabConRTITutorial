@@ -45,7 +45,7 @@ In this lab, you will build a Real-Time Intelligence Solution in Microsoft Fabri
 
 ## 🖼️ Architecture Diagram
 
-![](media/architecture4.png)
+![](media/arch-diag-1606.png)
 
 ## 🔍 Explanation of Components
 
@@ -74,7 +74,7 @@ To get a better understanding of your lab resources and credentials, navigate to
 ## Utilizing the Split Window Feature
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the top right corner.
 
-![](media/split-1606)
+![](media/split-1606.png)
 
 ## Managing Your Virtual Machine
 Feel free to **Start**, **Stop**, or **Restart** **(2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
