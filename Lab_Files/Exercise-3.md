@@ -37,7 +37,7 @@ In this task, you will set up the Lakehouse that will contain additional informa
     - Location: **RTI_<inject key="DeploymentID" enableCopy="false"></inject>** **(2)**
     - Lakehouse schema: **Unchecked (3)**
 
-        > **Note:** Make sure the Lakehouse scehma is unchecked. Keeping it checked may cause issues in the later steps of the exercise.
+        > **Note:** Make sure the Lakehouse schema is unchecked. Keeping it checked may cause issues in the later steps of the exercise.
     - Click on **Create (4)**
 
         ![](media/E3T1S3-1802.png)
