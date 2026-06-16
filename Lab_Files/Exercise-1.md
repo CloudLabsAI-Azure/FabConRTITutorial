@@ -2,11 +2,15 @@
 
 ### Estimated duration: 30 Minutes
 
-## Overview
+## 📘 Scenario
+
+Before any events can be ingested, we must provision a **Fabric Workspace** to contain the project resources, create an Eventhouse to store real-time event data, and enable OneLake Availability so that the Eventhouse data can later be accessed from other Fabric experiences.
+
+## 📖 Overview
 
 In this exercise, you will explore **Real-Time Intelligence** to gain insights from streaming data, and create a **Fabric Workspace** to organize and collaborate on your projects. You will set up an **Eventhouse** to efficiently store and analyze event-driven data, enable **OneLake Availability** for seamless data integration.
 
-## Objectives:
+## 🎯 Objectives:
 
 In this exercise, you will be able to complete the following tasks:
 
@@ -25,7 +29,7 @@ In this task, you will explore Real-Time Intelligence and its categories, gainin
 
     >**Note:** If you do not see Workloads icon, click on the three horizontal dots at the bottom of the left navigation pane to expand and find Workloads.
 
-1. Scroll down to the bottom and select **Real-Time Intelligence** under Workloads.
+1. Scroll down to the bottom and select **Real-Time Intelligence** under Workloads. This experience provides the tools required to ingest, process, analyze, visualize, and automate actions on streaming data, which are the core capabilities used throughout this lab.
 
     ![](media/E1T1S2.png)
 
@@ -70,7 +74,7 @@ In this task, you will create a workspace to begin working with Real-Time Intell
 
 1. The **Create a workspace** dialog opens on the right side of the browser.
 
-1. In the **Name** field enter **RTI_<inject key="DeploymentID" enableCopy="false"></inject>** **(1)**. 
+1. In the **Name** field enter **RTI_<inject key="DeploymentID" enableCopy="false"></inject>** **(1)**. The workspace serves as the central location for organizing all assets used in the real-time analytics solution.
 
    >**Note:** The user ID will be unique for each user, and the workspace name must also be unique. Ensure that a green check mark with **"This name is available"** appears below the Name field.
 
@@ -98,15 +102,15 @@ In this task, you will create an Eventhouse, which is used for storing, processi
 
     ![](media/E1T3S1.png)
 
-1. Search for **Eventhouse (1)** and Select the **Eventhouse (2)** option from Store data. As we have talked about, this can be viewed  similarly to a Lakehouse in that we can store data, but this Eventhouse is focused on real-time data.
+1. Search for **Eventhouse (1)** and select the **Eventhouse (2)**. The Eventhouse provides a scalable repository optimized for storing and querying streaming event data. It serves as the primary analytical store for the website events generated later in the lab.
 
-    ![](media/eventhouse-1up2.png)
+    ![](media/E1T3S2a-1606.png)
 
 1. In the window that appears, give your Eventhouse the name, **WebEvents_EH (1)**, and click on **Create (2)**.
 
     ![](media/image32up2.png)
 
-    >**Note:** if Welcome to Eventhouse! pop-up appears. Click on **Get started**.
+    >**Note:** Welcome to Eventhouse! pop-up appears. Click on **Get started** and close the pop-up windows that appear after it.
 
 1. The Eventhouse efficiently handles real-time data streams, enabling organizations to ingest, process, and analyze data in near real-time. It is optimized for time-based, streaming events, automatically indexing and partitioning data based on ingestion time.
 
@@ -128,13 +132,19 @@ In this task, you’ll enable OneLake Availability to automatically copy KQL Dat
 
     ![](media/new/4.png)
 
+    > **TIP:** If you do not see the Database details window on the right side, click on the **arrow** to open it.
+
+    > ![](media/new/E1T4S2note-1606.png)
+
     >**Note:** Newly created tables will automatically inherit the "OneLake availability" setting from the Database level
 
 3. Now the dialog **Enable OneLake Availability** is shown. Ensure that Apply to existing tables is checked and click on the button **Enable**.
 
     ![](media/image_task04_step03up2.png)
 
-## Summary
+    ![](media/new/E1T4S3a-1606.png)
+
+## 🧾 Summary
 
 In this exercise, you have explored the Real-Time Intelligence experience in Microsoft Fabric, created a Fabric Workspace, set up an Eventhouse for real-time data storage and analysis, and enabled OneLake Availability for seamless data integration. These foundational steps will allow you to effectively manage and analyze streaming data within Microsoft Fabric.
 

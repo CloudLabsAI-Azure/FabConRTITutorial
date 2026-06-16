@@ -2,11 +2,15 @@
 
 ### Estimated duration: 60 Minutes
 
-## Overview
+## 📘 Scenario
 
-In this exercise, you will set up a **Lakehouse** and upload reference data to create delta tables. You will access **Eventhouse data from the Lakehouse**, build a **KQL Database schema**.
+To provide additional business context for the streaming events, the AdventureWorks Data engineering team creates a **Lakehouse** that stores product reference information. They then connect the Lakehouse and Eventhouse using shortcuts and build KQL tables and transformation logic that convert raw event data into structured datasets suitable for analysis and reporting.
 
-## Objectives: 
+## 📖 Overview
+
+In this exercise, you create a **Lakehouse**, upload product reference files, generate Delta tables, create shortcuts between the Lakehouse and Eventhouse, and build the KQL schema by creating tables, functions, and update policies that transform raw streaming events into structured analytical data.
+
+## 🎯 Objectives: 
 
 In this exercise, you will be able to complete the following tasks:
 
@@ -25,11 +29,18 @@ In this task, you will set up the Lakehouse that will contain additional informa
 
 1. Click on the button **+ New Item (1)** in the toolbar and in the pop-up window, search for **Lakehouse (2)** and click on the tile **Lakehouse (3)**.
 
-    ![](media/E3T1S2-1802.png)
+    ![](media/new/E3T1S2-1606.png)
 
-1. In the dialog **New lakehouse**, enter `WebSalesData_LH` **(1)** as name for the new lakehouse. Select **RTI_<inject key="DeploymentID" enableCopy="false"></inject>** **(2)** as Location. Ensure that the checkbox **Lakehouse schemas (Public Preview)** is **not checked (3)**. Then click on the button **Create (4)**
+1. In the dialog **New lakehouse**, enter the following details:
 
-    ![](media/E3T1S3-1802.png)
+    - Name: **WebSalesData_LH** **(1)**
+    - Location: **RTI_<inject key="DeploymentID" enableCopy="false"></inject>** **(2)**
+    - Lakehouse schema: **Unchecked (3)**
+
+        > **Note:** Make sure the Lakehouse schema is unchecked. Keeping it checked may cause issues in the later steps of the exercise.
+    - Click on **Create (4)**
+
+        ![](media/E3T1S3-1802.png)
 
 1. You will be navigated to the overview page of the new lakehouse.
 
@@ -56,7 +67,7 @@ After our lakehouse has been created, the overview page of the lakehouse will be
 
     >**Note:** To select the two files at once, you can just hold the CTRL key while you click the two files.
 
-1. Click on the **Upload** button. Now the files will be uploaded.
+1. Click on the **Upload** button. Now the files will be uploaded. The close the Upload files window.
 
     ![](media/E3T2S3-1802.png)
 
@@ -124,13 +135,15 @@ In this task, you will create all the silver tables, functions and enable update
 
 1. Select the **WebEvents_EH (1)** database. Click on the button **+ New (2)** in the top toolbar and choose **OneLake shortcut (3)** from the drop-down menu.
 
-    ![](media/new/22.png)
+    ![](media/new/E3T4S3a-1606.png)
+
+    ![](media/new/E3T4S3b-1606.png)
 
 1. Select **Microsoft OneLake**.
 
     ![](media/guide-35up342.png)
 
-1. Select the lakehouse **WebSalesData_LH (1)** and click on the button **Next (2)**.
+1. Select the Lakehouse **WebSalesData_LH (1)** and click on the button **Next (2)**.
 
     ![](media/guide-39up2.png)
 
@@ -275,6 +288,8 @@ In this task, you will create all the silver tables, functions and enable update
 
     ![](media/guide-44up23156.png)
 
+1. The above executed script sets up the analytics layer for the lab by creating processed (Silver) tables, transformation functions, and automatic update policies. This ensures that incoming streaming events are converted into structured, query-ready data that will be used in the Real-Time Dashboard and later analysis.
+
 1. The status of the execution of the commands from the file **createAll.kql** can be seen at the bottom of the pane. The result of each Command should be **Completed**.
 
     ![](media/image_task12_step09bup2.png)
@@ -287,9 +302,9 @@ In this task, you will create all the silver tables, functions and enable update
 
     ![](media/guide-46up2.png)
 
-## Summary
+## 🧾 Summary
 
-In this exercise, you have set up a Lakehouse, uploaded reference data to create delta tables, accessed Eventhouse data from the Lakehouse by creating shortcuts, and built a KQL Database schema by creating tables. 
+In this exercise, you created a Lakehouse, loaded reference CSV files as Delta tables, established shortcuts between the Lakehouse and Eventhouse, and built the KQL schema consisting of Silver tables, transformation functions, and update policies. These steps prepare the streaming data for efficient querying and visualization.
 
 ### You have successfully completed the exercise. Now, click on **Next >>** from the lower right corner to proceed to the next exercise.
 
