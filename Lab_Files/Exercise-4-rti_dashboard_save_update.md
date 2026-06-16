@@ -2,11 +2,15 @@
 
 ### Estimated duration: 90 Minutes
 
-## Overview
+## 📘 Scenario
 
-In this exercise, you will develop a **Real-Time Dashboard** with auto-refresh for live insights. Finally, you will use **Data Activator** to automate actions based on real-time data.
+After the streaming pipeline and data model are complete, the operations team at AdventureWorks needs a **live monitoring solution**. You create a **Real-Time Dashboard** that visualizes incoming event data, configure automatic refresh so the dashboard stays current, and enable a Data Activator rule that can generate an automated response when a specified condition is met.
 
-## Objectives:
+## 📖 Overview
+
+In this exercise, you create a **Real-Time Dashboard** that queries the **processed event data** stored in the Eventhouse, build multiple live visualizations, enable continuous auto-refresh, and configure a **Data Activator** rule based on dashboard metrics to demonstrate event-driven automation.
+
+## 🎯 Objectives:
 
 In this exercise, you will be able to complete the following tasks:
 
@@ -16,9 +20,16 @@ In this exercise, you will be able to complete the following tasks:
 
 ## Task 1: Real-Time Dashboard 
 
-In this task, we will build a real-time dashboard to visualize the streaming data and set it to refresh every 30 seconds. (Optionally) A pre-built version of the dashboard is available to download [here](<https://github.com/microsoft/FabricRTIWorkshop/blob/main/dashboards/RTA%20dashboard/dashboard-RTA Dashboard.json>), which can be imported and configured to your KQL Database data source.
+In this task, you will create a Real-Time Dashboard that visualizes the processed streaming data stored in your Eventhouse KQL Database. Using KQL queries, you will build multiple dashboard tiles to monitor metrics such as clicks, impressions, geographic distribution, page load performance, and anomalies. You will also configure the dashboard for continuous refresh in a later task so that it reflects incoming streaming events in near real time.
 
-![](media/RealTimeDashboard.png)
+> **Note:** For reference or an accelerated setup, a pre-built version of the dashboard is available for download [here](https://github.com/microsoft/FabricRTIWorkshop/blob/main/dashboards/RTA%20dashboard/dashboard-RTA%20Dashboard.json). The downloaded JSON file can be imported into your Microsoft Fabric workspace as a Real-Time Dashboard.
+
+> ![](media/RealTimeDashboard.png)
+
+> To obtain the dashboard, open the GitHub link above and click **Raw** (or **Download raw file**) to save the `.json` file locally. You can then import the downloaded JSON into Microsoft Fabric and configure it to use your own KQL Database as the data source.
+
+> For this lab, however, you will build the dashboard manually to understand how each visualization, query, and configuration is created. This hands-on approach provides a better understanding of Real-Time Dashboard development in Microsoft Fabric.
+
 
 1. From the left navigation pane, select your workspace **RTI_<inject key="DeploymentID" enableCopy="false"></inject> (1)** and select **RTI_<inject key="DeploymentID" enableCopy="false"></inject> (2)**.
 
@@ -32,9 +43,13 @@ In this task, we will build a real-time dashboard to visualize the streaming dat
 
     ![](media/new/E4T1S3-1902.png)
 
-1. Enter the name as **Web Events Dashboard (1)**. Select location as **RTI_<inject key="DeploymentID" enableCopy="false"></inject> (2)**, then click on **Create (3)**.
+1. Enter the following details: 
 
-    ![](media/new/30.png)
+    - Name - **Web Events Dashboard (1)**.
+    - Location - **RTI_<inject key="DeploymentID" enableCopy="false"></inject> (2)** 
+    - Click on **Create (3)**.
+
+        ![](media/new/30.png)
 
 1. Now, as we have created the dashboard from KQL Database, it has automatically selected the Datasource as the KQL Database itself. 
 
@@ -42,11 +57,15 @@ In this task, we will build a real-time dashboard to visualize the streaming dat
 
      ![](media/20042026(6).jpg)
 
-1. From the **Home (1)** tab, click on the button **Add visual (2)** to create a new tile for the dashboard.
+The **Real-Time Dashboard** is currently empty. In the next series of subtasks, you will gradually build the dashboard by creating individual visuals for different business metrics. Each visual highlights a specific aspect of the streaming data and contributes to the final interactive dashboard
 
-    ![](media/new/E4T1S6-1802.png)
+### Task 1.1: Create the "Click by Hour" visual
 
-1. This visual will show the **Clicks by hour**. It will use the following query.
+1. From the **Home (1)** tab, click on the button **Add visual (2)** dropdown and select **Area chart (3)** to create a new tile for the dashboard.
+
+    ![](media/new/E4T1.1S1-1606.png)
+
+1. On the Query editor, paste the following query **(1)**. Set the time range as **Last 7 days (2)** and click on **Run (3)** to execute the query. 
 
     ```kusto
     SilverClicks
@@ -56,35 +75,23 @@ In this task, we will build a real-time dashboard to visualize the streaming dat
     | top 30 by date_count
     ```
 
-1. Replace the content of the textbox with the code above. Click on the time range parameter at the top of the screen and set it to **Last 7 days (1)**. This parameter is referenced by the query in the `where` clause by using fields `_startTime` and `_endTime`. Click on the button **Run (2)**. The query will be executed, and the results will be shown in the table at the bottom. To create a visualisation, click on the button **+ Add visual (3)**. This will open a pane on the right side of the browser.
+    ![](media/new/E4T1.1S2-1606.png)
 
-    ![](media/new/32.png)
+1. From the left navigation tab, click on **Visualization (1)** tab. Expand the General section **(2)**, and enter the Title name as **Clicks by Hour (3)**. Then click on **Done (4)**.
 
-1. Format the visual by entering `Click by hour` **(1)** in the field **Tile name**. Select **Area chart (2)** under **Visual type**. Then click on the button **Apply changes (3)**.
+    ![](media/new/E4T1.1S3-1606.png)
 
-    ![](media/new/33.png)
+1. You will be navigated to the Home page. Set the Time range as **Last 7 days**.
 
-1. Click on the tab **Manage (1)** on the top left then click on **Parameters (2)** button.
+    ![](media/new/E4T1.1S4-1606.png)
 
-    ![](media/new/34.png)
+### Task 1.2: Create "Impressions by Hour" visual
 
-1. On the Parameters window, which opens on the right side, click on the **pencil** icon under **Time range**. This will enter the edit mode for this parameter.
+1. From the **Home (1)** tab, click on the button **Add visual (2)** dropdown and select **Area chart (3)** to create a new tile for the dashboard.
 
-    ![](media/guide-54up2.png)
+    ![](media/new/E4T1.1S1-1606.png)
 
-1. Select **Last 7 Days  (1)** in the combo box **Default value**. Then click on **Done (2)**.
-
-    ![](media/image_task13_step12up2.png)
-
-1. In the Parameters pane, click on the button **Close**.
-
-    ![](media/new/35.png)
-
-1. Click on the **Home (1)** tab and then click on the button **Add visual (2)** to proceed with the next visuals.
-
-    ![](media/new/36.png)
-
-1. Enter the following query, then click on the **Run (1)** button. To create a visualisation, click on the button **+ Add visual (2)**.
+1. On the Query editor, paste the following query **(1)** and click on **Run (2)** to execute the query. Then navigate to the **Visualization (3)** tab.
 
     ```kusto
     //Impressions by hour
@@ -95,17 +102,19 @@ In this task, we will build a real-time dashboard to visualize the streaming dat
     | top 30 by date_count
     ```
 
-    ![](media/new/37.png)
-    
-1. Format the visual by entering `Impressions by hour` **(1)** in the field **Tile name**. Select **Area chart (2)** under **Visual type.** Then click on the button **Apply changes (3)**.
+    ![](media/new/E4T1.2S2-1606.png)
 
-    ![](media/new/38.png)
+1. Expand the General section, and enter the Title name as **Impressions by Hour (1)**. Then click on **Done (2)**.
 
-1. From the **Home (1)** tab, click on the button **Add visual (2)** button again to proceed with the next visuals.
+    ![](media/new/E4T1.2S3-1606.png)
 
-    ![](media/new/E4T1S17-1802.png)
+### Task 1.3: Create "Impressions by Location" visual.
 
-1. Enter the following query, then click on the **Run (1)** button. To create a visualisation, click on the button **+ Add visual (2)**.
+1. From the **Home (1)** tab, click on the button **Add visual (2)** dropdown and select **Map (3)** to create a new tile for the dashboard.
+
+    ![](media/new/E4T1.3S1-1606.png)
+
+1. On the Query editor, paste the following query **(1)** and click on **Run (2)** to execute the query. Then navigate to the **Visualization (3)** tab.
 
     ```kusto
     //Impressions by location
@@ -116,17 +125,19 @@ In this task, we will build a real-time dashboard to visualize the streaming dat
     | render scatterchart with (kind = map) //, xcolumn=lon, ycolumns=lat)
     ```
 
-   ![](media/new/39.png)
+    ![](media/new/E4T1.3S2-1606.png)
 
-1. Format the visual by entering `Impressions by location` **(1)** in the field **Tile name**. Select **Map (2)** under **Visual type**. Then click on the button **Apply changes (3)**.
+1. Expand the General section, and enter the Title name as **Impressions by Location (1)**. Then click on **Done (2)**.
 
-    ![](media/new/40.png)
+    ![](media/new/E4T1.3S3-1606.png)
 
-1. From the **Home** tab, click on the **Add visual** button again to proceed with the next visuals.
+### Task 1.4: Create the "Average Page Load Time" visual
 
-    ![](media/new/E4T1S20-1802.png)
+1. From the **Home (1)** tab, click on the button **Add visual (2)** dropdown and select **Time chart (3)** to create a new tile for the dashboard.
 
-1. Enter the following query, then click on the **Run (1)** button. To create a visualisation, click on the button **+ Add visual (2)**.
+    ![](media/new/E4T1.4S1-1606.png)
+
+1. On the Query editor, paste the following query **(1)** and click on **Run (2)** to execute the query. Then navigate to the **Visualization (3)** tab.
 
     ```kusto
     //Average Page Load time
@@ -138,17 +149,19 @@ In this task, we will build a real-time dashboard to visualize the streaming dat
     | render timechart
     ```
 
-   ![](media/new/41.png)
+    ![](media/new/E4T1.4S2-1606.png)
 
-1. Format the visual by entering `Average Page Load Time` **(1)** in the field **Tile name**. Select **Time chart (2)** under **Visual type**. Then click on the button **Apply changes (3)**.
+1. Expand the General section, and enter the Title name as **Average Page Load Time (1)**. Then click on **Done (2)**.
 
-    ![](media/new/42.png)
+    ![](media/new/E4T1.4S3-1606.png)
 
-1. From the **Home** tab, click on the **Add visual** button again to proceed with the next visuals.
+### Task 1.5: Create KPI Summary tiles
 
-    ![](media/new/E4T1S23-1802.png)
+1. From the **Home (1)** tab, click on the button **Add visual (2)** dropdown and select **Time chart (3)** to create a new tile for the dashboard.
 
-1. Enter the following query, then click on the **Run (1)** button. To create a visualisation click on the button **+ Add visual (2)**.
+    ![](media/new/E4T1.5S1-1606.png)
+
+1. On the Query editor, paste the following query **(1)** and click on **Run (2)** to execute the query. Then navigate to the **Visualization (3)** tab.
 
     ```kusto
     //Clicks, Impressions, CTR
@@ -165,39 +178,43 @@ In this task, we will build a real-time dashboard to visualize the streaming dat
     | project selected_date = dateOnly , impressions = imp_count , clicks = clck_count, CTR = clck_count * 100 / imp_count
     ```
 
-   ![](media/new/43.png)
+    ![](media/new/E4T1.5S1-1606.png)
 
-1. Enter **Impressions (1)** in the field **Tile name**. Select **Stat (2)** in the **Visual type**. In **Data** Value column select **impressions (long) (3)**. Then click on the button **Apply changes (4)**.
+1. Expand the General section, and enter the Title name as **Impressions (1)**. From the Data section, in the Value column select **impressions (long) (2)** Then click on **Done (3)**.
 
-    ![](media/new/44.png)
+    ![](media/new/E4T1.5S3-1606.png)
 
 1. Click the **ellipsis (...)** **(1)** at the top right of the Impressions tile you just created and select **Duplicate (2)** and duplicate it two times.
 
-    ![](media/new/E4T1S26-1802.png)
+    ![](media/new/E4T1.5S4-1606.png)
 
-    ![](media/new/E4T1S27-1802.png)
+    ![](media/new/E4T1.5S5-1606.png)
 
 1. Click the **ellipsis (...)** **(1)** on 1st duplicate and select **Edit (2)** to edit the tile.
 
-    ![](media/new/46.png)
+    ![](media/new/E4T1.5S6-1606.png)
 
-1. Enter the **Tile name** as **Clicks (1)**, set the Data value column to **clicks (long) (2)**, then click on **Apply changes (3)**.
+1. From the Visualization tab, enter the **Tile name** as **Clicks (1)**, set the Data value column to **clicks (long) (2)**, then click on **Done (3)**.
 
-    ![](media/fabrta57up2.png)
+    ![](media/new/E4T1.5S7-1606.png)
 
-1. Click the **ellipsis (...)** **(1)** on another duplicate and select **Edit (2)** to edit the tile.
+1. Click the **ellipsis (...)** on another duplicate and select **Edit** to edit the tile.
 
-    ![](media/new/46.png)
+1. Enter the **Tile name** as **Click Through Rate (1)**, set the Data value column to **CTR (long) (2)**, then click on **Done (3)**.
 
-1. Enter the **Tile name** as **Click Through Rate (1)**, set the Data value column to **CTR (long) (2)**, then click on **Apply changes (3)**.
+    ![](media/new/E4T1.5S8-1606.png)
 
-    ![](media/fabrta58up2.png)
+1. All three Stat visuals would look like this:
 
-1. From the **Home** tab, click on the **Add visual** button again to proceed with the next visuals.
+    ![](media/new/E4T1.5S10-1606.png)
 
-    ![](media/new/E4T1S31-1802.png)
+### Task 1.6: Create the "Average Page Load Time Anomalies" visual
 
-1. Enter the following query, then click on the **Run (1)** button. To create a visualisation, click on **+ Add visual (2)** button.
+1. From the **Home (1)** tab, click on the button **Add visual (2)** dropdown and select **Anomaly chart (3)** to create a new tile for the dashboard.
+
+    ![](media/new/E4T1.6S1-1606.png)
+
+1. On the Query editor, paste the following query **(1)** and click on **Run (2)** to execute the query. Then navigate to the **Visualization (3)** tab.
 
     ```kusto
     //Avg Page Load Time Anomalies
@@ -208,18 +225,20 @@ In this task, we will build a real-time dashboard to visualize the streaming dat
     | render anomalychart
     ```
 
-   ![](media/new/47.png)
+   ![](media/new/E4T1.6S2-1606.png)
 
-1. Format the visual by entering `Average Page Load Time Anomalies` **(1)** in the field **Tile name**. Select **Anomaly Chart (2)** under **Visual type**. Then click on the button **Apply changes (3)**.
+1. Expand the General section, and enter the Title name as **Average Page Load Time Anomalies (1)**. Then click on **Done (3)**.
 
-   ![](media/new/48.png)
+   ![](media/new/E4T1.6S3-1606.png)
 
-1. From the **Home** tab, click on the **Add visual** button again to proceed with the next visuals.
+### Task 1.7: Create the "Strong Anomalies" visual
 
-    ![](media/new/E4T1S33-1802.png)
+1. From the **Home (1)** tab, click on the button **Add visual (2)** dropdown and select **Table (3)** to create a new tile for the dashboard.
 
-1. Enter the following query, then click on the **Run (1)** button. To create a visualisation click on the button **+ Add visual (2)**.
-    
+    ![](media/new/E4T1.7S1-1606.png)
+
+1. On the Query editor, paste the following query **(1)** and click on **Run (2)** to execute the query. Then navigate to the **Visualization (3)** tab.
+
     ```kusto
     //Strong Anomalies
     SilverImpressions
@@ -231,24 +250,25 @@ In this task, we will build a real-time dashboard to visualize the streaming dat
     | project-away anomalies
     ```
 
-    ![](media/new/49.png)
+    ![](media/new/E4T1.7S2-1606.png)
 
-1. Format the visual by entering **Strong Anomalies (1)** in the Tile name field. Under Visual type, select **Table (2)**, and then click **Apply changes (3)**.
+1. Expand the General section, and enter the Title name as **Strong Anomalies (1)**. Then click on **Done (3)**.
 
-    ![](media/new/50.png)
+   ![](media/new/E4T1.7S3-1606.png)
+
+### Task 1.8: Add the dashboard logo and arrange the layout
 
 1. To add a **Logo**, click on the **Add Markdown** button from the top menu bar.
 
-    ![](media/new/E4T1S37-1802.png)
+    ![](media/new/E4T1.8S1-1606.png)
 
-1. Paste the following code in the text area and click on the button **Apply changes**.
+1. Paste **(1)** the following code in the text area. Give the tile name as **Logo (2)** and click on **Done (3)**.
 
     ```kusto
-    //Logo (Markdown Text Tile)
     ![AdventureWorks](https://raw.githubusercontent.com/CloudLabsAI-Azure/FabConRTITutorial/main/Lab_Files/media/AdventureWorksLogo.png "AdventureWorks")
     ```
 
-   ![](media/E4T1S39.png)
+   ![](media/new/E4T1.8S2-1606.png)
 
    >**Note:** The title can be resized on the dashboard canvas directly, rather than writing code.
 
@@ -267,13 +287,13 @@ In this task, we will build a real-time dashboard to visualize the streaming dat
 
 In this task, you will enable auto-refresh so the dashboard will be automatically updated while it is shown on screen.
 
-1. Click on the **Manage (1)** tab and then click on the button **Auto refresh (2)**. This will open a pane on the right side of the browser.
+1. Click on the **Manage (1)** tab and then click on the button **Refresh settings (2)**. This will open a pane on the right side of the browser.
 
-    ![](media/E4T2S1.png)
+    ![](media/new/E4T2S1-1606.png)
 
-1. In the **Auto refresh** window, which opens on the right side, set it to **Enabled (1)** and set **Default refresh rate** to **Continuous (2)**. Then click on **Apply (3)** button.
+1. In the **Refresh settings** window, which opens on the right side, select **Live refresh (1)** then click on **Apply (2)** button. You can click on the Settings button under Live refresh to view or change the refresh settings. 
 
-    ![](media/guide-56up2.png)
+    ![](media/new/E4T2S2-1606.png)
 
 1. Click on the **Home (1)** tab and then click on the **Save (2)** button.
 
@@ -285,11 +305,11 @@ In this task, you will create a Reflex Alert that will send a Teams Message when
 
 1. Click on the **ellipsis** **(...) (1)** of the tile **Click by hour**. Select **Add alert (2)** from the context menu. This will open the **Add Rule** pane on the right side in the browser.
 
-    ![](media/image_task14_step01up2.png)
+    ![](media/new/E4T3S1-1606.png)
 
-1. Enter any name for the rule name.
+1. Enter the name as **Click Alert**
 
-    ![](media/new/64.png)
+    ![](media/new/E4T3S2-1606.png)
 
 1. In the **Condition** section, fill the fields with the following values:
 
@@ -302,22 +322,24 @@ In this task, you will create a Reflex Alert that will send a Teams Message when
     | Value **(5)**                | **250**                     |
     | Occurance **(6)**           | **Every time the condition is met**           |
 
-    ![](media/new/60.png)
+    ![](media/new/E4T3S3-1606.png)
 
-1. In the Actions section, choose **Email** as the action type.
+1. In the Actions section, choose **Email (1)** as the action type.
 
-    ![](media/new/61.png)
-
-1. Select the workspace as **RTI_<inject key="DeploymentID" enableCopy="false"></inject>**. For Item, choose **Create a new item (1)**. Enter **My activator (2)** in the New item name field, and then click **Create (3)**.
+1. Select the workspace as **RTI_<inject key="DeploymentID" enableCopy="false"></inject> (2)**. For Item, choose **Create a new item (3)**. Enter **Activator (4)** in the New item name field, and then click **Create (5)**.
     
-   ![](media/new/63.png)
+   ![](media/new/E4T3S4-1606.png)
 
 1. The Reflex item will appear in your workspace, and you can edit the Reflex trigger action. The same Reflex item can also trigger multiple actions.
 
-## Summary
+## 🧾 Summary
 
 In this exercise, you have built a real-time dashboard in Microsoft Fabric to visualize streaming data. You created various visuals such as time charts, maps, anomaly charts, and tables to gain insights from the data. Additionally, you enabled auto-refresh to ensure that the dashboard updates in real-time as new data arrives. Finally, you set up a Data Activator to automate actions based on specific conditions in your data, allowing for proactive responses to important events.
 
-### You have successfully completed the lab!
+### 🎉 You have successfully completed the Build a Fabric Real-Time Intelligence Solution in a Day lab.
 
-By completing this lab, **Build A Fabric Real-Time Intelligence Solution in a Day**, you establish an end-to-end real-time data analytics solution in Microsoft Fabric. Starting with creating a collaborative workspace and setting up an Eventhouse, you integrate data seamlessly using OneLake and Eventstream, simulate and process streaming data, and organize it efficiently in a Lakehouse with tables. Leveraging KQL for structured querying, you transform raw event data into actionable insights, culminating in the development of an interactive real-time dashboard and automated event-driven actions through Data Activator, enabling timely and informed decision-making.
+During this lab, you created a Fabric Workspace and Eventhouse, enabled OneLake Availability, configured an Eventstream, and used a notebook to generate synthetic streaming web events. You then routed click and impression events into Eventhouse tables, created a Lakehouse with reference data, established shortcuts between storage layers, and built a KQL schema with transformation functions and update policies.
+
+Finally, you developed a Real-Time Dashboard to visualize live streaming data, enabled automatic refresh for continuous monitoring, and configured a Data Activator rule to demonstrate automated responses based on incoming events.
+
+The completed solution illustrates how Microsoft Fabric can be used to build an end-to-end real-time analytics pipeline that ingests, transforms, stores, visualizes, and monitors streaming event data while integrating seamlessly across Eventhouse, OneLake, Lakehouse, KQL, dashboards, and automation features.

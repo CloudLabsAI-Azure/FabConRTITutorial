@@ -2,11 +2,15 @@
 
 ### Estimated duration: 60 Minutes
 
-## Overview
+## 📘 Scenario
 
-In this exercise, you will create an **Eventstream** while defining its topology for real-time data ingestion. Additionally, you will import and run a **Data Generator Notebook** to simulate streaming events.
+With the environment ready, the next step is to **simulate** website activity and establish a **streaming ingestion pipeline**. A notebook generates synthetic impression and click events and sends them to an **Eventstream** through a custom endpoint. The Eventstream filters the incoming events and routes them into separate Eventhouse tables for further processing.
 
-## Objectives: 
+## 📖 Overview
+
+In this exercise, you create an Eventstream, import and execute a notebook that generates synthetic web events, and configure the Eventstream topology to filter and route click and impression events into separate Eventhouse destination tables. This establishes the real-time ingestion pipeline used throughout the remainder of the lab.
+
+## 🎯 Objectives: 
 
 In this exercise, you will be able to complete the following tasks:
 
@@ -25,7 +29,7 @@ In this task, you will be streaming events (impressions and click events) genera
 
 1. Click on **+ New Item (1)**. In the pop-up window, search for **Eventstream (2)** and select **Eventstream (3)** from the **Get data** section.
 
-    ![](media/new/E2T1S2-1802.png)
+    ![](media/new/E2T1S2-1606.png)
 
 1. Give the Eventstream the name **WebEventsStream_ES (1)** and then click on **Create (2)**.
 
@@ -35,7 +39,7 @@ In this task, you will be streaming events (impressions and click events) genera
 
     ![](media/guide-28up2.png)
 
-1. Insert `WebEventsCustomSource` **(1)** as the Source name and then click on **Add (2)**. 
+1. Enter **WebEventsCustomSource** **(1)** as the Source name and then click on **Add (2)**. 
 
     >**Note**: Leave the Schema association (preview) option disabled. Do not select the Activate checkbox. 
 
@@ -105,7 +109,7 @@ Now we have to run the notebook to create the stream of artificial click events 
 
     >**Note:** Errors in Cell 1 may occur due to pre-installed libraries in the environment. These can be safely ignored, as they will not impact the successful execution of the notebook.
 
-    ![](media/image_task07_errorsup2.png)
+    > ![](media/image_task07_errorsup2.png)
     
     >**Note:** Wait a few minutes for the first code cell to finish, and it will proceed to the next code cells automatically. Please note that some cells may take 5 minutes or longer to execute.
 
@@ -128,7 +132,7 @@ In this task, you will create the Eventstream topology that will insert the stre
 
 3. Click on the node **Transform events or add destination (1)** and select **Filter (2)** from the menu.
 
-    ![](media/image_task08_step03up2.png)
+    ![](media/new/E2T4S3-1606.png)
 
 4. Click on the pencil icon in the node **Filter** to enter edit mode.
 
@@ -159,17 +163,21 @@ In this task, you will create the Eventstream topology that will insert the stre
 
 8. Choose **Stream** from the context menu.
 
-    ![](media/new/12.png)
+    ![](media/new/E2T4S8-1606.png)
 
-9. Click on the **Pencil (1)** in node **DerivedStream** to go to edit mode. In the right pane, enter `ClickEventsStream` **(2)** as name of the Eventstream in the field **Stream name**. Ensure that the **Input data format** is **Json (3)**. Click on the button **Save (4)**.
+9. Click on the **Pencil (1)** in node **DerivedStream** to go to edit mode and enter the following details:
 
-    ![](media/guide-11up2.png)
+    - Stream name: **ClickEventsStream (2)**
+    - Input data format: **JSON (3)**
+    - Click on **Save (4)**
 
-10. Click on **+** icon next to the node **ClickEventsStream** and select the option **Eventhouse** in the context menu.
+        ![](media/guide-11up2.png)
 
-    ![](media/new/13.png)
+10. Click on **+** **(1)** icon next to the node **ClickEventsStream** and select the option **Eventhouse** **(2)** in the context menu.
 
-    ![](media/E2T4S10-2.png)
+    ![](media/new/E2T4S10a-1606.png)
+
+    ![](media/E2T4S10b-1606.png)
 
 11. Click the pencil in node **Eventhouse (1)** to enter edit mode. Provide the following values in the pane Eventhouse and click the button **Save (11)** after you have entered all the values.
 
@@ -185,7 +193,7 @@ In this task, you will create the Eventstream topology that will insert the stre
 
     ![](media/new/E2T4S11-1802.png)
 
-12. Hover the mouse over the connection arrow between WebEventsStream_ES and ClickEventsFilter and click on the highlighted sign above the arrow.
+12. Hover the mouse over the connection arrow between **WebEventsStream_ES** and **ClickEventsFilter** and click on the highlighted sign above the arrow.
 
     ![](media/guide-13up2.png)
 
@@ -216,21 +224,25 @@ In this task, you will create the Eventstream topology that will insert the stre
 
 17. The **ImpressionEventsFilter** node showing an **error** is expected. This indicates that there is no target for the outgoing data stream, which will be resolved in the next step.
 
-18. Click on **+** sign next to the **ImpressionEventsFilter** node and choose **Stream** from the context menu.
+18. Click on **+** **(1)** sign next to the **ImpressionEventsFilter** node and choose **Stream** **(2)** from the context menu.
 
-    ![](media/new/14.png)
+    ![](media/new/E2T4S18a-1606.png)
 
-    ![](media/guide-17up2.png)
+    ![](media/new/E2T4S18b-1606.png)
 
-19. Click on the **pencil (1)** icon in the node **DerivedStream** to enter edit mode. Enter `ImpressionsEventsStream` **(2)** as name of the Eventstream in the field **Stream name**. Ensure that the **Input data format** is **Json**. Click on the button **Save (3)**.
+19. Click on the **pencil (1)** icon in the node **DerivedStream** to enter edit mode and enter the following details:
 
-    ![](media/image_task08_step18up2.png)
+    - Stream name: **ImpressionsEventsStream (2)**
+    - Input data format: **JSON**
+    - Click on **Save (3)** 
 
-20. Click on **+** icon next to the node **ImpressionEventsStream** and select **Eventhouse** from the context menu.
+        ![](media/image_task08_step18up2.png)
 
-    ![](media/new/15.png)
+20. Click on **+** **(1)** icon next to the node **ImpressionEventsStream** and select **Eventhouse** **(2)** from the context menu.
 
-    ![](media/E2T4S20-2.png)
+    ![](media/new/E2T4S20a-1606.png)
+
+    ![](media/new/E2T4S20b-1606.png)
 
 21. Click the **pencil (1)** in node **Eventhouse** to enter edit mode. Provide the following values in the **pane (2)**. After providing these values, click on the button **Save (3)**.
 
@@ -260,7 +272,7 @@ In this task, you will create the Eventstream topology that will insert the stre
 
     ![](media/guide-22up2.png)
 
-## Summary
+## 🧾 Summary
 
 In this exercise, you have created an Eventstream topology that filters click and impression events from the incoming stream of events and inserts them into separate tables in your KQL database in your Eventhouse. You have also run a notebook that generates synthetic click and impression events and sends them to the Eventstream.
 
