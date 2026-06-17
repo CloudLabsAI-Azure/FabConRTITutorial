@@ -51,7 +51,7 @@ In this task, you will create a Real-Time Dashboard that visualizes the processe
 
         ![](media/new/30.png)
 
-1. Now, as we have created the dashboard from KQL Database, it has automatically selected the Datasource as the KQL Database itself. 
+1. Now, as we have created the dashboard from the KQL Database, it has automatically selected the Datasource as the KQL Database itself. 
 
 1. If a table is already present on the dashboard, click the **ellipsis (…) (1)** at the top-right corner of the table visual and select **Delete (2)** to remove it. We will add our own visuals based on the queries we create.
 
@@ -77,7 +77,7 @@ The **Real-Time Dashboard** is currently empty. In the next series of subtasks, 
 
     ![](media/new/E4T1.1S2-1606.png)
 
-1. From the left navigation tab, click on **Visualization (1)** tab. Expand the General section **(2)**, and enter the Title name as **Clicks by Hour (3)**. Then click on **Done (4)**.
+1. From the left navigation tab, click on the **Visualization (1)** tab. Expand the General section **(2)**, and enter the Tile name as **Clicks by Hour (3)**. Then click on **Done (4)**.
 
     ![](media/new/E4T1.1S3-1606.png)
 
@@ -104,7 +104,7 @@ The **Real-Time Dashboard** is currently empty. In the next series of subtasks, 
 
     ![](media/new/E4T1.2S2-1606.png)
 
-1. Expand the General section, and enter the Title name as **Impressions by Hour (1)**. Then click on **Done (2)**.
+1. Expand the General section, and enter the Tile name as **Impressions by Hour (1)**. Then click on **Done (2)**.
 
     ![](media/new/E4T1.2S3-1606.png)
 
@@ -127,7 +127,7 @@ The **Real-Time Dashboard** is currently empty. In the next series of subtasks, 
 
     ![](media/new/E4T1.3S2-1606.png)
 
-1. Expand the General section, and enter the Title name as **Impressions by Location (1)**. Then click on **Done (2)**.
+1. Expand the General section, and enter the Tile name as **Impressions by Location (1)**. Then click on **Done (2)**.
 
     ![](media/new/E4T1.3S3-1606.png)
 
@@ -151,7 +151,7 @@ The **Real-Time Dashboard** is currently empty. In the next series of subtasks, 
 
     ![](media/new/E4T1.4S2-1606.png)
 
-1. Expand the General section, and enter the Title name as **Average Page Load Time (1)**. Then click on **Done (2)**.
+1. Expand the General section, and enter the Tile name as **Average Page Load Time (1)**. Then click on **Done (2)**.
 
     ![](media/new/E4T1.4S3-1606.png)
 
@@ -178,9 +178,9 @@ The **Real-Time Dashboard** is currently empty. In the next series of subtasks, 
     | project selected_date = dateOnly , impressions = imp_count , clicks = clck_count, CTR = clck_count * 100 / imp_count
     ```
 
-    ![](media/new/E4T1.5S1-1606.png)
+    ![](media/new/E4T1.5S2-1606.png)
 
-1. Expand the General section, and enter the Title name as **Impressions (1)**. From the Data section, in the Value column select **impressions (long) (2)** Then click on **Done (3)**.
+1. Expand the General section, and enter the Tile name as **Impressions (1)**. From the Data section, in the Value column select **impressions (long) (2)** Then click on **Done (3)**.
 
     ![](media/new/E4T1.5S3-1606.png)
 
@@ -227,7 +227,7 @@ The **Real-Time Dashboard** is currently empty. In the next series of subtasks, 
 
    ![](media/new/E4T1.6S2-1606.png)
 
-1. Expand the General section, and enter the Title name as **Average Page Load Time Anomalies (1)**. Then click on **Done (3)**.
+1. Expand the General section, and enter the Tile name as **Average Page Load Time Anomalies (1)**. Then click on **Done (3)**.
 
    ![](media/new/E4T1.6S3-1606.png)
 
@@ -252,7 +252,7 @@ The **Real-Time Dashboard** is currently empty. In the next series of subtasks, 
 
     ![](media/new/E4T1.7S2-1606.png)
 
-1. Expand the General section, and enter the Title name as **Strong Anomalies (1)**. Then click on **Done (3)**.
+1. Expand the General section, and enter the Tile name as **Strong Anomalies (1)**. Then click on **Done (3)**.
 
    ![](media/new/E4T1.7S3-1606.png)
 
@@ -270,9 +270,9 @@ The **Real-Time Dashboard** is currently empty. In the next series of subtasks, 
 
    ![](media/new/E4T1.8S2-1606.png)
 
-   >**Note:** The title can be resized on the dashboard canvas directly, rather than writing code.
+   >**Note:** The Tile can be resized on the dashboard canvas directly, rather than writing code.
 
-1. After you added all the visuals and moved them to their appropriate places, your dashboard should look similar to the image below.
+1. After you have added all the visuals and moved them to their appropriate places, your dashboard should look similar to the image below.
 
     ![](media/new/E4T1S39-1802.png)
 
