@@ -8,7 +8,7 @@ Before any events can be ingested, we must provision a **Fabric Workspace** to c
 
 ## 📖 Overview
 
-In this exercise, you will explore **Real-Time Intelligence** to gain insights from streaming data, and create a **Fabric Workspace** to organize and collaborate on your projects. You will set up an **Eventhouse** to efficiently store and analyze event-driven data, enable **OneLake Availability** for seamless data integration.
+In this exercise, you will explore **Real-Time Intelligence** to gain insights from streaming data, and create a **Fabric Workspace** to organize and collaborate on your projects. You will set up an **Eventhouse** to efficiently store and analyze event-driven data, enabling **OneLake Availability** for seamless data integration.
 
 ## 🎯 Objectives:
 
@@ -19,21 +19,21 @@ In this exercise, you will be able to complete the following tasks:
 - Task 3: Create an Eventhouse.
 - Task 4: Enable OneLake Availability.
 
-## Task 1: Experience Real-Time Intelligence
+### Task 1: Experience Real-Time Intelligence
 
 In this task, you will explore Real-Time Intelligence and its categories, gaining an understanding of its various components and functionalities.
 
-1. Select **Workloads** icon on the left of your screen. A dialog with the list of Fabric experiences will open. The list of experiences includes Power BI, Data Factory, Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science and Data Warehouse. Let’s explore.
+1. Select the **Workloads** icon on the left of your screen. A dialog with the list of Fabric experiences will open. The list of experiences includes Power BI, Data Factory, Industry Solutions, Real-Time Intelligence, Data Engineering, Data Science, and Data Warehouse. Let’s explore.
 
     ![](media/E1T1S1.png)
 
-    >**Note:** If you do not see Workloads icon, click on the three horizontal dots at the bottom of the left navigation pane to expand and find Workloads.
+    >**Note:** If you do not see the Workloads icon, click on the three horizontal dots at the bottom of the left navigation pane to expand and find Workloads.
 
 1. Scroll down to the bottom and select **Real-Time Intelligence** under Workloads. This experience provides the tools required to ingest, process, analyze, visualize, and automate actions on streaming data, which are the core capabilities used throughout this lab.
 
     ![](media/E1T1S2.png)
 
-1. You will be navigated to **Real-Time Intelligence Home page**. You will see **Item types** under **About**, and **Get started** categories. With the **Item type** category notice the items:
+1. You will be navigated to the **Real-Time Intelligence Home page**. You will see **Item types** under **About**, and **Get started** categories. With the **Item type** category, notice the items:
 
     a. **Eventhouse:** Used to create a workspace of one or multiple KQL database(s), which can be shared across projects.
     
@@ -51,9 +51,9 @@ In this task, you will explore Real-Time Intelligence and its categories, gainin
 
     h. **Map (preview):** Map (preview) is a powerful geospatial visualization platform that transforms spatial data, whether static or real-time, into actionable intelligence. By uncovering patterns, relationships, and trends across space and time, Map reveals insights often missed in traditional charts and tables, helping you make informed decisions with greater clarity.
 
-    i. **Digital Twin Builder (preview):** Digital Twin Builder lets you create digital replicas of physical environments, assets, and processes. These replicas-called digital twins-are built using an ontology, which is a structured model of entities and their relationships.
+    i. **Digital Twin Builder (preview):** Digital Twin Builder lets you create digital replicas of physical environments, assets, and processes. These replicas, called digital twins, are built using an ontology, which is a structured model of entities and their relationships.
 
-    j. **Anomaly detection (preview):** It provides below recommended models and allows you to set up continuous monitoring with automated actions.
+    j. **Anomaly detection (preview):** It provides the recommended models and allows you to set up continuous monitoring with automated actions.
 
      * Model recommendations: Suggests the best algorithms and parameters for your data.
      * Interactive anomaly exploration: Visualize detected anomalies and adjust model sensitivity.
@@ -62,7 +62,7 @@ In this task, you will explore Real-Time Intelligence and its categories, gainin
        
        ![](media/new/2.png)
 
-## Task 2: Create a Fabric Workspace
+### Task 2: Create a Fabric Workspace
 
 In this task, you will create a workspace to begin working with Real-Time Intelligence.
 
@@ -95,7 +95,7 @@ In this task, you will create a workspace to begin working with Real-Time Intell
 
 <validation step="0cf9b162-7a65-422c-b1f0-86178c692f30" />
 
-## Task 3: Create an Eventhouse
+### Task 3: Create an Eventhouse
 In this task, you will create an Eventhouse, which is used for storing, processing, and analyzing real-time streaming data efficiently within Microsoft Fabric.
 
 1. Click the **+ New item** button to open a new pane that has all the items you can create in this Fabric workspace.
@@ -121,7 +121,7 @@ In this task, you will create an Eventhouse, which is used for storing, processi
 
 <validation step="e0e12ffc-7d34-4768-aaef-c3d89d6e615f" />
 
-## Task 4: Enable OneLake Availability
+### Task 4: Enable OneLake Availability
 In this task, you’ll enable OneLake Availability to automatically copy KQL Database data to OneLake in Delta format, allowing seamless querying through Lakehouse and other tools. It’s best enabled before loading large datasets and can be set per table.
 
 1. When an Eventhouse is created, a KQL Database with the same name is created as well. To open the KQL Database, click on the Database **WebEvents_EH** in the section **KQL Databases**.
