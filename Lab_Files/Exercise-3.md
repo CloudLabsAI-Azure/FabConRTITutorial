@@ -4,7 +4,7 @@
 
 ## 📘 Scenario
 
-To provide additional business context for the streaming events, the AdventureWorks Data engineering team creates a **Lakehouse** that stores product reference information. They then connect the Lakehouse and Eventhouse using shortcuts and build KQL tables and transformation logic that convert raw event data into structured datasets suitable for analysis and reporting.
+To provide additional business context for the streaming events, the AdventureWorks Data Engineering team creates a **Lakehouse** to store product reference information. They then connect the Lakehouse and Eventhouse using shortcuts and build KQL tables and transformation logic that convert raw event data into structured datasets suitable for analysis and reporting.
 
 ## 📖 Overview
 
@@ -19,9 +19,9 @@ In this exercise, you will be able to complete the following tasks:
 - Task 3: Accessing Eventhouse data from the lakehouse 
 - Task 4: Build the KQL DB schema
 
-## Task 1: Setting up the Lakehouse
+### Task 1: Setting up the Lakehouse
 
-In this task, you will set up the Lakehouse that will contain additional information for our use case and in which you will also make the data from the KQL Database accessible through the Lakehouse.
+In this task, you will set up the Lakehouse to contain additional information for our use case and make the data from the KQL Database accessible through it.
 
 1. To create a **Lakehouse**, first return to your assigned workspace **RTI_<inject key="DeploymentID" enableCopy="false"></inject> (1)** by clicking on it from the left navigation pane and select it **(2)**. 
 
@@ -53,7 +53,7 @@ In this task, you will set up the Lakehouse that will contain additional informa
 
 <validation step="36131701-01b8-4da8-bb9d-b1a686ec3df5" />
 
-## Task 2: Create delta tables in the lakehouse
+### Task 2: Create delta tables in the lakehouse
 
 After our lakehouse has been created, the overview page of the lakehouse will be displayed. In this task, we will load static data into our new lakehouse. To do so please execute the following steps.
 
@@ -67,7 +67,7 @@ After our lakehouse has been created, the overview page of the lakehouse will be
 
     >**Note:** To select the two files at once, you can just hold the CTRL key while you click the two files.
 
-1. Click on the **Upload** button. Now the files will be uploaded. The close the Upload files window.
+1. Click on the **Upload** button. Now the files will be uploaded. Close the Upload files window.
 
     ![](media/E3T2S3-1802.png)
 
@@ -91,7 +91,7 @@ After our lakehouse has been created, the overview page of the lakehouse will be
 
     ![](media/20042026(4).png)
 
-## Task 3: Accessing Eventhouse data from the lakehouse
+### Task 3: Accessing Eventhouse data from the lakehouse
 
 In this task, you will make the Eventhouse tables from the KQL Database available in our Lakehouse. This will be accomplished by creating shortcuts.
 
@@ -121,9 +121,9 @@ In this task, you will make the Eventhouse tables from the KQL Database availabl
 
     ![](media/20042026(5).png)
 
-## Task 4: Build the KQL DB schema
+### Task 4: Build the KQL DB schema
 
-In this task, you will create all the silver tables, functions and enable update policies in our Eventhouse KQL Database. Two of the tables (`product` and `productCategory)` are shortcuts to the lakehouse, and the data is not being copied into our KQL Database.
+In this task, you will create all the silver tables, functions, and enable update policies in our Eventhouse KQL Database. Two of the tables (`product` and `productCategory`) are shortcuts to the lakehouse, and the data is not being copied into our KQL Database.
 
 1. From the left navigation pane, select your workspace **RTI_<inject key="DeploymentID" enableCopy="false"></inject>** **(1)**,  then select the KQL Database **WebEvents_EH (2)**.
 
